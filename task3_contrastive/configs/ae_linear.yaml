@@ -1,0 +1,13 @@
+# Classify quark/gluon using Task 1 SegNet encoder bottleneck
+experiment_name: ae_linear
+
+# Autoencoder checkpoint
+ae_checkpoint: outputs/task1/segnet_ptlogpct/best.pt
+
+# Training
+batch_size: 256
+linear_lr: 3.0e-4
+min_lr: 1.0e-6
+weight_decay: 3.0e-3
+linear_epochs: 200
+seed: 42

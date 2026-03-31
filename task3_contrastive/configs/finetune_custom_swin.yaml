@@ -1,0 +1,28 @@
+# Fine-tune MoCo-pretrained Custom Swin for quark/gluon classification
+# Full model unfrozen, differential learning rate
+experiment_name: finetune_custom_swin
+
+# Data
+data_path: data/processed/percentile/all_images.npy
+
+# Encoder
+encoder: custom_swin
+embed_dim: 256
+pretrain_checkpoint: outputs/task3/moco_custom_swin/pretrained_50ep_backup.pt
+
+# Fine-tune strategy
+unfreeze_all: true
+dropout: 0.1
+
+# Differential learning rate
+learning_rate_encoder: 2.0e-6
+learning_rate_head: 1.0e-4
+min_lr_encoder: 1.0e-8
+min_lr_head: 1.0e-6
+
+# Training
+batch_size: 128
+weight_decay: 1.0e-4
+num_epochs: 80
+patience: 15
+seed: 42

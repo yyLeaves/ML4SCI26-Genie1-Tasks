@@ -1,0 +1,20 @@
+# Shallow AE: 3x downsample (128->16), 1x1 conv bottleneck
+experiment_name: shallow_mse
+model: shallow
+
+# Data (run `python preprocess.py` first)
+data_path: data/processed/perchannel_log/all_images.npy
+train_split: 0.8
+
+# Model
+bottleneck_ch: 4
+encoder_channels: [32, 64, 128]
+
+# Training
+batch_size: 512
+learning_rate: 3.0e-3
+min_lr: 1.0e-5
+weight_decay: 1.0e-5
+num_epochs: 100
+patience: 10
+seed: 42

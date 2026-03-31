@@ -1,0 +1,18 @@
+# GCN baseline for quark/gluon classification
+experiment_name: gcn_baseline
+model: gcn
+data_root: data
+k: 16
+
+# Model
+in_channels: 3
+hidden: 128
+
+# Training
+batch_size: 256
+learning_rate: 1.0e-3
+min_lr: 1.0e-5
+weight_decay: 1.0e-4
+num_epochs: 50
+patience: 10
+seed: 42

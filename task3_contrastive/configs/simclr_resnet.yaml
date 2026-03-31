@@ -1,0 +1,26 @@
+# SimCLR + ResNet-18 baseline for comparison
+experiment_name: simclr_resnet
+
+# Data
+data_path: data/processed/percentile/all_images.npy
+
+# Contrastive method
+method: simclr
+encoder: resnet
+embed_dim: 256
+temperature: 0.1
+
+# Augmentations
+translate_frac: 0.1
+noise_std: 0.02
+intensity_range: [0.8, 1.2]
+erase_prob: 0.3
+
+# Training
+batch_size: 256
+learning_rate: 1.0e-3
+min_lr: 1.0e-6
+weight_decay: 1.0e-4
+pretrain_epochs: 80
+linear_epochs: 50
+seed: 42

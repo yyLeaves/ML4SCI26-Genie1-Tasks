@@ -1,0 +1,25 @@
+# MoCo + Swin-T with pT+log+percentile data
+experiment_name: moco_swin_ptlog
+
+data_path: data/processed/pt_log_percentile/all_images.npy
+
+method: moco
+encoder: swin
+embed_dim: 256
+temperature: 0.1
+queue_size: 4096
+moco_momentum: 0.999
+pretrained: true
+
+translate_frac: 0.1
+noise_std: 0.02
+intensity_range: [0.8, 1.2]
+erase_prob: 0.3
+
+batch_size: 128
+learning_rate: 2.0e-5
+min_lr: 1.0e-6
+weight_decay: 1.0e-4
+pretrain_epochs: 10
+linear_epochs: 50
+seed: 42

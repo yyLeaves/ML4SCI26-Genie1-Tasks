@@ -1,0 +1,20 @@
+# SegNet + pure pT normalization (no log/sqrt)
+experiment_name: segnet_pt
+model: segnet
+
+# Data
+data_path: data/processed/perchannel_raw/all_images.npy
+train_split: 0.8
+
+# Model
+latent_dim: 512
+encoder_channels: [32, 64, 128]
+
+# Training
+batch_size: 128
+learning_rate: 3.0e-3
+min_lr: 1.0e-5
+weight_decay: 1.0e-5
+num_epochs: 100
+patience: 10
+seed: 42

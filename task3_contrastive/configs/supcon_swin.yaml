@@ -1,0 +1,23 @@
+# Swin-T ImageNet + SupCon 10ep → fine-tune last 2 stages
+experiment_name: supcon_swin
+
+data_path: data/processed/percentile/all_images.npy
+
+encoder: swin
+embed_dim: 256
+temperature: 0.1
+pretrained: true
+
+translate_frac: 0.1
+noise_std: 0.02
+intensity_range: [0.8, 1.2]
+erase_prob: 0.3
+
+# SupCon pretraining
+batch_size: 128
+learning_rate: 2.0e-5
+min_lr: 1.0e-7
+weight_decay: 1.0e-4
+pretrain_epochs: 10
+linear_epochs: 50
+seed: 42

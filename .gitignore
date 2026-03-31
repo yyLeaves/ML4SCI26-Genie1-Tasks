@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+
+# Data files (too large for git)
+data/raw/
+data/processed/**/*.npy
+data/processed/**/*.pt
+data/processed/**/*.log
+data/norm_stats.npy
+
+# Model checkpoints
+outputs/**/*.pt
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Keep directory structure
+!**/.gitkeep

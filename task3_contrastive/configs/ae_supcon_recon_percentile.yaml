@@ -1,0 +1,27 @@
+# AE SupCon + Reconstruction using segnet_percentile model + percentile data
+experiment_name: ae_supcon_recon_percentile
+
+ae_checkpoint: outputs/task1/segnet_percentile/best.pt
+
+# SupCon settings
+embed_dim: 256
+temperature: 0.1
+lambda_recon: 10000
+
+# Augmentations
+translate_frac: 0.1
+noise_std: 0.02
+intensity_range: [0.8, 1.2]
+erase_prob: 0.3
+
+# Training
+batch_size: 128
+learning_rate: 2.0e-5
+min_lr: 1.0e-7
+weight_decay: 1.0e-4
+pretrain_epochs: 30
+
+# Linear probe
+linear_lr: 1.0e-3
+linear_epochs: 100
+seed: 42

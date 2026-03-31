@@ -1,0 +1,29 @@
+# AE encoder → MoCo contrastive fine-tune → linear probe
+experiment_name: ae_moco
+
+# AE checkpoint (Task 1 SegNet)
+ae_checkpoint: outputs/task1/segnet_ptlogpct/best.pt
+
+# MoCo settings
+embed_dim: 256
+temperature: 0.1
+queue_size: 4096
+moco_momentum: 0.999
+
+# Augmentations
+translate_frac: 0.1
+noise_std: 0.02
+intensity_range: [0.8, 1.2]
+erase_prob: 0.3
+
+# Contrastive pretraining
+batch_size: 128
+learning_rate: 2.0e-5
+min_lr: 1.0e-7
+weight_decay: 1.0e-4
+pretrain_epochs: 30
+
+# Linear probe
+linear_lr: 1.0e-3
+linear_epochs: 100
+seed: 42

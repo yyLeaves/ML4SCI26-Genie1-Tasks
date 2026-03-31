@@ -1,0 +1,10 @@
+# AE linear probe with Adam
+experiment_name: ae_linear_adam
+ae_checkpoint: outputs/task1/segnet_ptlogpct/best.pt
+batch_size: 256
+optimizer: adam
+linear_lr: 1.0e-3
+min_lr: 1.0e-6
+weight_decay: 1.0e-4
+linear_epochs: 200
+seed: 42

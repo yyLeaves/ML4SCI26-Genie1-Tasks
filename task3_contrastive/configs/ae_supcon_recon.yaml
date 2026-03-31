@@ -1,0 +1,28 @@
+# AE SupCon + Reconstruction joint fine-tune
+# lambda_recon scales MSE (~4e-5) to ~7% of SupCon loss (~5.5)
+experiment_name: ae_supcon_recon
+
+ae_checkpoint: outputs/task1/segnet_ptlogpct/best.pt
+
+# SupCon settings
+embed_dim: 256
+temperature: 0.1
+lambda_recon: 10000
+
+# Augmentations
+translate_frac: 0.1
+noise_std: 0.02
+intensity_range: [0.8, 1.2]
+erase_prob: 0.3
+
+# Training
+batch_size: 128
+learning_rate: 2.0e-5
+min_lr: 1.0e-7
+weight_decay: 1.0e-4
+pretrain_epochs: 30
+
+# Linear probe
+linear_lr: 1.0e-3
+linear_epochs: 100
+seed: 42

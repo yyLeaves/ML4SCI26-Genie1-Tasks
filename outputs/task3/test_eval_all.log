@@ -1,0 +1,6 @@
+2026-03-26 16:09:51 [INFO] Test set: 13931 samples
+2026-03-26 16:10:11 [INFO] moco_swin: Test AUC=0.7775 Acc=0.7117
+2026-03-26 16:10:16 [INFO] moco_custom_swin: Test AUC=0.7568 Acc=0.6959
+2026-03-26 16:10:27 [INFO] finetune_swin: Test AUC=0.7795 Acc=0.7123
+2026-03-26 16:10:32 [INFO] finetune_custom_swin: Test AUC=0.7811 Acc=0.7164
+2026-03-26 16:10:32 [INFO] All done!

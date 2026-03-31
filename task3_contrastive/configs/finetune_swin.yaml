@@ -1,0 +1,24 @@
+# Fine-tune MoCo-pretrained Swin-T for quark/gluon classification
+# Unfreeze last 2 Swin stages + classifier head
+experiment_name: finetune_swin
+
+# Data
+data_path: data/processed/percentile/all_images.npy
+
+# Encoder
+encoder: swin
+embed_dim: 256
+pretrain_checkpoint: outputs/task3/moco_swin/pretrained.pt
+
+# Fine-tune strategy
+unfreeze_layers: 2  # unfreeze last 2 Swin stages
+dropout: 0.1
+
+# Training
+batch_size: 128
+learning_rate: 1.0e-5
+min_lr: 1.0e-7
+weight_decay: 1.0e-4
+num_epochs: 30
+patience: 10
+seed: 42

@@ -1,0 +1,10 @@
+# AE linear probe with SGD (MoCo standard protocol)
+experiment_name: ae_linear_sgd
+ae_checkpoint: outputs/task1/segnet_ptlogpct/best.pt
+batch_size: 256
+optimizer: sgd
+linear_lr: 2.0e-5
+min_lr: 1.0e-7
+weight_decay: 2.0e-3
+linear_epochs: 200
+seed: 42
