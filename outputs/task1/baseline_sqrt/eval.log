@@ -1,0 +1,19 @@
+2026-03-23 11:41:19 [INFO] Loaded model from epoch 14, val_loss=0.000061
+2026-03-23 11:41:19 [INFO] Data: 139306 samples (train: 111444, val: 27862)
+2026-03-23 11:41:19 [INFO] --- Validation Metrics ---
+2026-03-23 11:41:32 [INFO]   MSE:  0.000061
+2026-03-23 11:41:32 [INFO]   MAE:  0.000716
+2026-03-23 11:41:32 [INFO]   MSE (Tracks): 0.000061
+2026-03-23 11:41:32 [INFO]   MSE (ECAL  ): 0.000061
+2026-03-23 11:41:32 [INFO]   MSE (HCAL  ): 0.000061
+2026-03-23 11:41:32 [INFO] --- Train Metrics ---
+2026-03-23 11:42:38 [INFO]   MSE:  0.000061
+2026-03-23 11:42:38 [INFO]   MAE:  0.000716
+2026-03-23 11:42:38 [INFO] Loading raw total pT for inverse transform...
+2026-03-23 11:44:05 [INFO] Loaded total_pt: (139306, 3)
+2026-03-23 11:44:09 [INFO] Saved reconstruction plots (normalized + raw)
+2026-03-23 11:44:16 [INFO] Saved jet event plots
+2026-03-23 11:44:17 [INFO] Saved scatter comparison plot
+2026-03-23 11:44:49 [INFO] Saved: outputs\task1\baseline_sqrt\avg_reconstruction.png (normalized + raw)
+2026-03-23 11:44:58 [INFO] Saved: outputs\task1\baseline_sqrt\loss_distribution.png
+2026-03-23 11:44:58 [INFO] Done!

@@ -1,0 +1,38 @@
+2026-03-23 18:54:26 [INFO] Loaded model from epoch 10, val_loss=0.000013
+2026-03-23 18:54:26 [INFO] Data: 139306 samples (train: 111444, val: 27862)
+2026-03-23 18:54:26 [INFO] --- Validation Metrics ---
+2026-03-23 18:54:39 [INFO]   MSE:  0.000013
+2026-03-23 18:54:39 [INFO]   MAE:  0.000246
+2026-03-23 18:54:39 [INFO]   MSE (Tracks): 0.000007
+2026-03-23 18:54:39 [INFO]   MSE (ECAL  ): 0.000011
+2026-03-23 18:54:39 [INFO]   MSE (HCAL  ): 0.000021
+2026-03-23 18:54:39 [INFO] --- Train Metrics ---
+2026-03-23 18:55:44 [INFO]   MSE:  0.000013
+2026-03-23 18:55:44 [INFO]   MAE:  0.000246
+2026-03-23 18:55:44 [INFO] Loading raw total pT for inverse transform...
+2026-03-23 18:57:07 [INFO] Loaded total_pt: (139306, 3)
+2026-03-23 18:57:11 [INFO] Saved reconstruction plots (normalized + raw)
+2026-03-23 18:57:17 [INFO] Saved jet event plots
+2026-03-23 18:57:19 [INFO] Saved scatter comparison plot
+2026-03-23 18:57:45 [INFO] Saved: outputs\task1\segnet_percentile\avg_reconstruction.png (normalized + raw)
+2026-03-23 18:57:54 [INFO] Saved: outputs\task1\segnet_percentile\loss_distribution.png
+2026-03-23 18:57:54 [INFO] Done!
+2026-03-23 21:26:44 [INFO] Loaded model from epoch 99, val_loss=0.000002
+2026-03-23 21:26:44 [INFO] Data: 139306 samples (train: 111444, val: 27862)
+2026-03-23 21:26:44 [INFO] --- Validation Metrics ---
+2026-03-23 21:26:57 [INFO]   MSE:  0.000002
+2026-03-23 21:26:57 [INFO]   MAE:  0.000091
+2026-03-23 21:26:57 [INFO]   MSE (Tracks): 0.000001
+2026-03-23 21:26:57 [INFO]   MSE (ECAL  ): 0.000002
+2026-03-23 21:26:57 [INFO]   MSE (HCAL  ): 0.000002
+2026-03-23 21:26:57 [INFO] --- Train Metrics ---
+2026-03-23 21:27:56 [INFO]   MSE:  0.000002
+2026-03-23 21:27:56 [INFO]   MAE:  0.000090
+2026-03-23 21:27:56 [INFO] Loading raw total pT for inverse transform...
+2026-03-23 21:29:19 [INFO] Loaded total_pt: (139306, 3)
+2026-03-23 21:29:23 [INFO] Saved reconstruction plots (normalized + raw)
+2026-03-23 21:29:29 [INFO] Saved jet event plots
+2026-03-23 21:29:30 [INFO] Saved scatter comparison plot
+2026-03-23 21:29:51 [INFO] Saved: outputs\task1\segnet_percentile\avg_reconstruction.png (normalized + raw)
+2026-03-23 21:29:59 [INFO] Saved: outputs\task1\segnet_percentile\loss_distribution.png
+2026-03-23 21:29:59 [INFO] Done!

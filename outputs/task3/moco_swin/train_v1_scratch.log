@@ -1,0 +1,24 @@
+2026-03-24 12:42:14 [INFO] Experiment: moco_swin
+2026-03-24 12:42:14 [INFO] Config: {'experiment_name': 'moco_swin', 'data_path': 'data/processed/percentile/all_images.npy', 'method': 'moco', 'encoder': 'swin', 'embed_dim': 256, 'temperature': 0.1, 'queue_size': 4096, 'moco_momentum': 0.999, 'pretrained': False, 'translate_frac': 0.1, 'noise_std': 0.02, 'intensity_range': [0.8, 1.2], 'erase_prob': 0.3, 'batch_size': 128, 'learning_rate': 0.0001, 'min_lr': 1e-06, 'weight_decay': 0.0001, 'pretrain_epochs': 80, 'linear_epochs': 50, 'seed': 42}
+2026-03-24 12:42:14 [INFO] Data: 139306 images
+2026-03-24 12:42:14 [INFO] Split: train=111444, val=13931, test=13931
+2026-03-24 12:43:34 [INFO] Method: moco, Encoder: swin
+2026-03-24 12:43:34 [INFO] Trainable parameters: 28,306,810
+2026-03-24 12:43:34 [INFO] === Phase 1: Contrastive Pretraining ===
+2026-03-24 12:47:31 [INFO] Experiment: moco_swin
+2026-03-24 12:47:31 [INFO] Config: {'experiment_name': 'moco_swin', 'data_path': 'data/processed/percentile/all_images.npy', 'method': 'moco', 'encoder': 'swin', 'embed_dim': 256, 'temperature': 0.1, 'queue_size': 4096, 'moco_momentum': 0.999, 'pretrained': False, 'translate_frac': 0.1, 'noise_std': 0.02, 'intensity_range': [0.8, 1.2], 'erase_prob': 0.3, 'batch_size': 128, 'learning_rate': 0.0001, 'min_lr': 1e-06, 'weight_decay': 0.0001, 'pretrain_epochs': 80, 'linear_epochs': 50, 'seed': 42}
+2026-03-24 12:47:31 [INFO] Data: 139306 images
+2026-03-24 12:47:31 [INFO] Split: train=111444, val=13931, test=13931
+2026-03-24 12:48:52 [INFO] Method: moco, Encoder: swin
+2026-03-24 12:48:52 [INFO] Trainable parameters: 28,306,810
+2026-03-24 12:48:52 [INFO] === Phase 1: Contrastive Pretraining ===
+2026-03-24 13:02:41 [INFO] Pretrain Epoch   1/80 | Loss: 7.7891 | LR: 1.00e-04
+2026-03-24 13:02:41 [INFO]   -> Best pretrained model saved (loss=7.7891)
+2026-03-24 13:15:00 [INFO] Pretrain Epoch   2/80 | Loss: 7.9272 | LR: 9.98e-05
+2026-03-24 13:19:39 [INFO] Experiment: moco_swin
+2026-03-24 13:19:39 [INFO] Config: {'experiment_name': 'moco_swin', 'data_path': 'data/processed/percentile/all_images.npy', 'method': 'moco', 'encoder': 'swin', 'embed_dim': 256, 'temperature': 0.1, 'queue_size': 4096, 'moco_momentum': 0.999, 'pretrained': True, 'translate_frac': 0.1, 'noise_std': 0.02, 'intensity_range': [0.8, 1.2], 'erase_prob': 0.3, 'batch_size': 128, 'learning_rate': 2e-05, 'min_lr': 1e-06, 'weight_decay': 0.0001, 'pretrain_epochs': 10, 'linear_epochs': 50, 'seed': 42}
+2026-03-24 13:19:39 [INFO] Data: 139306 images
+2026-03-24 13:19:39 [INFO] Split: train=111444, val=13931, test=13931
+2026-03-24 13:22:12 [INFO] Method: moco, Encoder: swin
+2026-03-24 13:22:12 [INFO] Trainable parameters: 28,306,810
+2026-03-24 13:22:12 [INFO] === Phase 1: Contrastive Pretraining ===

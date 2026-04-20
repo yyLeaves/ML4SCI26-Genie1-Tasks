@@ -1,0 +1,11 @@
+2026-03-26 00:03:24 [INFO] Loaded segnet_percentile
+2026-03-26 00:03:24 [INFO] Split: train=111444, val=13931, test=13931
+2026-03-26 00:03:24 [INFO] Extracting features...
+2026-03-26 00:05:02 [INFO] Feature dim: 512
+2026-03-26 00:05:08 [INFO] Epoch  20 | Val AUC: 0.7549 Acc: 0.6948
+2026-03-26 00:05:12 [INFO] Epoch  40 | Val AUC: 0.7555 Acc: 0.7004
+2026-03-26 00:05:16 [INFO] Epoch  60 | Val AUC: 0.7579 Acc: 0.6977
+2026-03-26 00:05:20 [INFO] Epoch  80 | Val AUC: 0.7593 Acc: 0.7012
+2026-03-26 00:05:25 [INFO] Epoch 100 | Val AUC: 0.7607 Acc: 0.7044
+2026-03-26 00:05:25 [INFO] Best val AUC: 0.7607
+2026-03-26 00:05:25 [INFO] Test AUC: 0.7689 Acc: 0.7110

@@ -1,0 +1,20 @@
+2026-03-26 19:13:27 [INFO] Evaluating: particlenet
+2026-03-26 19:13:43 [INFO] Test set: 13931 samples
+2026-03-26 19:13:45 [INFO] Loaded model from epoch 30, val_auc=0.7762
+2026-03-26 19:13:49 [INFO] --- Test Metrics ---
+2026-03-26 19:13:49 [INFO]   AUC:      0.7810
+2026-03-26 19:13:49 [INFO]   Accuracy: 0.7165
+2026-03-26 19:13:49 [INFO] 
+              precision    recall  f1-score   support
+
+       Quark       0.72      0.72      0.72      6966
+       Gluon       0.72      0.72      0.72      6965
+
+    accuracy                           0.72     13931
+   macro avg       0.72      0.72      0.72     13931
+weighted avg       0.72      0.72      0.72     13931
+
+2026-03-26 19:13:50 [INFO] Saved ROC curve
+2026-03-26 19:13:50 [INFO] Saved confusion matrix
+2026-03-26 19:13:50 [INFO] Saved score distribution
+2026-03-26 19:13:50 [INFO] Done!

@@ -1,0 +1,21 @@
+2026-03-25 23:46:58 [INFO] Experiment: moco_swin_ptlog
+2026-03-25 23:46:58 [INFO] Config: {'experiment_name': 'moco_swin_ptlog', 'data_path': 'data/processed/pt_log_percentile/all_images.npy', 'method': 'moco', 'encoder': 'swin', 'embed_dim': 256, 'temperature': 0.1, 'queue_size': 4096, 'moco_momentum': 0.999, 'pretrained': True, 'translate_frac': 0.1, 'noise_std': 0.02, 'intensity_range': [0.8, 1.2], 'erase_prob': 0.3, 'batch_size': 128, 'learning_rate': 2e-05, 'min_lr': 1e-06, 'weight_decay': 0.0001, 'pretrain_epochs': 10, 'linear_epochs': 50, 'seed': 42}
+2026-03-25 23:46:58 [INFO] Data: 139306 images
+2026-03-25 23:46:58 [INFO] Split: train=111444, val=13931, test=13931
+2026-03-25 23:46:58 [INFO] DataLoader ready: 871 batches, batch_size=128
+2026-03-25 23:46:59 [INFO] Method: moco, Encoder: swin
+2026-03-25 23:46:59 [INFO] Trainable parameters: 28,306,810
+2026-03-25 23:46:59 [INFO] === Phase 1: Contrastive Pretraining ===
+2026-03-25 23:47:01 [INFO]   Epoch 1 batch 1/871 | loss: 1.1552 (avg: 1.1552)
+2026-03-25 23:47:06 [INFO]   Epoch 1 batch 10/871 | loss: 7.0499 (avg: 5.8511)
+2026-03-25 23:48:00 [INFO]   Epoch 1 batch 100/871 | loss: 7.9647 (avg: 7.7198)
+2026-03-25 23:49:32 [INFO] Experiment: moco_swin_ptlog
+2026-03-25 23:49:32 [INFO] Config: {'experiment_name': 'moco_swin_ptlog', 'data_path': 'data/processed/pt_log_percentile/all_images.npy', 'method': 'moco', 'encoder': 'swin', 'embed_dim': 256, 'temperature': 0.1, 'queue_size': 4096, 'moco_momentum': 0.999, 'pretrained': True, 'translate_frac': 0.1, 'noise_std': 0.02, 'intensity_range': [0.8, 1.2], 'erase_prob': 0.3, 'batch_size': 128, 'learning_rate': 2e-05, 'min_lr': 1e-06, 'weight_decay': 0.0001, 'pretrain_epochs': 10, 'linear_epochs': 50, 'seed': 42}
+2026-03-25 23:49:32 [INFO] Data: 139306 images
+2026-03-25 23:49:33 [INFO] Split: train=111444, val=13931, test=13931
+2026-03-25 23:49:33 [INFO] DataLoader ready: 871 batches, batch_size=128
+2026-03-25 23:49:34 [INFO] Method: moco, Encoder: swin
+2026-03-25 23:49:34 [INFO] Trainable parameters: 28,306,810
+2026-03-25 23:49:34 [INFO] === Phase 1: Contrastive Pretraining ===
+2026-03-25 23:49:35 [INFO]   Epoch 1 batch 1/871 | loss: 1.1713 (avg: 1.1713)
+2026-03-25 23:49:40 [INFO]   Epoch 1 batch 10/871 | loss: 6.9853 (avg: 5.8566)

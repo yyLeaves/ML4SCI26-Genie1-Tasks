@@ -1,0 +1,122 @@
+2026-03-26 06:39:45 [INFO] Experiment: supcon_swin
+2026-03-26 06:39:45 [INFO] Config: {'experiment_name': 'supcon_swin', 'data_path': 'data/processed/percentile/all_images.npy', 'encoder': 'swin', 'embed_dim': 256, 'temperature': 0.1, 'pretrained': True, 'translate_frac': 0.1, 'noise_std': 0.02, 'intensity_range': [0.8, 1.2], 'erase_prob': 0.3, 'batch_size': 128, 'learning_rate': 2e-05, 'min_lr': 1e-07, 'weight_decay': 0.0001, 'pretrain_epochs': 10, 'linear_epochs': 50, 'seed': 42}
+2026-03-26 06:39:45 [INFO] Data: 139306 images
+2026-03-26 06:39:45 [INFO] Split: train=111444, val=13931, test=13931
+2026-03-26 06:39:45 [INFO] DataLoader: 871 batches
+2026-03-26 06:39:46 [INFO] Encoder: swin, params: 28,306,810
+2026-03-26 06:39:46 [INFO] === Phase 1: SupCon Pretraining ===
+2026-03-26 06:39:48 [INFO]   Epoch 1 batch 1/871 | loss: 5.9230
+2026-03-26 06:39:54 [INFO]   Epoch 1 batch 10/871 | loss: 5.5712
+2026-03-26 06:40:56 [INFO]   Epoch 1 batch 100/871 | loss: 5.5367
+2026-03-26 06:42:08 [INFO]   Epoch 1 batch 200/871 | loss: 5.5210
+2026-03-26 06:44:53 [INFO]   Epoch 1 batch 400/871 | loss: 5.5297
+2026-03-26 06:48:19 [INFO]   Epoch 1 batch 600/871 | loss: 5.5305
+2026-03-26 06:52:04 [INFO]   Epoch 1 batch 800/871 | loss: 5.5428
+2026-03-26 06:53:30 [INFO] SupCon Epoch   1/10 | Loss: 5.5271 | LR: 1.95e-05
+2026-03-26 06:53:30 [INFO]   -> Best model saved (loss=5.5271)
+2026-03-26 06:53:31 [INFO]   Epoch 2 batch 1/871 | loss: 5.5209
+2026-03-26 06:53:41 [INFO]   Epoch 2 batch 10/871 | loss: 5.5278
+2026-03-26 06:55:10 [INFO]   Epoch 2 batch 100/871 | loss: 5.5210
+2026-03-26 06:56:48 [INFO]   Epoch 2 batch 200/871 | loss: 5.5380
+2026-03-26 07:00:14 [INFO]   Epoch 2 batch 400/871 | loss: 5.5248
+2026-03-26 07:03:45 [INFO]   Epoch 2 batch 600/871 | loss: 5.5280
+2026-03-26 07:07:16 [INFO]   Epoch 2 batch 800/871 | loss: 5.5167
+2026-03-26 07:08:13 [INFO] SupCon Epoch   2/10 | Loss: 5.5198 | LR: 1.81e-05
+2026-03-26 07:08:13 [INFO]   -> Best model saved (loss=5.5198)
+2026-03-26 07:08:14 [INFO]   Epoch 3 batch 1/871 | loss: 5.5137
+2026-03-26 07:08:21 [INFO]   Epoch 3 batch 10/871 | loss: 5.5409
+2026-03-26 07:09:29 [INFO]   Epoch 3 batch 100/871 | loss: 5.5143
+2026-03-26 07:10:44 [INFO]   Epoch 3 batch 200/871 | loss: 5.5220
+2026-03-26 07:13:15 [INFO]   Epoch 3 batch 400/871 | loss: 5.5302
+2026-03-26 07:15:46 [INFO]   Epoch 3 batch 600/871 | loss: 5.5035
+2026-03-26 07:18:17 [INFO]   Epoch 3 batch 800/871 | loss: 5.5257
+2026-03-26 07:19:10 [INFO] SupCon Epoch   3/10 | Loss: 5.5178 | LR: 1.59e-05
+2026-03-26 07:19:10 [INFO]   -> Best model saved (loss=5.5178)
+2026-03-26 07:19:11 [INFO]   Epoch 4 batch 1/871 | loss: 5.5179
+2026-03-26 07:19:18 [INFO]   Epoch 4 batch 10/871 | loss: 5.5179
+2026-03-26 07:20:25 [INFO]   Epoch 4 batch 100/871 | loss: 5.5239
+2026-03-26 07:21:40 [INFO]   Epoch 4 batch 200/871 | loss: 5.5368
+2026-03-26 07:24:10 [INFO]   Epoch 4 batch 400/871 | loss: 5.5192
+2026-03-26 07:26:40 [INFO]   Epoch 4 batch 600/871 | loss: 5.5064
+2026-03-26 07:29:09 [INFO]   Epoch 4 batch 800/871 | loss: 5.5116
+2026-03-26 07:30:02 [INFO] SupCon Epoch   4/10 | Loss: 5.5168 | LR: 1.31e-05
+2026-03-26 07:30:02 [INFO]   -> Best model saved (loss=5.5168)
+2026-03-26 07:30:03 [INFO]   Epoch 5 batch 1/871 | loss: 5.5435
+2026-03-26 07:30:10 [INFO]   Epoch 5 batch 10/871 | loss: 5.5187
+2026-03-26 07:31:18 [INFO]   Epoch 5 batch 100/871 | loss: 5.5023
+2026-03-26 07:32:32 [INFO]   Epoch 5 batch 200/871 | loss: 5.5208
+2026-03-26 07:35:01 [INFO]   Epoch 5 batch 400/871 | loss: 5.5289
+2026-03-26 07:37:31 [INFO]   Epoch 5 batch 600/871 | loss: 5.5187
+2026-03-26 07:39:57 [INFO]   Epoch 5 batch 800/871 | loss: 5.5507
+2026-03-26 07:40:49 [INFO] SupCon Epoch   5/10 | Loss: 5.5159 | LR: 1.01e-05
+2026-03-26 07:40:49 [INFO]   -> Best model saved (loss=5.5159)
+2026-03-26 07:40:50 [INFO]   Epoch 6 batch 1/871 | loss: 5.5100
+2026-03-26 07:40:56 [INFO]   Epoch 6 batch 10/871 | loss: 5.5484
+2026-03-26 07:42:03 [INFO]   Epoch 6 batch 100/871 | loss: 5.5126
+2026-03-26 07:43:17 [INFO]   Epoch 6 batch 200/871 | loss: 5.5486
+2026-03-26 07:45:46 [INFO]   Epoch 6 batch 400/871 | loss: 5.4951
+2026-03-26 07:48:15 [INFO]   Epoch 6 batch 600/871 | loss: 5.5171
+2026-03-26 07:50:44 [INFO]   Epoch 6 batch 800/871 | loss: 5.5465
+2026-03-26 07:51:39 [INFO] SupCon Epoch   6/10 | Loss: 5.5152 | LR: 6.98e-06
+2026-03-26 07:51:40 [INFO]   -> Best model saved (loss=5.5152)
+2026-03-26 07:51:40 [INFO]   Epoch 7 batch 1/871 | loss: 5.4806
+2026-03-26 07:51:47 [INFO]   Epoch 7 batch 10/871 | loss: 5.5294
+2026-03-26 07:52:55 [INFO]   Epoch 7 batch 100/871 | loss: 5.5099
+2026-03-26 07:54:11 [INFO]   Epoch 7 batch 200/871 | loss: 5.4891
+2026-03-26 07:56:41 [INFO]   Epoch 7 batch 400/871 | loss: 5.5191
+2026-03-26 07:59:12 [INFO]   Epoch 7 batch 600/871 | loss: 5.5190
+2026-03-26 08:01:44 [INFO]   Epoch 7 batch 800/871 | loss: 5.4875
+2026-03-26 08:02:36 [INFO] SupCon Epoch   7/10 | Loss: 5.5148 | LR: 4.20e-06
+2026-03-26 08:02:37 [INFO]   -> Best model saved (loss=5.5148)
+2026-03-26 08:02:37 [INFO]   Epoch 8 batch 1/871 | loss: 5.5042
+2026-03-26 08:02:44 [INFO]   Epoch 8 batch 10/871 | loss: 5.5033
+2026-03-26 08:03:51 [INFO]   Epoch 8 batch 100/871 | loss: 5.5225
+2026-03-26 08:05:07 [INFO]   Epoch 8 batch 200/871 | loss: 5.5017
+2026-03-26 08:07:40 [INFO]   Epoch 8 batch 400/871 | loss: 5.5377
+2026-03-26 08:10:11 [INFO]   Epoch 8 batch 600/871 | loss: 5.5116
+2026-03-26 08:12:45 [INFO]   Epoch 8 batch 800/871 | loss: 5.4874
+2026-03-26 08:13:38 [INFO] SupCon Epoch   8/10 | Loss: 5.5140 | LR: 2.00e-06
+2026-03-26 08:13:38 [INFO]   -> Best model saved (loss=5.5140)
+2026-03-26 08:13:39 [INFO]   Epoch 9 batch 1/871 | loss: 5.5029
+2026-03-26 08:13:46 [INFO]   Epoch 9 batch 10/871 | loss: 5.4929
+2026-03-26 08:14:54 [INFO]   Epoch 9 batch 100/871 | loss: 5.5173
+2026-03-26 08:16:09 [INFO]   Epoch 9 batch 200/871 | loss: 5.5230
+2026-03-26 08:18:40 [INFO]   Epoch 9 batch 400/871 | loss: 5.5148
+2026-03-26 08:21:10 [INFO]   Epoch 9 batch 600/871 | loss: 5.5154
+2026-03-26 08:23:39 [INFO]   Epoch 9 batch 800/871 | loss: 5.5081
+2026-03-26 08:24:31 [INFO] SupCon Epoch   9/10 | Loss: 5.5137 | LR: 5.87e-07
+2026-03-26 08:24:31 [INFO]   -> Best model saved (loss=5.5137)
+2026-03-26 08:24:32 [INFO]   Epoch 10 batch 1/871 | loss: 5.4965
+2026-03-26 08:24:39 [INFO]   Epoch 10 batch 10/871 | loss: 5.4676
+2026-03-26 08:25:46 [INFO]   Epoch 10 batch 100/871 | loss: 5.5298
+2026-03-26 08:27:01 [INFO]   Epoch 10 batch 200/871 | loss: 5.4808
+2026-03-26 08:29:29 [INFO]   Epoch 10 batch 400/871 | loss: 5.5288
+2026-03-26 08:31:56 [INFO]   Epoch 10 batch 600/871 | loss: 5.5332
+2026-03-26 08:34:26 [INFO]   Epoch 10 batch 800/871 | loss: 5.5167
+2026-03-26 08:37:04 [INFO] SupCon Epoch  10/10 | Loss: 5.5133 | LR: 1.00e-07
+2026-03-26 08:37:06 [INFO]   -> Best model saved (loss=5.5133)
+2026-03-26 08:37:06 [INFO] SupCon done. Best loss: 5.5133
+2026-03-26 08:37:06 [INFO] === Phase 2: Linear Evaluation ===
+2026-03-26 08:37:06 [INFO] Extracting features...
+2026-03-26 08:42:41 [INFO] Feature dim: 768
+2026-03-26 08:42:43 [INFO] Linear   1/50 | Val AUC: 0.7784 Acc: 0.7139 *
+2026-03-26 08:42:46 [INFO] Linear   2/50 | Val AUC: 0.7793 Acc: 0.7165 *
+2026-03-26 08:42:47 [INFO] Linear   3/50 | Val AUC: 0.7800 Acc: 0.7159 *
+2026-03-26 08:42:49 [INFO] Linear   4/50 | Val AUC: 0.7802 Acc: 0.7184 *
+2026-03-26 08:42:51 [INFO] Linear   5/50 | Val AUC: 0.7807 Acc: 0.7167 *
+2026-03-26 08:42:58 [INFO] Linear   9/50 | Val AUC: 0.7807 Acc: 0.7172 *
+2026-03-26 08:42:59 [INFO] Linear  10/50 | Val AUC: 0.7808 Acc: 0.7146 *
+2026-03-26 08:43:01 [INFO] Linear  11/50 | Val AUC: 0.7808 Acc: 0.7176 *
+2026-03-26 08:43:04 [INFO] Linear  13/50 | Val AUC: 0.7810 Acc: 0.7157 *
+2026-03-26 08:43:11 [INFO] Linear  17/50 | Val AUC: 0.7813 Acc: 0.7175 *
+2026-03-26 08:43:16 [INFO] Linear  20/50 | Val AUC: 0.7809 Acc: 0.7170
+2026-03-26 08:43:25 [INFO] Linear  26/50 | Val AUC: 0.7813 Acc: 0.7175 *
+2026-03-26 08:43:32 [INFO] Linear  30/50 | Val AUC: 0.7811 Acc: 0.7164
+2026-03-26 08:43:39 [INFO] Linear  34/50 | Val AUC: 0.7813 Acc: 0.7162 *
+2026-03-26 08:43:48 [INFO] Linear  40/50 | Val AUC: 0.7812 Acc: 0.7176
+2026-03-26 08:44:02 [INFO] Linear  50/50 | Val AUC: 0.7813 Acc: 0.7171
+2026-03-26 08:44:02 [INFO] Linear probe done. Best val AUC: 0.7813
+2026-03-26 08:44:02 [INFO] === Phase 3: Test Evaluation ===
+2026-03-26 08:44:02 [INFO] Test AUC: 0.7879
+2026-03-26 08:44:02 [INFO] Test Acc: 0.7213
+2026-03-26 08:44:02 [INFO] Done!

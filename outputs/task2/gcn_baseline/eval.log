@@ -1,0 +1,22 @@
+2026-03-24 11:34:47 [INFO] Evaluating: gcn_baseline
+2026-03-24 11:35:40 [INFO] Test set: 13931 samples
+2026-03-24 11:36:55 [INFO] Evaluating: gcn_baseline
+2026-03-24 11:37:33 [INFO] Test set: 13931 samples
+2026-03-24 11:37:35 [INFO] Loaded model from epoch 10, val_auc=0.7661
+2026-03-24 11:37:44 [INFO] --- Test Metrics ---
+2026-03-24 11:37:44 [INFO]   AUC:      0.7716
+2026-03-24 11:37:44 [INFO]   Accuracy: 0.6716
+2026-03-24 11:37:44 [INFO] 
+              precision    recall  f1-score   support
+
+       Quark       0.62      0.88      0.73      6966
+       Gluon       0.79      0.46      0.59      6965
+
+    accuracy                           0.67     13931
+   macro avg       0.71      0.67      0.66     13931
+weighted avg       0.71      0.67      0.66     13931
+
+2026-03-24 11:37:44 [INFO] Saved ROC curve
+2026-03-24 11:37:45 [INFO] Saved confusion matrix
+2026-03-24 11:37:45 [INFO] Saved score distribution
+2026-03-24 11:37:45 [INFO] Done!

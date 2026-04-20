@@ -1,0 +1,59 @@
+2026-03-24 10:23:44 [INFO] Experiment: gcn_baseline
+2026-03-24 10:23:44 [INFO] Config: {'experiment_name': 'gcn_baseline', 'model': 'gcn', 'data_root': 'data', 'k': 16, 'in_channels': 3, 'hidden': 128, 'batch_size': 256, 'learning_rate': 0.001, 'min_lr': 1e-05, 'weight_decay': 0.0001, 'num_epochs': 50, 'patience': 10, 'seed': 42}
+2026-03-24 10:24:18 [INFO] Dataset: 139306 graphs
+2026-03-24 10:24:18 [INFO] Split: train=97514, val=20896, test=20896
+2026-03-24 10:24:18 [INFO]   Train quark/gluon: 48757/48757
+2026-03-24 10:24:18 [INFO]   Val   quark/gluon: 10448/10448
+2026-03-24 10:24:18 [INFO]   Test  quark/gluon: 10448/10448
+2026-03-24 10:24:20 [INFO] Model: gcn, Parameters: 42,696
+2026-03-24 10:26:14 [INFO] Epoch   1/50 | Train Loss: 0.5784 Acc: 0.7057 | Val Loss: 0.7529 Acc: 0.6091 AUC: 0.7679 | LR: 9.99e-04
+2026-03-24 10:26:14 [INFO]   -> Best model saved (AUC=0.7679)
+2026-03-24 10:26:37 [INFO] Experiment: gcn_baseline
+2026-03-24 10:26:37 [INFO] Config: {'experiment_name': 'gcn_baseline', 'model': 'gcn', 'data_root': 'data', 'k': 16, 'in_channels': 3, 'hidden': 128, 'batch_size': 256, 'learning_rate': 0.001, 'min_lr': 1e-05, 'weight_decay': 0.0001, 'num_epochs': 50, 'patience': 10, 'seed': 42}
+2026-03-24 10:27:44 [INFO] Dataset: 139306 graphs
+2026-03-24 10:27:44 [INFO] Split: train=111444, val=13931, test=13931
+2026-03-24 10:27:44 [INFO]   Train quark/gluon: 55722/55722
+2026-03-24 10:27:44 [INFO]   Val   quark/gluon: 6965/6966
+2026-03-24 10:27:44 [INFO]   Test  quark/gluon: 6966/6965
+2026-03-24 10:27:45 [INFO] Model: gcn, Parameters: 42,696
+2026-03-24 10:45:35 [INFO] Experiment: gcn_baseline
+2026-03-24 10:45:35 [INFO] Config: {'experiment_name': 'gcn_baseline', 'model': 'gcn', 'data_root': 'data', 'k': 16, 'in_channels': 3, 'hidden': 128, 'batch_size': 256, 'learning_rate': 0.001, 'min_lr': 1e-05, 'weight_decay': 0.0001, 'num_epochs': 50, 'patience': 10, 'seed': 42}
+2026-03-24 10:46:06 [INFO] Dataset: 139306 graphs
+2026-03-24 10:46:07 [INFO] Split: train=111444, val=13931, test=13931
+2026-03-24 10:46:07 [INFO]   Train quark/gluon: 55722/55722
+2026-03-24 10:46:07 [INFO]   Val   quark/gluon: 6965/6966
+2026-03-24 10:46:07 [INFO]   Test  quark/gluon: 6966/6965
+2026-03-24 10:46:08 [INFO] Model: gcn, Parameters: 42,696
+2026-03-24 10:57:59 [INFO] Experiment: gcn_baseline
+2026-03-24 10:57:59 [INFO] Config: {'experiment_name': 'gcn_baseline', 'model': 'gcn', 'data_root': 'data', 'k': 16, 'in_channels': 3, 'hidden': 128, 'batch_size': 256, 'learning_rate': 0.001, 'min_lr': 1e-05, 'weight_decay': 0.0001, 'num_epochs': 50, 'patience': 10, 'seed': 42}
+2026-03-24 10:57:59 [INFO] Dataset: 139306 graphs
+2026-03-24 10:58:27 [INFO] Split: train=111444, val=13931, test=13931
+2026-03-24 10:58:27 [INFO]   Train quark/gluon: 55722/55722
+2026-03-24 10:58:27 [INFO]   Val   quark/gluon: 6965/6966
+2026-03-24 10:58:27 [INFO]   Test  quark/gluon: 6966/6965
+2026-03-24 10:58:29 [INFO] Model: gcn, Parameters: 42,696
+2026-03-24 11:02:14 [INFO] Epoch   1/50 | Train Loss: 0.5799 Acc: 0.7043 | Val Loss: 0.7177 Acc: 0.6168 AUC: 0.7528 | LR: 9.99e-04
+2026-03-24 11:02:14 [INFO]   -> Best model saved (AUC=0.7528)
+2026-03-24 11:06:22 [INFO] Epoch   2/50 | Train Loss: 0.5709 Acc: 0.7115 | Val Loss: 0.9408 Acc: 0.5542 AUC: 0.7505 | LR: 9.96e-04
+2026-03-24 11:07:38 [INFO] Epoch   3/50 | Train Loss: 0.5684 Acc: 0.7146 | Val Loss: 0.7880 Acc: 0.5857 AUC: 0.7591 | LR: 9.91e-04
+2026-03-24 11:07:38 [INFO]   -> Best model saved (AUC=0.7591)
+2026-03-24 11:08:55 [INFO] Epoch   4/50 | Train Loss: 0.5672 Acc: 0.7140 | Val Loss: 0.8146 Acc: 0.5886 AUC: 0.7580 | LR: 9.84e-04
+2026-03-24 11:10:18 [INFO] Epoch   5/50 | Train Loss: 0.5655 Acc: 0.7171 | Val Loss: 0.7016 Acc: 0.6274 AUC: 0.7559 | LR: 9.76e-04
+2026-03-24 11:11:44 [INFO] Epoch   6/50 | Train Loss: 0.5639 Acc: 0.7180 | Val Loss: 0.9311 Acc: 0.5527 AUC: 0.7229 | LR: 9.65e-04
+2026-03-24 11:13:13 [INFO] Epoch   7/50 | Train Loss: 0.5635 Acc: 0.7185 | Val Loss: 0.8833 Acc: 0.5723 AUC: 0.7278 | LR: 9.53e-04
+2026-03-24 11:14:45 [INFO] Epoch   8/50 | Train Loss: 0.5625 Acc: 0.7198 | Val Loss: 0.7758 Acc: 0.6006 AUC: 0.7584 | LR: 9.39e-04
+2026-03-24 11:16:19 [INFO] Epoch   9/50 | Train Loss: 0.5620 Acc: 0.7196 | Val Loss: 0.7956 Acc: 0.5988 AUC: 0.7014 | LR: 9.23e-04
+2026-03-24 11:17:56 [INFO] Epoch  10/50 | Train Loss: 0.5613 Acc: 0.7200 | Val Loss: 0.6409 Acc: 0.6684 AUC: 0.7661 | LR: 9.05e-04
+2026-03-24 11:17:56 [INFO]   -> Best model saved (AUC=0.7661)
+2026-03-24 11:19:30 [INFO] Epoch  11/50 | Train Loss: 0.5607 Acc: 0.7213 | Val Loss: 0.7806 Acc: 0.5894 AUC: 0.7409 | LR: 8.86e-04
+2026-03-24 11:21:07 [INFO] Epoch  12/50 | Train Loss: 0.5604 Acc: 0.7212 | Val Loss: 0.7189 Acc: 0.6321 AUC: 0.7544 | LR: 8.66e-04
+2026-03-24 11:22:43 [INFO] Epoch  13/50 | Train Loss: 0.5592 Acc: 0.7212 | Val Loss: 0.7225 Acc: 0.6105 AUC: 0.7170 | LR: 8.44e-04
+2026-03-24 11:24:21 [INFO] Epoch  14/50 | Train Loss: 0.5600 Acc: 0.7222 | Val Loss: 0.7961 Acc: 0.5934 AUC: 0.7204 | LR: 8.21e-04
+2026-03-24 11:25:58 [INFO] Epoch  15/50 | Train Loss: 0.5587 Acc: 0.7228 | Val Loss: 0.7130 Acc: 0.6215 AUC: 0.7387 | LR: 7.96e-04
+2026-03-24 11:27:35 [INFO] Epoch  16/50 | Train Loss: 0.5579 Acc: 0.7235 | Val Loss: 1.2324 Acc: 0.5268 AUC: 0.7085 | LR: 7.70e-04
+2026-03-24 11:29:10 [INFO] Epoch  17/50 | Train Loss: 0.5579 Acc: 0.7226 | Val Loss: 0.6415 Acc: 0.6762 AUC: 0.7582 | LR: 7.43e-04
+2026-03-24 11:30:46 [INFO] Epoch  18/50 | Train Loss: 0.5577 Acc: 0.7239 | Val Loss: 1.0214 Acc: 0.5562 AUC: 0.7429 | LR: 7.16e-04
+2026-03-24 11:32:21 [INFO] Epoch  19/50 | Train Loss: 0.5576 Acc: 0.7232 | Val Loss: 0.7348 Acc: 0.6399 AUC: 0.7592 | LR: 6.87e-04
+2026-03-24 11:33:53 [INFO] Epoch  20/50 | Train Loss: 0.5570 Acc: 0.7228 | Val Loss: 1.2802 Acc: 0.5353 AUC: 0.6989 | LR: 6.58e-04
+2026-03-24 11:33:53 [INFO] Early stopping at epoch 20
+2026-03-24 11:33:53 [INFO] Done. Best val AUC: 0.7661

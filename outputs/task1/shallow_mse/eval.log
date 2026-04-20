@@ -1,0 +1,48 @@
+2026-03-23 09:42:57 [INFO] Loaded model from epoch 100, val_loss=0.149477
+2026-03-23 09:42:57 [INFO] Data: 139306 samples (train: 111444, val: 27862)
+2026-03-23 09:42:57 [INFO] --- Validation Metrics ---
+2026-03-23 09:43:10 [INFO]   MSE:  0.149555
+2026-03-23 09:43:10 [INFO]   MAE:  0.033247
+2026-03-23 09:43:10 [INFO]   MSE (Tracks): 0.142820
+2026-03-23 09:43:10 [INFO]   MSE (ECAL  ): 0.290837
+2026-03-23 09:43:10 [INFO]   MSE (HCAL  ): 0.015007
+2026-03-23 09:43:10 [INFO] --- Train Metrics ---
+2026-03-23 09:44:16 [INFO]   MSE:  0.148454
+2026-03-23 09:44:16 [INFO]   MAE:  0.033099
+2026-03-23 09:44:19 [INFO] Saved reconstruction plots
+2026-03-23 09:44:25 [INFO] Saved jet event plots
+2026-03-23 09:44:27 [INFO] Saved scatter comparison plot
+2026-03-23 09:44:41 [INFO] Saved: outputs\task1\shallow_mse\avg_reconstruction.png
+2026-03-23 09:44:47 [INFO] Saved: outputs\task1\shallow_mse\loss_distribution.png
+2026-03-23 09:44:47 [INFO] Done!
+2026-03-23 10:15:10 [INFO] Loaded model from epoch 100, val_loss=0.149477
+2026-03-23 10:15:10 [INFO] Data: 139306 samples (train: 111444, val: 27862)
+2026-03-23 10:15:10 [INFO] --- Validation Metrics ---
+2026-03-23 10:15:22 [INFO]   MSE:  0.149555
+2026-03-23 10:15:22 [INFO]   MAE:  0.033247
+2026-03-23 10:15:22 [INFO]   MSE (Tracks): 0.142820
+2026-03-23 10:15:22 [INFO]   MSE (ECAL  ): 0.290837
+2026-03-23 10:15:22 [INFO]   MSE (HCAL  ): 0.015007
+2026-03-23 10:15:22 [INFO] --- Train Metrics ---
+2026-03-23 10:16:37 [INFO]   MSE:  0.148454
+2026-03-23 10:16:37 [INFO]   MAE:  0.033099
+2026-03-23 10:16:37 [INFO] Loading raw total pT for inverse transform...
+2026-03-23 10:24:46 [INFO] Loaded model from epoch 100, val_loss=0.149477
+2026-03-23 10:24:46 [INFO] Data: 139306 samples (train: 111444, val: 27862)
+2026-03-23 10:24:46 [INFO] --- Validation Metrics ---
+2026-03-23 10:25:04 [INFO]   MSE:  0.149555
+2026-03-23 10:25:04 [INFO]   MAE:  0.033247
+2026-03-23 10:25:04 [INFO]   MSE (Tracks): 0.142820
+2026-03-23 10:25:04 [INFO]   MSE (ECAL  ): 0.290837
+2026-03-23 10:25:04 [INFO]   MSE (HCAL  ): 0.015007
+2026-03-23 10:25:04 [INFO] --- Train Metrics ---
+2026-03-23 10:26:09 [INFO]   MSE:  0.148454
+2026-03-23 10:26:09 [INFO]   MAE:  0.033099
+2026-03-23 10:26:09 [INFO] Loading raw total pT for inverse transform...
+2026-03-23 10:27:26 [INFO] Loaded total_pt: (139306, 3)
+2026-03-23 10:27:29 [INFO] Saved reconstruction plots (normalized + raw)
+2026-03-23 10:27:35 [INFO] Saved jet event plots
+2026-03-23 10:27:37 [INFO] Saved scatter comparison plot
+2026-03-23 10:28:02 [INFO] Saved: outputs\task1\shallow_mse\avg_reconstruction.png (normalized + raw)
+2026-03-23 10:28:09 [INFO] Saved: outputs\task1\shallow_mse\loss_distribution.png
+2026-03-23 10:28:09 [INFO] Done!

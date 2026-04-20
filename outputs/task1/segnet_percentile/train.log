@@ -1,0 +1,163 @@
+2026-03-23 13:57:16 [INFO] Experiment: segnet_percentile
+2026-03-23 13:57:16 [INFO] Config: {'experiment_name': 'segnet_percentile', 'model': 'segnet', 'data_path': 'data/processed/percentile/all_images.npy', 'train_split': 0.8, 'latent_dim': 512, 'encoder_channels': [32, 64, 128], 'batch_size': 512, 'learning_rate': 0.003, 'min_lr': 1e-05, 'weight_decay': 1e-05, 'num_epochs': 100, 'patience': 10, 'seed': 42}
+2026-03-23 13:57:17 [INFO] Data: 139306 samples
+2026-03-23 13:57:18 [INFO] Parameters: 33,774,723
+2026-03-23 13:57:18 [INFO] Loss: MSE
+2026-03-23 13:59:39 [INFO] Epoch   1/100 | Train: 0.000231 | Val: 0.000086 | LR: 3.00e-03
+2026-03-23 13:59:39 [INFO]   -> Best model saved (0.000086)
+2026-03-23 14:01:33 [INFO] Epoch   2/100 | Train: 0.000086 | Val: 0.000086 | LR: 3.00e-03
+2026-03-23 14:01:33 [INFO]   -> Best model saved (0.000086)
+2026-03-23 14:03:42 [INFO] Epoch   3/100 | Train: 0.000086 | Val: 0.000086 | LR: 2.99e-03
+2026-03-23 14:03:43 [INFO]   -> Best model saved (0.000086)
+2026-03-23 14:05:55 [INFO] Epoch   4/100 | Train: 0.000086 | Val: 0.000086 | LR: 2.99e-03
+2026-03-23 14:05:55 [INFO]   -> Best model saved (0.000086)
+2026-03-23 14:08:03 [INFO] Epoch   5/100 | Train: 0.000086 | Val: 0.000086 | LR: 2.98e-03
+2026-03-23 14:08:03 [INFO]   -> Best model saved (0.000086)
+2026-03-23 14:10:13 [INFO] Epoch   6/100 | Train: 0.000086 | Val: 0.000086 | LR: 2.97e-03
+2026-03-23 14:10:13 [INFO]   -> Best model saved (0.000086)
+2026-03-23 14:12:44 [INFO] Epoch   7/100 | Train: 0.000086 | Val: 0.000086 | LR: 2.96e-03
+2026-03-23 14:12:44 [INFO]   -> Best model saved (0.000086)
+2026-03-23 14:15:13 [INFO] Epoch   8/100 | Train: 0.000063 | Val: 0.000034 | LR: 2.95e-03
+2026-03-23 14:15:13 [INFO]   -> Best model saved (0.000034)
+2026-03-23 14:17:38 [INFO] Epoch   9/100 | Train: 0.000027 | Val: 0.000019 | LR: 2.94e-03
+2026-03-23 14:17:38 [INFO]   -> Best model saved (0.000019)
+2026-03-23 14:20:00 [INFO] Epoch  10/100 | Train: 0.000016 | Val: 0.000013 | LR: 2.93e-03
+2026-03-23 14:20:00 [INFO]   -> Best model saved (0.000013)
+2026-03-23 19:10:54 [INFO] Experiment: segnet_percentile
+2026-03-23 19:10:54 [INFO] Config: {'experiment_name': 'segnet_percentile', 'model': 'segnet', 'data_path': 'data/processed/percentile/all_images.npy', 'train_split': 0.8, 'latent_dim': 512, 'encoder_channels': [32, 64, 128], 'batch_size': 512, 'learning_rate': 0.003, 'min_lr': 1e-05, 'weight_decay': 1e-05, 'num_epochs': 100, 'patience': 10, 'seed': 42, '_resume': 'outputs/task1/segnet_percentile/best.pt'}
+2026-03-23 19:10:56 [INFO] Data: 139306 samples
+2026-03-23 19:10:56 [INFO] Parameters: 33,774,723
+2026-03-23 19:10:56 [INFO] Resumed from epoch 10 (val_loss=0.000013)
+2026-03-23 19:10:56 [INFO] Loss: MSE
+2026-03-23 19:12:34 [INFO] Epoch  11/100 | Train: 0.000014 | Val: 0.000010 | LR: 3.00e-03
+2026-03-23 19:12:34 [INFO]   -> Best model saved (0.000010)
+2026-03-23 19:13:58 [INFO] Epoch  12/100 | Train: 0.000008 | Val: 0.000007 | LR: 3.00e-03
+2026-03-23 19:13:58 [INFO]   -> Best model saved (0.000007)
+2026-03-23 19:15:17 [INFO] Epoch  13/100 | Train: 0.000006 | Val: 0.000006 | LR: 2.99e-03
+2026-03-23 19:15:17 [INFO]   -> Best model saved (0.000006)
+2026-03-23 19:16:37 [INFO] Epoch  14/100 | Train: 0.000006 | Val: 0.000005 | LR: 2.99e-03
+2026-03-23 19:16:37 [INFO]   -> Best model saved (0.000005)
+2026-03-23 19:18:03 [INFO] Epoch  15/100 | Train: 0.000005 | Val: 0.000005 | LR: 2.98e-03
+2026-03-23 19:19:30 [INFO] Epoch  16/100 | Train: 0.000005 | Val: 0.000005 | LR: 2.97e-03
+2026-03-23 19:20:58 [INFO] Epoch  17/100 | Train: 0.000005 | Val: 0.000004 | LR: 2.96e-03
+2026-03-23 19:20:58 [INFO]   -> Best model saved (0.000004)
+2026-03-23 19:22:26 [INFO] Epoch  18/100 | Train: 0.000004 | Val: 0.000004 | LR: 2.95e-03
+2026-03-23 19:22:26 [INFO]   -> Best model saved (0.000004)
+2026-03-23 19:23:54 [INFO] Epoch  19/100 | Train: 0.000004 | Val: 0.000004 | LR: 2.94e-03
+2026-03-23 19:23:54 [INFO]   -> Best model saved (0.000004)
+2026-03-23 19:25:22 [INFO] Epoch  20/100 | Train: 0.000004 | Val: 0.000004 | LR: 2.93e-03
+2026-03-23 19:26:47 [INFO] Epoch  21/100 | Train: 0.000004 | Val: 0.000003 | LR: 2.91e-03
+2026-03-23 19:26:47 [INFO]   -> Best model saved (0.000003)
+2026-03-23 19:28:09 [INFO] Epoch  22/100 | Train: 0.000004 | Val: 0.000004 | LR: 2.90e-03
+2026-03-23 19:29:34 [INFO] Epoch  23/100 | Train: 0.000004 | Val: 0.000003 | LR: 2.88e-03
+2026-03-23 19:29:34 [INFO]   -> Best model saved (0.000003)
+2026-03-23 19:31:01 [INFO] Epoch  24/100 | Train: 0.000003 | Val: 0.000003 | LR: 2.86e-03
+2026-03-23 19:32:27 [INFO] Epoch  25/100 | Train: 0.000003 | Val: 0.000003 | LR: 2.84e-03
+2026-03-23 19:32:27 [INFO]   -> Best model saved (0.000003)
+2026-03-23 19:33:48 [INFO] Epoch  26/100 | Train: 0.000003 | Val: 0.000003 | LR: 2.82e-03
+2026-03-23 19:33:49 [INFO]   -> Best model saved (0.000003)
+2026-03-23 19:35:12 [INFO] Epoch  27/100 | Train: 0.000003 | Val: 0.000003 | LR: 2.79e-03
+2026-03-23 19:36:42 [INFO] Epoch  28/100 | Train: 0.000003 | Val: 0.000003 | LR: 2.77e-03
+2026-03-23 19:36:43 [INFO]   -> Best model saved (0.000003)
+2026-03-23 19:38:09 [INFO] Epoch  29/100 | Train: 0.000003 | Val: 0.000003 | LR: 2.74e-03
+2026-03-23 19:39:33 [INFO] Epoch  30/100 | Train: 0.000003 | Val: 0.000003 | LR: 2.71e-03
+2026-03-23 19:40:55 [INFO] Epoch  31/100 | Train: 0.000003 | Val: 0.000003 | LR: 2.69e-03
+2026-03-23 19:42:18 [INFO] Epoch  32/100 | Train: 0.000003 | Val: 0.000003 | LR: 2.66e-03
+2026-03-23 19:42:19 [INFO]   -> Best model saved (0.000003)
+2026-03-23 19:43:46 [INFO] Epoch  33/100 | Train: 0.000003 | Val: 0.000003 | LR: 2.63e-03
+2026-03-23 19:43:46 [INFO]   -> Best model saved (0.000003)
+2026-03-23 19:45:24 [INFO] Epoch  34/100 | Train: 0.000003 | Val: 0.000003 | LR: 2.59e-03
+2026-03-23 19:46:58 [INFO] Epoch  35/100 | Train: 0.000003 | Val: 0.000003 | LR: 2.56e-03
+2026-03-23 19:48:23 [INFO] Epoch  36/100 | Train: 0.000003 | Val: 0.000002 | LR: 2.53e-03
+2026-03-23 19:48:24 [INFO]   -> Best model saved (0.000002)
+2026-03-23 19:49:53 [INFO] Epoch  37/100 | Train: 0.000003 | Val: 0.000002 | LR: 2.49e-03
+2026-03-23 19:49:53 [INFO]   -> Best model saved (0.000002)
+2026-03-23 19:51:23 [INFO] Epoch  38/100 | Train: 0.000003 | Val: 0.000002 | LR: 2.46e-03
+2026-03-23 19:52:48 [INFO] Epoch  39/100 | Train: 0.000003 | Val: 0.000002 | LR: 2.42e-03
+2026-03-23 19:54:22 [INFO] Epoch  40/100 | Train: 0.000003 | Val: 0.000002 | LR: 2.38e-03
+2026-03-23 19:54:22 [INFO]   -> Best model saved (0.000002)
+2026-03-23 19:55:52 [INFO] Epoch  41/100 | Train: 0.000003 | Val: 0.000002 | LR: 2.35e-03
+2026-03-23 19:57:20 [INFO] Epoch  42/100 | Train: 0.000003 | Val: 0.000002 | LR: 2.31e-03
+2026-03-23 19:57:20 [INFO]   -> Best model saved (0.000002)
+2026-03-23 19:58:49 [INFO] Epoch  43/100 | Train: 0.000003 | Val: 0.000002 | LR: 2.27e-03
+2026-03-23 20:00:14 [INFO] Epoch  44/100 | Train: 0.000002 | Val: 0.000002 | LR: 2.23e-03
+2026-03-23 20:01:40 [INFO] Epoch  45/100 | Train: 0.000002 | Val: 0.000002 | LR: 2.18e-03
+2026-03-23 20:01:40 [INFO]   -> Best model saved (0.000002)
+2026-03-23 20:03:07 [INFO] Epoch  46/100 | Train: 0.000003 | Val: 0.000002 | LR: 2.14e-03
+2026-03-23 20:04:31 [INFO] Epoch  47/100 | Train: 0.000002 | Val: 0.000002 | LR: 2.10e-03
+2026-03-23 20:05:59 [INFO] Epoch  48/100 | Train: 0.000002 | Val: 0.000002 | LR: 2.06e-03
+2026-03-23 20:07:34 [INFO] Epoch  49/100 | Train: 0.000002 | Val: 0.000002 | LR: 2.01e-03
+2026-03-23 20:07:35 [INFO]   -> Best model saved (0.000002)
+2026-03-23 20:09:07 [INFO] Epoch  50/100 | Train: 0.000002 | Val: 0.000002 | LR: 1.97e-03
+2026-03-23 20:09:07 [INFO]   -> Best model saved (0.000002)
+2026-03-23 20:10:35 [INFO] Epoch  51/100 | Train: 0.000002 | Val: 0.000002 | LR: 1.92e-03
+2026-03-23 20:12:02 [INFO] Epoch  52/100 | Train: 0.000002 | Val: 0.000002 | LR: 1.88e-03
+2026-03-23 20:12:03 [INFO]   -> Best model saved (0.000002)
+2026-03-23 20:13:32 [INFO] Epoch  53/100 | Train: 0.000002 | Val: 0.000002 | LR: 1.83e-03
+2026-03-23 20:13:32 [INFO]   -> Best model saved (0.000002)
+2026-03-23 20:15:01 [INFO] Epoch  54/100 | Train: 0.000002 | Val: 0.000002 | LR: 1.79e-03
+2026-03-23 20:16:28 [INFO] Epoch  55/100 | Train: 0.000002 | Val: 0.000002 | LR: 1.74e-03
+2026-03-23 20:17:54 [INFO] Epoch  56/100 | Train: 0.000002 | Val: 0.000002 | LR: 1.69e-03
+2026-03-23 20:17:54 [INFO]   -> Best model saved (0.000002)
+2026-03-23 20:19:23 [INFO] Epoch  57/100 | Train: 0.000002 | Val: 0.000002 | LR: 1.65e-03
+2026-03-23 20:20:52 [INFO] Epoch  58/100 | Train: 0.000002 | Val: 0.000002 | LR: 1.60e-03
+2026-03-23 20:22:20 [INFO] Epoch  59/100 | Train: 0.000002 | Val: 0.000002 | LR: 1.55e-03
+2026-03-23 20:22:20 [INFO]   -> Best model saved (0.000002)
+2026-03-23 20:23:52 [INFO] Epoch  60/100 | Train: 0.000002 | Val: 0.000002 | LR: 1.50e-03
+2026-03-23 20:25:26 [INFO] Epoch  61/100 | Train: 0.000002 | Val: 0.000002 | LR: 1.46e-03
+2026-03-23 20:25:26 [INFO]   -> Best model saved (0.000002)
+2026-03-23 20:26:59 [INFO] Epoch  62/100 | Train: 0.000002 | Val: 0.000002 | LR: 1.41e-03
+2026-03-23 20:26:59 [INFO]   -> Best model saved (0.000002)
+2026-03-23 20:28:37 [INFO] Epoch  63/100 | Train: 0.000002 | Val: 0.000002 | LR: 1.36e-03
+2026-03-23 20:30:08 [INFO] Epoch  64/100 | Train: 0.000002 | Val: 0.000002 | LR: 1.32e-03
+2026-03-23 20:31:54 [INFO] Epoch  65/100 | Train: 0.000002 | Val: 0.000002 | LR: 1.27e-03
+2026-03-23 20:31:54 [INFO]   -> Best model saved (0.000002)
+2026-03-23 20:33:30 [INFO] Epoch  66/100 | Train: 0.000002 | Val: 0.000002 | LR: 1.22e-03
+2026-03-23 20:33:30 [INFO]   -> Best model saved (0.000002)
+2026-03-23 20:34:56 [INFO] Epoch  67/100 | Train: 0.000002 | Val: 0.000002 | LR: 1.18e-03
+2026-03-23 20:36:26 [INFO] Epoch  68/100 | Train: 0.000002 | Val: 0.000002 | LR: 1.13e-03
+2026-03-23 20:37:59 [INFO] Epoch  69/100 | Train: 0.000002 | Val: 0.000002 | LR: 1.09e-03
+2026-03-23 20:39:28 [INFO] Epoch  70/100 | Train: 0.000002 | Val: 0.000002 | LR: 1.04e-03
+2026-03-23 20:39:29 [INFO]   -> Best model saved (0.000002)
+2026-03-23 20:40:56 [INFO] Epoch  71/100 | Train: 0.000002 | Val: 0.000002 | LR: 9.99e-04
+2026-03-23 20:40:56 [INFO]   -> Best model saved (0.000002)
+2026-03-23 20:42:27 [INFO] Epoch  72/100 | Train: 0.000002 | Val: 0.000002 | LR: 9.55e-04
+2026-03-23 20:43:57 [INFO] Epoch  73/100 | Train: 0.000002 | Val: 0.000002 | LR: 9.11e-04
+2026-03-23 20:45:27 [INFO] Epoch  74/100 | Train: 0.000002 | Val: 0.000002 | LR: 8.68e-04
+2026-03-23 20:45:27 [INFO]   -> Best model saved (0.000002)
+2026-03-23 20:46:58 [INFO] Epoch  75/100 | Train: 0.000002 | Val: 0.000002 | LR: 8.26e-04
+2026-03-23 20:48:27 [INFO] Epoch  76/100 | Train: 0.000002 | Val: 0.000002 | LR: 7.85e-04
+2026-03-23 20:48:28 [INFO]   -> Best model saved (0.000002)
+2026-03-23 20:49:56 [INFO] Epoch  77/100 | Train: 0.000002 | Val: 0.000002 | LR: 7.44e-04
+2026-03-23 20:51:32 [INFO] Epoch  78/100 | Train: 0.000002 | Val: 0.000002 | LR: 7.04e-04
+2026-03-23 20:53:02 [INFO] Epoch  79/100 | Train: 0.000002 | Val: 0.000002 | LR: 6.65e-04
+2026-03-23 20:54:34 [INFO] Epoch  80/100 | Train: 0.000002 | Val: 0.000002 | LR: 6.26e-04
+2026-03-23 20:54:34 [INFO]   -> Best model saved (0.000002)
+2026-03-23 20:56:18 [INFO] Epoch  81/100 | Train: 0.000002 | Val: 0.000002 | LR: 5.89e-04
+2026-03-23 20:57:46 [INFO] Epoch  82/100 | Train: 0.000002 | Val: 0.000002 | LR: 5.52e-04
+2026-03-23 20:57:46 [INFO]   -> Best model saved (0.000002)
+2026-03-23 20:59:21 [INFO] Epoch  83/100 | Train: 0.000002 | Val: 0.000002 | LR: 5.16e-04
+2026-03-23 20:59:21 [INFO]   -> Best model saved (0.000002)
+2026-03-23 21:00:48 [INFO] Epoch  84/100 | Train: 0.000002 | Val: 0.000002 | LR: 4.82e-04
+2026-03-23 21:02:19 [INFO] Epoch  85/100 | Train: 0.000002 | Val: 0.000002 | LR: 4.48e-04
+2026-03-23 21:03:54 [INFO] Epoch  86/100 | Train: 0.000002 | Val: 0.000002 | LR: 4.15e-04
+2026-03-23 21:03:54 [INFO]   -> Best model saved (0.000002)
+2026-03-23 21:05:24 [INFO] Epoch  87/100 | Train: 0.000002 | Val: 0.000002 | LR: 3.84e-04
+2026-03-23 21:07:01 [INFO] Epoch  88/100 | Train: 0.000002 | Val: 0.000002 | LR: 3.53e-04
+2026-03-23 21:08:28 [INFO] Epoch  89/100 | Train: 0.000002 | Val: 0.000002 | LR: 3.24e-04
+2026-03-23 21:09:59 [INFO] Epoch  90/100 | Train: 0.000002 | Val: 0.000002 | LR: 2.96e-04
+2026-03-23 21:09:59 [INFO]   -> Best model saved (0.000002)
+2026-03-23 21:11:34 [INFO] Epoch  91/100 | Train: 0.000002 | Val: 0.000002 | LR: 2.69e-04
+2026-03-23 21:13:05 [INFO] Epoch  92/100 | Train: 0.000002 | Val: 0.000002 | LR: 2.43e-04
+2026-03-23 21:13:05 [INFO]   -> Best model saved (0.000002)
+2026-03-23 21:14:40 [INFO] Epoch  93/100 | Train: 0.000002 | Val: 0.000002 | LR: 2.18e-04
+2026-03-23 21:16:07 [INFO] Epoch  94/100 | Train: 0.000002 | Val: 0.000002 | LR: 1.95e-04
+2026-03-23 21:17:46 [INFO] Epoch  95/100 | Train: 0.000002 | Val: 0.000002 | LR: 1.73e-04
+2026-03-23 21:17:46 [INFO]   -> Best model saved (0.000002)
+2026-03-23 21:19:16 [INFO] Epoch  96/100 | Train: 0.000002 | Val: 0.000002 | LR: 1.52e-04
+2026-03-23 21:20:50 [INFO] Epoch  97/100 | Train: 0.000002 | Val: 0.000002 | LR: 1.33e-04
+2026-03-23 21:22:16 [INFO] Epoch  98/100 | Train: 0.000002 | Val: 0.000002 | LR: 1.15e-04
+2026-03-23 21:23:41 [INFO] Epoch  99/100 | Train: 0.000002 | Val: 0.000002 | LR: 9.84e-05
+2026-03-23 21:23:41 [INFO]   -> Best model saved (0.000002)
+2026-03-23 21:25:09 [INFO] Epoch 100/100 | Train: 0.000002 | Val: 0.000002 | LR: 8.32e-05
+2026-03-23 21:25:09 [INFO] Done. Best val loss: 0.000002

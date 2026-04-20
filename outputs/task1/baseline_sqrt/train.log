@@ -1,0 +1,32 @@
+2026-03-23 11:18:12 [INFO] Experiment: baseline_sqrt
+2026-03-23 11:18:12 [INFO] Config: {'experiment_name': 'baseline_sqrt', 'data_path': 'data/processed/perchannel_sqrt/all_images.npy', 'train_split': 0.8, 'latent_dim': 128, 'encoder_channels': [32, 64, 128, 256], 'batch_size': 512, 'learning_rate': 0.003, 'min_lr': 1e-05, 'weight_decay': 1e-05, 'num_epochs': 100, 'patience': 10, 'seed': 42}
+2026-03-23 11:18:14 [INFO] Data: 139306 samples
+2026-03-23 11:18:15 [INFO] Parameters: 5,290,531
+2026-03-23 11:18:15 [INFO] Loss: MSE
+2026-03-23 11:19:57 [INFO] Epoch   1/100 | Train: 0.000867 | Val: 0.000061 | LR: 3.00e-03
+2026-03-23 11:19:57 [INFO]   -> Best model saved (0.000061)
+2026-03-23 11:21:28 [INFO] Epoch   2/100 | Train: 0.000061 | Val: 0.000061 | LR: 3.00e-03
+2026-03-23 11:21:28 [INFO]   -> Best model saved (0.000061)
+2026-03-23 11:23:00 [INFO] Epoch   3/100 | Train: 0.000061 | Val: 0.000061 | LR: 2.99e-03
+2026-03-23 11:23:00 [INFO]   -> Best model saved (0.000061)
+2026-03-23 11:24:35 [INFO] Epoch   4/100 | Train: 0.000061 | Val: 0.000061 | LR: 2.99e-03
+2026-03-23 11:24:35 [INFO]   -> Best model saved (0.000061)
+2026-03-23 11:26:07 [INFO] Epoch   5/100 | Train: 0.000061 | Val: 0.000061 | LR: 2.98e-03
+2026-03-23 11:26:07 [INFO]   -> Best model saved (0.000061)
+2026-03-23 11:27:44 [INFO] Epoch   6/100 | Train: 0.000061 | Val: 0.000061 | LR: 2.97e-03
+2026-03-23 11:27:44 [INFO]   -> Best model saved (0.000061)
+2026-03-23 11:29:22 [INFO] Epoch   7/100 | Train: 0.000061 | Val: 0.000061 | LR: 2.96e-03
+2026-03-23 11:29:22 [INFO]   -> Best model saved (0.000061)
+2026-03-23 11:30:59 [INFO] Epoch   8/100 | Train: 0.000061 | Val: 0.000061 | LR: 2.95e-03
+2026-03-23 11:30:59 [INFO]   -> Best model saved (0.000061)
+2026-03-23 11:32:37 [INFO] Epoch   9/100 | Train: 0.000061 | Val: 0.000061 | LR: 2.94e-03
+2026-03-23 11:32:37 [INFO]   -> Best model saved (0.000061)
+2026-03-23 11:34:13 [INFO] Epoch  10/100 | Train: 0.000061 | Val: 0.000061 | LR: 2.93e-03
+2026-03-23 11:34:13 [INFO]   -> Best model saved (0.000061)
+2026-03-23 11:35:44 [INFO] Epoch  11/100 | Train: 0.000061 | Val: 0.000061 | LR: 2.91e-03
+2026-03-23 11:35:44 [INFO]   -> Best model saved (0.000061)
+2026-03-23 11:37:16 [INFO] Epoch  12/100 | Train: 0.000061 | Val: 0.000061 | LR: 2.90e-03
+2026-03-23 11:37:17 [INFO]   -> Best model saved (0.000061)
+2026-03-23 11:38:50 [INFO] Epoch  13/100 | Train: 0.000061 | Val: 0.000061 | LR: 2.88e-03
+2026-03-23 11:40:31 [INFO] Epoch  14/100 | Train: 0.000061 | Val: 0.000061 | LR: 2.86e-03
+2026-03-23 11:40:31 [INFO]   -> Best model saved (0.000061)

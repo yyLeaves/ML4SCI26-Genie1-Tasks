@@ -1,0 +1,17 @@
+2026-03-23 06:26:21 [INFO] Loaded model from epoch 46, val_loss=0.310018
+2026-03-23 06:26:21 [INFO] Data: 139306 samples (train: 111444, val: 27862)
+2026-03-23 06:26:21 [INFO] --- Validation Metrics ---
+2026-03-23 06:26:36 [INFO]   MSE:  0.310198
+2026-03-23 06:26:36 [INFO]   MAE:  0.060003
+2026-03-23 06:26:36 [INFO]   MSE (Tracks): 0.370442
+2026-03-23 06:26:36 [INFO]   MSE (ECAL  ): 0.477681
+2026-03-23 06:26:36 [INFO]   MSE (HCAL  ): 0.082471
+2026-03-23 06:26:36 [INFO] --- Train Metrics ---
+2026-03-23 06:27:49 [INFO]   MSE:  0.284381
+2026-03-23 06:27:49 [INFO]   MAE:  0.055042
+2026-03-23 06:27:53 [INFO] Saved reconstruction plots
+2026-03-23 06:27:59 [INFO] Saved jet event plots
+2026-03-23 06:28:01 [INFO] Saved scatter comparison plot
+2026-03-23 06:28:20 [INFO] Saved: outputs\task1\perchannel_mse\avg_reconstruction.png
+2026-03-23 06:28:28 [INFO] Saved: outputs\task1\perchannel_mse\loss_distribution.png
+2026-03-23 06:28:28 [INFO] Done!

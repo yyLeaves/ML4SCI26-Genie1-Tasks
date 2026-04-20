@@ -1,0 +1,19 @@
+2026-03-23 13:26:28 [INFO] Experiment: baseline_percentile
+2026-03-23 13:26:28 [INFO] Config: {'experiment_name': 'baseline_percentile', 'data_path': 'data/processed/percentile/all_images.npy', 'train_split': 0.8, 'latent_dim': 128, 'encoder_channels': [32, 64, 128, 256], 'batch_size': 512, 'learning_rate': 0.003, 'min_lr': 1e-05, 'weight_decay': 1e-05, 'num_epochs': 100, 'patience': 10, 'seed': 42}
+2026-03-23 13:26:29 [INFO] Data: 139306 samples
+2026-03-23 13:26:30 [INFO] Parameters: 5,290,531
+2026-03-23 13:26:30 [INFO] Loss: MSE
+2026-03-23 13:28:11 [INFO] Epoch   1/100 | Train: 0.001157 | Val: 0.000086 | LR: 3.00e-03
+2026-03-23 13:28:11 [INFO]   -> Best model saved (0.000086)
+2026-03-23 13:29:42 [INFO] Epoch   2/100 | Train: 0.000086 | Val: 0.000086 | LR: 3.00e-03
+2026-03-23 13:31:15 [INFO] Epoch   3/100 | Train: 0.000086 | Val: 0.000086 | LR: 2.99e-03
+2026-03-23 13:32:46 [INFO] Epoch   4/100 | Train: 0.000086 | Val: 0.000086 | LR: 2.99e-03
+2026-03-23 13:34:17 [INFO] Epoch   5/100 | Train: 0.000086 | Val: 0.000086 | LR: 2.98e-03
+2026-03-23 13:35:49 [INFO] Epoch   6/100 | Train: 0.000086 | Val: 0.000086 | LR: 2.97e-03
+2026-03-23 13:37:20 [INFO] Epoch   7/100 | Train: 0.000086 | Val: 0.000086 | LR: 2.96e-03
+2026-03-23 13:38:51 [INFO] Epoch   8/100 | Train: 0.000086 | Val: 0.000086 | LR: 2.95e-03
+2026-03-23 13:40:22 [INFO] Epoch   9/100 | Train: 0.000086 | Val: 0.000086 | LR: 2.94e-03
+2026-03-23 13:41:53 [INFO] Epoch  10/100 | Train: 0.000086 | Val: 0.000086 | LR: 2.93e-03
+2026-03-23 13:43:23 [INFO] Epoch  11/100 | Train: 0.000086 | Val: 0.000086 | LR: 2.91e-03
+2026-03-23 13:43:23 [INFO] Early stopping at epoch 11
+2026-03-23 13:43:23 [INFO] Done. Best val loss: 0.000086

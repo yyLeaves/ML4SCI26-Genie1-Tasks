@@ -1,0 +1,387 @@
+2026-03-25 11:56:20 [INFO] Experiment: ae_moco
+2026-03-25 11:56:20 [INFO] Config: {'experiment_name': 'ae_moco', 'ae_checkpoint': 'outputs/task1/segnet_ptlogpct/best.pt', 'embed_dim': 256, 'temperature': 0.1, 'queue_size': 4096, 'moco_momentum': 0.999, 'translate_frac': 0.1, 'noise_std': 0.02, 'intensity_range': [0.8, 1.2], 'erase_prob': 0.3, 'batch_size': 128, 'learning_rate': 2e-05, 'min_lr': 1e-07, 'weight_decay': 0.0001, 'pretrain_epochs': 30, 'linear_lr': 0.001, 'linear_epochs': 100, 'seed': 42}
+2026-03-25 11:56:20 [INFO] Loaded SegNet from segnet_ptlogpct (epoch 61)
+2026-03-25 11:56:20 [INFO] SegNet encoder wrapper: 17,265,408 params, latent_dim=512
+2026-03-25 11:56:20 [INFO] Data: 139306 images
+2026-03-25 11:56:20 [INFO] Split: train=111444, val=13931, test=13931
+2026-03-25 11:56:20 [INFO] DataLoader: 871 batches, batch_size=128
+2026-03-25 11:56:20 [INFO] MoCo trainable params: 17,265,408
+2026-03-25 11:56:20 [INFO] === Phase 1: MoCo Contrastive Fine-tune ===
+2026-03-25 11:56:21 [INFO]   Epoch 1 batch 1/871 | loss: 1.6706
+2026-03-25 11:56:23 [INFO]   Epoch 1 batch 10/871 | loss: 6.6296
+2026-03-25 11:56:49 [INFO]   Epoch 1 batch 100/871 | loss: 7.3499
+2026-03-25 11:57:20 [INFO]   Epoch 1 batch 200/871 | loss: 6.8542
+2026-03-25 11:58:23 [INFO]   Epoch 1 batch 400/871 | loss: 6.6068
+2026-03-25 11:59:29 [INFO]   Epoch 1 batch 600/871 | loss: 6.1370
+2026-03-25 12:00:41 [INFO]   Epoch 1 batch 800/871 | loss: 5.5139
+2026-03-25 12:01:09 [INFO] Pretrain Epoch   1/30 | Loss: 6.4348 | LR: 1.99e-05
+2026-03-25 12:01:09 [INFO]   -> Best model saved (loss=6.4348)
+2026-03-25 12:01:09 [INFO]   Epoch 2 batch 1/871 | loss: 5.5337
+2026-03-25 12:01:11 [INFO]   Epoch 2 batch 10/871 | loss: 5.3079
+2026-03-25 12:01:35 [INFO]   Epoch 2 batch 100/871 | loss: 5.4305
+2026-03-25 12:02:01 [INFO]   Epoch 2 batch 200/871 | loss: 5.2905
+2026-03-25 12:02:52 [INFO]   Epoch 2 batch 400/871 | loss: 4.6145
+2026-03-25 12:03:43 [INFO]   Epoch 2 batch 600/871 | loss: 4.2279
+2026-03-25 12:04:34 [INFO]   Epoch 2 batch 800/871 | loss: 4.0440
+2026-03-25 12:04:53 [INFO] Pretrain Epoch   2/30 | Loss: 4.6774 | LR: 1.98e-05
+2026-03-25 12:04:53 [INFO]   -> Best model saved (loss=4.6774)
+2026-03-25 12:04:53 [INFO]   Epoch 3 batch 1/871 | loss: 4.0426
+2026-03-25 12:04:56 [INFO]   Epoch 3 batch 10/871 | loss: 3.9427
+2026-03-25 12:05:18 [INFO]   Epoch 3 batch 100/871 | loss: 3.9402
+2026-03-25 12:05:44 [INFO]   Epoch 3 batch 200/871 | loss: 3.9959
+2026-03-25 12:06:36 [INFO]   Epoch 3 batch 400/871 | loss: 3.4258
+2026-03-25 12:07:29 [INFO]   Epoch 3 batch 600/871 | loss: 3.5197
+2026-03-25 12:08:22 [INFO]   Epoch 3 batch 800/871 | loss: 3.4018
+2026-03-25 12:08:40 [INFO] Pretrain Epoch   3/30 | Loss: 3.6417 | LR: 1.95e-05
+2026-03-25 12:08:40 [INFO]   -> Best model saved (loss=3.6417)
+2026-03-25 12:08:41 [INFO]   Epoch 4 batch 1/871 | loss: 3.3982
+2026-03-25 12:08:43 [INFO]   Epoch 4 batch 10/871 | loss: 3.4552
+2026-03-25 12:09:06 [INFO]   Epoch 4 batch 100/871 | loss: 3.2833
+2026-03-25 12:09:32 [INFO]   Epoch 4 batch 200/871 | loss: 3.2183
+2026-03-25 12:10:24 [INFO]   Epoch 4 batch 400/871 | loss: 3.3126
+2026-03-25 12:11:16 [INFO]   Epoch 4 batch 600/871 | loss: 3.1274
+2026-03-25 12:12:08 [INFO]   Epoch 4 batch 800/871 | loss: 2.8291
+2026-03-25 12:12:26 [INFO] Pretrain Epoch   4/30 | Loss: 3.0666 | LR: 1.91e-05
+2026-03-25 12:12:26 [INFO]   -> Best model saved (loss=3.0666)
+2026-03-25 12:12:27 [INFO]   Epoch 5 batch 1/871 | loss: 2.8541
+2026-03-25 12:12:29 [INFO]   Epoch 5 batch 10/871 | loss: 2.9991
+2026-03-25 12:12:52 [INFO]   Epoch 5 batch 100/871 | loss: 2.6760
+2026-03-25 12:13:18 [INFO]   Epoch 5 batch 200/871 | loss: 2.7695
+2026-03-25 12:14:10 [INFO]   Epoch 5 batch 400/871 | loss: 2.6487
+2026-03-25 12:15:01 [INFO]   Epoch 5 batch 600/871 | loss: 2.6370
+2026-03-25 12:15:53 [INFO]   Epoch 5 batch 800/871 | loss: 2.5940
+2026-03-25 12:16:11 [INFO] Pretrain Epoch   5/30 | Loss: 2.7061 | LR: 1.87e-05
+2026-03-25 12:16:12 [INFO]   -> Best model saved (loss=2.7061)
+2026-03-25 12:16:12 [INFO]   Epoch 6 batch 1/871 | loss: 2.6843
+2026-03-25 12:16:14 [INFO]   Epoch 6 batch 10/871 | loss: 2.5022
+2026-03-25 12:16:37 [INFO]   Epoch 6 batch 100/871 | loss: 2.5725
+2026-03-25 12:17:03 [INFO]   Epoch 6 batch 200/871 | loss: 2.4995
+2026-03-25 12:17:56 [INFO]   Epoch 6 batch 400/871 | loss: 2.4979
+2026-03-25 12:18:49 [INFO]   Epoch 6 batch 600/871 | loss: 2.2268
+2026-03-25 12:19:42 [INFO]   Epoch 6 batch 800/871 | loss: 2.3776
+2026-03-25 12:20:01 [INFO] Pretrain Epoch   6/30 | Loss: 2.4266 | LR: 1.81e-05
+2026-03-25 12:20:01 [INFO]   -> Best model saved (loss=2.4266)
+2026-03-25 12:20:02 [INFO]   Epoch 7 batch 1/871 | loss: 2.3418
+2026-03-25 12:20:04 [INFO]   Epoch 7 batch 10/871 | loss: 2.2194
+2026-03-25 12:20:28 [INFO]   Epoch 7 batch 100/871 | loss: 2.3142
+2026-03-25 12:20:55 [INFO]   Epoch 7 batch 200/871 | loss: 2.2393
+2026-03-25 12:21:48 [INFO]   Epoch 7 batch 400/871 | loss: 2.2676
+2026-03-25 12:22:42 [INFO]   Epoch 7 batch 600/871 | loss: 2.1900
+2026-03-25 12:23:36 [INFO]   Epoch 7 batch 800/871 | loss: 2.1052
+2026-03-25 12:23:55 [INFO] Pretrain Epoch   7/30 | Loss: 2.2053 | LR: 1.74e-05
+2026-03-25 12:23:56 [INFO]   -> Best model saved (loss=2.2053)
+2026-03-25 12:23:56 [INFO]   Epoch 8 batch 1/871 | loss: 2.0951
+2026-03-25 12:23:58 [INFO]   Epoch 8 batch 10/871 | loss: 2.1039
+2026-03-25 12:24:23 [INFO]   Epoch 8 batch 100/871 | loss: 2.1268
+2026-03-25 12:24:50 [INFO]   Epoch 8 batch 200/871 | loss: 2.0746
+2026-03-25 12:25:43 [INFO]   Epoch 8 batch 400/871 | loss: 2.0943
+2026-03-25 12:26:36 [INFO]   Epoch 8 batch 600/871 | loss: 2.0267
+2026-03-25 12:27:30 [INFO]   Epoch 8 batch 800/871 | loss: 2.0845
+2026-03-25 12:27:49 [INFO] Pretrain Epoch   8/30 | Loss: 2.0336 | LR: 1.67e-05
+2026-03-25 12:27:50 [INFO]   -> Best model saved (loss=2.0336)
+2026-03-25 12:27:50 [INFO]   Epoch 9 batch 1/871 | loss: 1.9491
+2026-03-25 12:27:52 [INFO]   Epoch 9 batch 10/871 | loss: 2.0246
+2026-03-25 12:28:16 [INFO]   Epoch 9 batch 100/871 | loss: 2.0198
+2026-03-25 12:28:44 [INFO]   Epoch 9 batch 200/871 | loss: 1.9079
+2026-03-25 12:29:38 [INFO]   Epoch 9 batch 400/871 | loss: 1.9072
+2026-03-25 12:30:47 [INFO]   Epoch 9 batch 600/871 | loss: 1.7570
+2026-03-25 12:31:43 [INFO]   Epoch 9 batch 800/871 | loss: 1.8973
+2026-03-25 12:32:02 [INFO] Pretrain Epoch   9/30 | Loss: 1.8918 | LR: 1.59e-05
+2026-03-25 12:32:03 [INFO]   -> Best model saved (loss=1.8918)
+2026-03-25 12:32:03 [INFO]   Epoch 10 batch 1/871 | loss: 1.9563
+2026-03-25 12:32:05 [INFO]   Epoch 10 batch 10/871 | loss: 1.7229
+2026-03-25 12:32:29 [INFO]   Epoch 10 batch 100/871 | loss: 1.8038
+2026-03-25 12:32:54 [INFO]   Epoch 10 batch 200/871 | loss: 1.7954
+2026-03-25 12:33:46 [INFO]   Epoch 10 batch 400/871 | loss: 1.7416
+2026-03-25 12:34:38 [INFO]   Epoch 10 batch 600/871 | loss: 1.6648
+2026-03-25 12:35:29 [INFO]   Epoch 10 batch 800/871 | loss: 1.6483
+2026-03-25 12:35:46 [INFO] Pretrain Epoch  10/30 | Loss: 1.7789 | LR: 1.50e-05
+2026-03-25 12:35:47 [INFO]   -> Best model saved (loss=1.7789)
+2026-03-25 12:35:47 [INFO]   Epoch 11 batch 1/871 | loss: 1.6790
+2026-03-25 12:35:49 [INFO]   Epoch 11 batch 10/871 | loss: 1.7982
+2026-03-25 12:36:11 [INFO]   Epoch 11 batch 100/871 | loss: 1.7656
+2026-03-25 12:36:36 [INFO]   Epoch 11 batch 200/871 | loss: 1.8087
+2026-03-25 12:37:25 [INFO]   Epoch 11 batch 400/871 | loss: 1.8041
+2026-03-25 12:38:14 [INFO]   Epoch 11 batch 600/871 | loss: 1.6568
+2026-03-25 12:39:03 [INFO]   Epoch 11 batch 800/871 | loss: 1.7344
+2026-03-25 12:39:21 [INFO] Pretrain Epoch  11/30 | Loss: 1.6846 | LR: 1.41e-05
+2026-03-25 12:39:21 [INFO]   -> Best model saved (loss=1.6846)
+2026-03-25 12:39:21 [INFO]   Epoch 12 batch 1/871 | loss: 1.6969
+2026-03-25 12:39:24 [INFO]   Epoch 12 batch 10/871 | loss: 1.6037
+2026-03-25 12:39:46 [INFO]   Epoch 12 batch 100/871 | loss: 1.6907
+2026-03-25 12:40:11 [INFO]   Epoch 12 batch 200/871 | loss: 1.6531
+2026-03-25 12:41:01 [INFO]   Epoch 12 batch 400/871 | loss: 1.6550
+2026-03-25 12:41:51 [INFO]   Epoch 12 batch 600/871 | loss: 1.6747
+2026-03-25 12:42:41 [INFO]   Epoch 12 batch 800/871 | loss: 1.6276
+2026-03-25 12:42:59 [INFO] Pretrain Epoch  12/30 | Loss: 1.6065 | LR: 1.31e-05
+2026-03-25 12:42:59 [INFO]   -> Best model saved (loss=1.6065)
+2026-03-25 12:42:59 [INFO]   Epoch 13 batch 1/871 | loss: 1.5329
+2026-03-25 12:43:02 [INFO]   Epoch 13 batch 10/871 | loss: 1.5605
+2026-03-25 12:43:24 [INFO]   Epoch 13 batch 100/871 | loss: 1.4737
+2026-03-25 12:43:48 [INFO]   Epoch 13 batch 200/871 | loss: 1.4792
+2026-03-25 12:44:38 [INFO]   Epoch 13 batch 400/871 | loss: 1.6138
+2026-03-25 12:45:27 [INFO]   Epoch 13 batch 600/871 | loss: 1.5877
+2026-03-25 12:46:30 [INFO]   Epoch 13 batch 800/871 | loss: 1.5062
+2026-03-25 12:46:47 [INFO] Pretrain Epoch  13/30 | Loss: 1.5479 | LR: 1.21e-05
+2026-03-25 12:46:48 [INFO]   -> Best model saved (loss=1.5479)
+2026-03-25 12:46:48 [INFO]   Epoch 14 batch 1/871 | loss: 1.5803
+2026-03-25 12:46:50 [INFO]   Epoch 14 batch 10/871 | loss: 1.4614
+2026-03-25 12:47:12 [INFO]   Epoch 14 batch 100/871 | loss: 1.5239
+2026-03-25 12:47:36 [INFO]   Epoch 14 batch 200/871 | loss: 1.4232
+2026-03-25 12:48:26 [INFO]   Epoch 14 batch 400/871 | loss: 1.5991
+2026-03-25 12:49:15 [INFO]   Epoch 14 batch 600/871 | loss: 1.5174
+2026-03-25 12:50:04 [INFO]   Epoch 14 batch 800/871 | loss: 1.4897
+2026-03-25 12:50:22 [INFO] Pretrain Epoch  14/30 | Loss: 1.4935 | LR: 1.11e-05
+2026-03-25 12:50:22 [INFO]   -> Best model saved (loss=1.4935)
+2026-03-25 12:50:23 [INFO]   Epoch 15 batch 1/871 | loss: 1.4835
+2026-03-25 12:50:25 [INFO]   Epoch 15 batch 10/871 | loss: 1.4965
+2026-03-25 12:50:47 [INFO]   Epoch 15 batch 100/871 | loss: 1.4842
+2026-03-25 12:51:12 [INFO]   Epoch 15 batch 200/871 | loss: 1.5382
+2026-03-25 12:52:02 [INFO]   Epoch 15 batch 400/871 | loss: 1.4523
+2026-03-25 12:52:52 [INFO]   Epoch 15 batch 600/871 | loss: 1.5185
+2026-03-25 12:53:42 [INFO]   Epoch 15 batch 800/871 | loss: 1.4414
+2026-03-25 12:54:00 [INFO] Pretrain Epoch  15/30 | Loss: 1.4518 | LR: 1.01e-05
+2026-03-25 12:54:00 [INFO]   -> Best model saved (loss=1.4518)
+2026-03-25 12:54:00 [INFO]   Epoch 16 batch 1/871 | loss: 1.4046
+2026-03-25 12:54:02 [INFO]   Epoch 16 batch 10/871 | loss: 1.4228
+2026-03-25 12:54:25 [INFO]   Epoch 16 batch 100/871 | loss: 1.3804
+2026-03-25 12:54:50 [INFO]   Epoch 16 batch 200/871 | loss: 1.3758
+2026-03-25 12:55:39 [INFO]   Epoch 16 batch 400/871 | loss: 1.3817
+2026-03-25 12:56:28 [INFO]   Epoch 16 batch 600/871 | loss: 1.4162
+2026-03-25 12:57:17 [INFO]   Epoch 16 batch 800/871 | loss: 1.3490
+2026-03-25 12:57:35 [INFO] Pretrain Epoch  16/30 | Loss: 1.4143 | LR: 9.01e-06
+2026-03-25 12:57:35 [INFO]   -> Best model saved (loss=1.4143)
+2026-03-25 12:57:35 [INFO]   Epoch 17 batch 1/871 | loss: 1.3621
+2026-03-25 12:57:38 [INFO]   Epoch 17 batch 10/871 | loss: 1.3576
+2026-03-25 12:58:00 [INFO]   Epoch 17 batch 100/871 | loss: 1.3869
+2026-03-25 12:58:24 [INFO]   Epoch 17 batch 200/871 | loss: 1.4139
+2026-03-25 12:59:13 [INFO]   Epoch 17 batch 400/871 | loss: 1.3571
+2026-03-25 13:00:02 [INFO]   Epoch 17 batch 600/871 | loss: 1.3675
+2026-03-25 13:00:52 [INFO]   Epoch 17 batch 800/871 | loss: 1.4111
+2026-03-25 13:01:10 [INFO] Pretrain Epoch  17/30 | Loss: 1.3805 | LR: 7.98e-06
+2026-03-25 13:01:10 [INFO]   -> Best model saved (loss=1.3805)
+2026-03-25 13:01:10 [INFO]   Epoch 18 batch 1/871 | loss: 1.4187
+2026-03-25 13:01:12 [INFO]   Epoch 18 batch 10/871 | loss: 1.4020
+2026-03-25 13:01:34 [INFO]   Epoch 18 batch 100/871 | loss: 1.3949
+2026-03-25 13:01:59 [INFO]   Epoch 18 batch 200/871 | loss: 1.3477
+2026-03-25 13:02:48 [INFO]   Epoch 18 batch 400/871 | loss: 1.3532
+2026-03-25 13:03:37 [INFO]   Epoch 18 batch 600/871 | loss: 1.2847
+2026-03-25 13:04:27 [INFO]   Epoch 18 batch 800/871 | loss: 1.3804
+2026-03-25 13:04:44 [INFO] Pretrain Epoch  18/30 | Loss: 1.3560 | LR: 6.98e-06
+2026-03-25 13:04:44 [INFO]   -> Best model saved (loss=1.3560)
+2026-03-25 13:04:45 [INFO]   Epoch 19 batch 1/871 | loss: 1.3356
+2026-03-25 13:04:47 [INFO]   Epoch 19 batch 10/871 | loss: 1.2987
+2026-03-25 13:05:09 [INFO]   Epoch 19 batch 100/871 | loss: 1.3035
+2026-03-25 13:05:34 [INFO]   Epoch 19 batch 200/871 | loss: 1.2967
+2026-03-25 13:06:23 [INFO]   Epoch 19 batch 400/871 | loss: 1.3264
+2026-03-25 13:07:13 [INFO]   Epoch 19 batch 600/871 | loss: 1.2841
+2026-03-25 13:08:03 [INFO]   Epoch 19 batch 800/871 | loss: 1.3295
+2026-03-25 13:08:20 [INFO] Pretrain Epoch  19/30 | Loss: 1.3317 | LR: 6.00e-06
+2026-03-25 13:08:20 [INFO]   -> Best model saved (loss=1.3317)
+2026-03-25 13:08:20 [INFO]   Epoch 20 batch 1/871 | loss: 1.3303
+2026-03-25 13:08:22 [INFO]   Epoch 20 batch 10/871 | loss: 1.3685
+2026-03-25 13:08:44 [INFO]   Epoch 20 batch 100/871 | loss: 1.4044
+2026-03-25 13:09:09 [INFO]   Epoch 20 batch 200/871 | loss: 1.3636
+2026-03-25 13:09:58 [INFO]   Epoch 20 batch 400/871 | loss: 1.2867
+2026-03-25 13:10:47 [INFO]   Epoch 20 batch 600/871 | loss: 1.3267
+2026-03-25 13:11:37 [INFO]   Epoch 20 batch 800/871 | loss: 1.4010
+2026-03-25 13:11:55 [INFO] Pretrain Epoch  20/30 | Loss: 1.3146 | LR: 5.08e-06
+2026-03-25 13:11:55 [INFO]   -> Best model saved (loss=1.3146)
+2026-03-25 13:11:55 [INFO]   Epoch 21 batch 1/871 | loss: 1.2376
+2026-03-25 13:11:57 [INFO]   Epoch 21 batch 10/871 | loss: 1.3729
+2026-03-25 13:12:20 [INFO]   Epoch 21 batch 100/871 | loss: 1.2734
+2026-03-25 13:12:44 [INFO]   Epoch 21 batch 200/871 | loss: 1.2276
+2026-03-25 13:13:34 [INFO]   Epoch 21 batch 400/871 | loss: 1.2537
+2026-03-25 13:14:24 [INFO]   Epoch 21 batch 600/871 | loss: 1.2690
+2026-03-25 13:15:13 [INFO]   Epoch 21 batch 800/871 | loss: 1.2662
+2026-03-25 13:15:30 [INFO] Pretrain Epoch  21/30 | Loss: 1.2980 | LR: 4.20e-06
+2026-03-25 13:15:31 [INFO]   -> Best model saved (loss=1.2980)
+2026-03-25 13:15:31 [INFO]   Epoch 22 batch 1/871 | loss: 1.2704
+2026-03-25 13:15:33 [INFO]   Epoch 22 batch 10/871 | loss: 1.2712
+2026-03-25 13:15:56 [INFO]   Epoch 22 batch 100/871 | loss: 1.3107
+2026-03-25 13:16:20 [INFO]   Epoch 22 batch 200/871 | loss: 1.3179
+2026-03-25 13:17:09 [INFO]   Epoch 22 batch 400/871 | loss: 1.2518
+2026-03-25 13:17:58 [INFO]   Epoch 22 batch 600/871 | loss: 1.3027
+2026-03-25 13:18:47 [INFO]   Epoch 22 batch 800/871 | loss: 1.1645
+2026-03-25 13:19:04 [INFO] Pretrain Epoch  22/30 | Loss: 1.2815 | LR: 3.39e-06
+2026-03-25 13:19:05 [INFO]   -> Best model saved (loss=1.2815)
+2026-03-25 13:19:05 [INFO]   Epoch 23 batch 1/871 | loss: 1.2202
+2026-03-25 13:19:07 [INFO]   Epoch 23 batch 10/871 | loss: 1.2808
+2026-03-25 13:19:29 [INFO]   Epoch 23 batch 100/871 | loss: 1.3482
+2026-03-25 13:19:54 [INFO]   Epoch 23 batch 200/871 | loss: 1.3583
+2026-03-25 13:20:43 [INFO]   Epoch 23 batch 400/871 | loss: 1.2440
+2026-03-25 13:21:33 [INFO]   Epoch 23 batch 600/871 | loss: 1.2235
+2026-03-25 13:22:24 [INFO]   Epoch 23 batch 800/871 | loss: 1.3001
+2026-03-25 13:22:41 [INFO] Pretrain Epoch  23/30 | Loss: 1.2740 | LR: 2.66e-06
+2026-03-25 13:22:41 [INFO]   -> Best model saved (loss=1.2740)
+2026-03-25 13:22:42 [INFO]   Epoch 24 batch 1/871 | loss: 1.3622
+2026-03-25 13:22:44 [INFO]   Epoch 24 batch 10/871 | loss: 1.2487
+2026-03-25 13:23:06 [INFO]   Epoch 24 batch 100/871 | loss: 1.2588
+2026-03-25 13:23:31 [INFO]   Epoch 24 batch 200/871 | loss: 1.2709
+2026-03-25 13:24:20 [INFO]   Epoch 24 batch 400/871 | loss: 1.2251
+2026-03-25 13:25:10 [INFO]   Epoch 24 batch 600/871 | loss: 1.2566
+2026-03-25 13:25:59 [INFO]   Epoch 24 batch 800/871 | loss: 1.2453
+2026-03-25 13:26:16 [INFO] Pretrain Epoch  24/30 | Loss: 1.2644 | LR: 2.00e-06
+2026-03-25 13:26:17 [INFO]   -> Best model saved (loss=1.2644)
+2026-03-25 13:26:17 [INFO]   Epoch 25 batch 1/871 | loss: 1.3200
+2026-03-25 13:26:19 [INFO]   Epoch 25 batch 10/871 | loss: 1.2541
+2026-03-25 13:26:41 [INFO]   Epoch 25 batch 100/871 | loss: 1.2718
+2026-03-25 13:27:06 [INFO]   Epoch 25 batch 200/871 | loss: 1.2881
+2026-03-25 13:27:55 [INFO]   Epoch 25 batch 400/871 | loss: 1.2724
+2026-03-25 13:28:44 [INFO]   Epoch 25 batch 600/871 | loss: 1.3000
+2026-03-25 13:29:34 [INFO]   Epoch 25 batch 800/871 | loss: 1.3315
+2026-03-25 13:29:51 [INFO] Pretrain Epoch  25/30 | Loss: 1.2552 | LR: 1.43e-06
+2026-03-25 13:29:51 [INFO]   -> Best model saved (loss=1.2552)
+2026-03-25 13:29:52 [INFO]   Epoch 26 batch 1/871 | loss: 1.2889
+2026-03-25 13:29:54 [INFO]   Epoch 26 batch 10/871 | loss: 1.2677
+2026-03-25 13:30:16 [INFO]   Epoch 26 batch 100/871 | loss: 1.2485
+2026-03-25 13:30:41 [INFO]   Epoch 26 batch 200/871 | loss: 1.2361
+2026-03-25 13:31:30 [INFO]   Epoch 26 batch 400/871 | loss: 1.2410
+2026-03-25 13:32:19 [INFO]   Epoch 26 batch 600/871 | loss: 1.2223
+2026-03-25 13:33:08 [INFO]   Epoch 26 batch 800/871 | loss: 1.2383
+2026-03-25 13:33:26 [INFO] Pretrain Epoch  26/30 | Loss: 1.2497 | LR: 9.60e-07
+2026-03-25 13:33:26 [INFO]   -> Best model saved (loss=1.2497)
+2026-03-25 13:33:26 [INFO]   Epoch 27 batch 1/871 | loss: 1.3372
+2026-03-25 13:33:28 [INFO]   Epoch 27 batch 10/871 | loss: 1.2244
+2026-03-25 13:33:50 [INFO]   Epoch 27 batch 100/871 | loss: 1.1910
+2026-03-25 13:34:15 [INFO]   Epoch 27 batch 200/871 | loss: 1.2313
+2026-03-25 13:35:05 [INFO]   Epoch 27 batch 400/871 | loss: 1.3581
+2026-03-25 13:35:54 [INFO]   Epoch 27 batch 600/871 | loss: 1.2509
+2026-03-25 13:36:44 [INFO]   Epoch 27 batch 800/871 | loss: 1.2162
+2026-03-25 13:37:02 [INFO] Pretrain Epoch  27/30 | Loss: 1.2477 | LR: 5.87e-07
+2026-03-25 13:37:02 [INFO]   -> Best model saved (loss=1.2477)
+2026-03-25 13:37:02 [INFO]   Epoch 28 batch 1/871 | loss: 1.2226
+2026-03-25 13:37:05 [INFO]   Epoch 28 batch 10/871 | loss: 1.2297
+2026-03-25 13:37:27 [INFO]   Epoch 28 batch 100/871 | loss: 1.2679
+2026-03-25 13:37:51 [INFO]   Epoch 28 batch 200/871 | loss: 1.1815
+2026-03-25 13:38:41 [INFO]   Epoch 28 batch 400/871 | loss: 1.1546
+2026-03-25 13:39:30 [INFO]   Epoch 28 batch 600/871 | loss: 1.2814
+2026-03-25 13:40:19 [INFO]   Epoch 28 batch 800/871 | loss: 1.2276
+2026-03-25 13:40:37 [INFO] Pretrain Epoch  28/30 | Loss: 1.2431 | LR: 3.17e-07
+2026-03-25 13:40:37 [INFO]   -> Best model saved (loss=1.2431)
+2026-03-25 13:40:37 [INFO]   Epoch 29 batch 1/871 | loss: 1.2409
+2026-03-25 13:40:40 [INFO]   Epoch 29 batch 10/871 | loss: 1.2660
+2026-03-25 13:41:02 [INFO]   Epoch 29 batch 100/871 | loss: 1.2270
+2026-03-25 13:41:26 [INFO]   Epoch 29 batch 200/871 | loss: 1.1968
+2026-03-25 13:42:15 [INFO]   Epoch 29 batch 400/871 | loss: 1.2263
+2026-03-25 13:43:04 [INFO]   Epoch 29 batch 600/871 | loss: 1.1811
+2026-03-25 13:43:53 [INFO]   Epoch 29 batch 800/871 | loss: 1.1722
+2026-03-25 13:44:10 [INFO] Pretrain Epoch  29/30 | Loss: 1.2440 | LR: 1.55e-07
+2026-03-25 13:44:10 [INFO]   Epoch 30 batch 1/871 | loss: 1.2534
+2026-03-25 13:44:13 [INFO]   Epoch 30 batch 10/871 | loss: 1.2187
+2026-03-25 13:44:35 [INFO]   Epoch 30 batch 100/871 | loss: 1.2621
+2026-03-25 13:44:59 [INFO]   Epoch 30 batch 200/871 | loss: 1.2829
+2026-03-25 13:45:48 [INFO]   Epoch 30 batch 400/871 | loss: 1.2390
+2026-03-25 13:46:38 [INFO]   Epoch 30 batch 600/871 | loss: 1.1572
+2026-03-25 13:47:27 [INFO]   Epoch 30 batch 800/871 | loss: 1.2140
+2026-03-25 13:47:44 [INFO] Pretrain Epoch  30/30 | Loss: 1.2418 | LR: 1.00e-07
+2026-03-25 13:47:45 [INFO]   -> Best model saved (loss=1.2418)
+2026-03-25 13:47:45 [INFO] Pretraining done. Best loss: 1.2418
+2026-03-25 13:47:45 [INFO] === Phase 2: Linear Evaluation ===
+2026-03-25 13:47:45 [INFO] Extracting features...
+2026-03-25 13:48:30 [INFO] Feature dim: 512
+2026-03-25 13:48:31 [INFO] Linear   1/100 | Train Loss: 1.2465 Acc: 0.5700 | Val Loss: 0.9159 Acc: 0.5897 AUC: 0.6378 *
+2026-03-25 13:48:33 [INFO] Linear   2/100 | Train Loss: 0.8213 Acc: 0.6038 | Val Loss: 0.8734 Acc: 0.5850 AUC: 0.6618 *
+2026-03-25 13:48:34 [INFO] Linear   3/100 | Train Loss: 0.7659 Acc: 0.6136 | Val Loss: 0.6863 Acc: 0.6459 AUC: 0.6886 *
+2026-03-25 13:48:35 [INFO] Linear   4/100 | Train Loss: 0.7027 Acc: 0.6284 | Val Loss: 0.7418 Acc: 0.6155 AUC: 0.6987 *
+2026-03-25 13:48:36 [INFO] Linear   5/100 | Train Loss: 0.6710 Acc: 0.6415 | Val Loss: 0.6679 Acc: 0.6360 AUC: 0.7062 *
+2026-03-25 13:48:37 [INFO] Linear   6/100 | Train Loss: 0.6643 Acc: 0.6434 | Val Loss: 0.6562 Acc: 0.6392 AUC: 0.7113 *
+2026-03-25 13:48:38 [INFO] Linear   7/100 | Train Loss: 0.6576 Acc: 0.6480 | Val Loss: 0.6272 Acc: 0.6664 AUC: 0.7182 *
+2026-03-25 13:48:39 [INFO] Linear   8/100 | Train Loss: 0.6517 Acc: 0.6502 | Val Loss: 0.7111 Acc: 0.6253 AUC: 0.7267 *
+2026-03-25 13:48:40 [INFO] Linear   9/100 | Train Loss: 0.6519 Acc: 0.6512 | Val Loss: 0.8008 Acc: 0.5594 AUC: 0.7200
+2026-03-25 13:48:41 [INFO] Linear  10/100 | Train Loss: 0.6636 Acc: 0.6467 | Val Loss: 0.6146 Acc: 0.6763 AUC: 0.7287 *
+2026-03-25 13:48:42 [INFO] Linear  11/100 | Train Loss: 0.6416 Acc: 0.6555 | Val Loss: 0.6516 Acc: 0.6420 AUC: 0.7289 *
+2026-03-25 13:48:43 [INFO] Linear  12/100 | Train Loss: 0.6362 Acc: 0.6590 | Val Loss: 0.6275 Acc: 0.6582 AUC: 0.7294 *
+2026-03-25 13:48:44 [INFO] Linear  13/100 | Train Loss: 0.6468 Acc: 0.6502 | Val Loss: 0.7537 Acc: 0.6015 AUC: 0.7267
+2026-03-25 13:48:45 [INFO] Linear  14/100 | Train Loss: 0.6471 Acc: 0.6546 | Val Loss: 0.6146 Acc: 0.6752 AUC: 0.7297 *
+2026-03-25 13:48:46 [INFO] Linear  15/100 | Train Loss: 0.6343 Acc: 0.6612 | Val Loss: 0.6260 Acc: 0.6655 AUC: 0.7310 *
+2026-03-25 13:48:47 [INFO] Linear  16/100 | Train Loss: 0.6347 Acc: 0.6593 | Val Loss: 0.6312 Acc: 0.6623 AUC: 0.7350 *
+2026-03-25 13:48:48 [INFO] Linear  17/100 | Train Loss: 0.6355 Acc: 0.6600 | Val Loss: 0.6144 Acc: 0.6748 AUC: 0.7339
+2026-03-25 13:48:49 [INFO] Linear  18/100 | Train Loss: 0.6379 Acc: 0.6578 | Val Loss: 0.6144 Acc: 0.6720 AUC: 0.7335
+2026-03-25 13:48:50 [INFO] Linear  19/100 | Train Loss: 0.6332 Acc: 0.6600 | Val Loss: 0.6832 Acc: 0.6302 AUC: 0.7324
+2026-03-25 13:48:51 [INFO] Linear  20/100 | Train Loss: 0.6311 Acc: 0.6627 | Val Loss: 0.6153 Acc: 0.6704 AUC: 0.7338
+2026-03-25 13:48:52 [INFO] Linear  21/100 | Train Loss: 0.6379 Acc: 0.6592 | Val Loss: 0.8184 Acc: 0.5702 AUC: 0.7294
+2026-03-25 13:48:53 [INFO] Linear  22/100 | Train Loss: 0.6271 Acc: 0.6635 | Val Loss: 0.6868 Acc: 0.6119 AUC: 0.7315
+2026-03-25 13:48:54 [INFO] Linear  23/100 | Train Loss: 0.6747 Acc: 0.6474 | Val Loss: 0.6190 Acc: 0.6721 AUC: 0.7368 *
+2026-03-25 13:48:55 [INFO] Linear  24/100 | Train Loss: 0.6198 Acc: 0.6702 | Val Loss: 0.7777 Acc: 0.5721 AUC: 0.7319
+2026-03-25 13:48:56 [INFO] Linear  25/100 | Train Loss: 0.6437 Acc: 0.6568 | Val Loss: 0.6494 Acc: 0.6492 AUC: 0.7330
+2026-03-25 13:48:57 [INFO] Linear  26/100 | Train Loss: 0.6575 Acc: 0.6515 | Val Loss: 0.6610 Acc: 0.6317 AUC: 0.7349
+2026-03-25 13:48:58 [INFO] Linear  27/100 | Train Loss: 0.6336 Acc: 0.6591 | Val Loss: 0.6056 Acc: 0.6809 AUC: 0.7375 *
+2026-03-25 13:48:59 [INFO] Linear  28/100 | Train Loss: 0.6224 Acc: 0.6674 | Val Loss: 0.6491 Acc: 0.6410 AUC: 0.7341
+2026-03-25 13:49:00 [INFO] Linear  29/100 | Train Loss: 0.6298 Acc: 0.6613 | Val Loss: 0.6211 Acc: 0.6618 AUC: 0.7359
+2026-03-25 13:49:01 [INFO] Linear  30/100 | Train Loss: 0.6288 Acc: 0.6639 | Val Loss: 0.6342 Acc: 0.6590 AUC: 0.7363
+2026-03-25 13:49:02 [INFO] Linear  31/100 | Train Loss: 0.6348 Acc: 0.6582 | Val Loss: 0.6068 Acc: 0.6796 AUC: 0.7371
+2026-03-25 13:49:03 [INFO] Linear  32/100 | Train Loss: 0.6316 Acc: 0.6636 | Val Loss: 0.6190 Acc: 0.6648 AUC: 0.7350
+2026-03-25 13:49:04 [INFO] Linear  33/100 | Train Loss: 0.6272 Acc: 0.6656 | Val Loss: 0.6062 Acc: 0.6807 AUC: 0.7377 *
+2026-03-25 13:49:05 [INFO] Linear  34/100 | Train Loss: 0.6253 Acc: 0.6648 | Val Loss: 0.6102 Acc: 0.6753 AUC: 0.7333
+2026-03-25 13:49:06 [INFO] Linear  35/100 | Train Loss: 0.6247 Acc: 0.6656 | Val Loss: 0.6402 Acc: 0.6499 AUC: 0.7348
+2026-03-25 13:49:07 [INFO] Linear  36/100 | Train Loss: 0.6196 Acc: 0.6670 | Val Loss: 0.6387 Acc: 0.6492 AUC: 0.7346
+2026-03-25 13:49:08 [INFO] Linear  37/100 | Train Loss: 0.6492 Acc: 0.6539 | Val Loss: 0.6107 Acc: 0.6765 AUC: 0.7372
+2026-03-25 13:49:09 [INFO] Linear  38/100 | Train Loss: 0.6181 Acc: 0.6701 | Val Loss: 0.6295 Acc: 0.6573 AUC: 0.7355
+2026-03-25 13:49:10 [INFO] Linear  39/100 | Train Loss: 0.6269 Acc: 0.6639 | Val Loss: 0.6122 Acc: 0.6771 AUC: 0.7373
+2026-03-25 13:49:11 [INFO] Linear  40/100 | Train Loss: 0.6317 Acc: 0.6600 | Val Loss: 0.6171 Acc: 0.6732 AUC: 0.7353
+2026-03-25 13:49:12 [INFO] Linear  41/100 | Train Loss: 0.6169 Acc: 0.6707 | Val Loss: 0.6103 Acc: 0.6757 AUC: 0.7380 *
+2026-03-25 13:49:13 [INFO] Linear  42/100 | Train Loss: 0.6154 Acc: 0.6723 | Val Loss: 0.6074 Acc: 0.6757 AUC: 0.7369
+2026-03-25 13:49:14 [INFO] Linear  43/100 | Train Loss: 0.6315 Acc: 0.6616 | Val Loss: 0.6030 Acc: 0.6836 AUC: 0.7404 *
+2026-03-25 13:49:15 [INFO] Linear  44/100 | Train Loss: 0.6153 Acc: 0.6722 | Val Loss: 0.6334 Acc: 0.6532 AUC: 0.7374
+2026-03-25 13:49:16 [INFO] Linear  45/100 | Train Loss: 0.6243 Acc: 0.6664 | Val Loss: 0.6908 Acc: 0.6269 AUC: 0.7372
+2026-03-25 13:49:17 [INFO] Linear  46/100 | Train Loss: 0.6128 Acc: 0.6733 | Val Loss: 0.6309 Acc: 0.6625 AUC: 0.7389
+2026-03-25 13:49:18 [INFO] Linear  47/100 | Train Loss: 0.6177 Acc: 0.6697 | Val Loss: 0.6060 Acc: 0.6804 AUC: 0.7377
+2026-03-25 13:49:19 [INFO] Linear  48/100 | Train Loss: 0.6210 Acc: 0.6675 | Val Loss: 0.6120 Acc: 0.6731 AUC: 0.7377
+2026-03-25 13:49:20 [INFO] Linear  49/100 | Train Loss: 0.6132 Acc: 0.6738 | Val Loss: 0.6191 Acc: 0.6639 AUC: 0.7388
+2026-03-25 13:49:21 [INFO] Linear  50/100 | Train Loss: 0.6227 Acc: 0.6671 | Val Loss: 0.6222 Acc: 0.6603 AUC: 0.7381
+2026-03-25 13:49:22 [INFO] Linear  51/100 | Train Loss: 0.6093 Acc: 0.6745 | Val Loss: 0.6146 Acc: 0.6750 AUC: 0.7387
+2026-03-25 13:49:23 [INFO] Linear  52/100 | Train Loss: 0.6149 Acc: 0.6712 | Val Loss: 0.6429 Acc: 0.6503 AUC: 0.7369
+2026-03-25 13:49:24 [INFO] Linear  53/100 | Train Loss: 0.6107 Acc: 0.6752 | Val Loss: 0.6885 Acc: 0.6266 AUC: 0.7374
+2026-03-25 13:49:25 [INFO] Linear  54/100 | Train Loss: 0.6107 Acc: 0.6744 | Val Loss: 0.6108 Acc: 0.6714 AUC: 0.7395
+2026-03-25 13:49:26 [INFO] Linear  55/100 | Train Loss: 0.6094 Acc: 0.6755 | Val Loss: 0.6338 Acc: 0.6611 AUC: 0.7384
+2026-03-25 13:49:27 [INFO] Linear  56/100 | Train Loss: 0.6108 Acc: 0.6742 | Val Loss: 0.6891 Acc: 0.6135 AUC: 0.7361
+2026-03-25 13:49:28 [INFO] Linear  57/100 | Train Loss: 0.6088 Acc: 0.6760 | Val Loss: 0.6280 Acc: 0.6548 AUC: 0.7342
+2026-03-25 13:49:29 [INFO] Linear  58/100 | Train Loss: 0.6127 Acc: 0.6732 | Val Loss: 0.6118 Acc: 0.6756 AUC: 0.7404
+2026-03-25 13:49:30 [INFO] Linear  59/100 | Train Loss: 0.6094 Acc: 0.6757 | Val Loss: 0.6059 Acc: 0.6775 AUC: 0.7384
+2026-03-25 13:49:31 [INFO] Linear  60/100 | Train Loss: 0.6099 Acc: 0.6757 | Val Loss: 0.6373 Acc: 0.6486 AUC: 0.7380
+2026-03-25 13:49:32 [INFO] Linear  61/100 | Train Loss: 0.6130 Acc: 0.6731 | Val Loss: 0.6129 Acc: 0.6698 AUC: 0.7396
+2026-03-25 13:49:33 [INFO] Linear  62/100 | Train Loss: 0.6053 Acc: 0.6796 | Val Loss: 0.6048 Acc: 0.6786 AUC: 0.7379
+2026-03-25 13:49:34 [INFO] Linear  63/100 | Train Loss: 0.6049 Acc: 0.6796 | Val Loss: 0.6130 Acc: 0.6750 AUC: 0.7408 *
+2026-03-25 13:49:35 [INFO] Linear  64/100 | Train Loss: 0.6063 Acc: 0.6785 | Val Loss: 0.6336 Acc: 0.6510 AUC: 0.7394
+2026-03-25 13:49:36 [INFO] Linear  65/100 | Train Loss: 0.6095 Acc: 0.6755 | Val Loss: 0.6052 Acc: 0.6818 AUC: 0.7404
+2026-03-25 13:49:37 [INFO] Linear  66/100 | Train Loss: 0.6068 Acc: 0.6772 | Val Loss: 0.6662 Acc: 0.6334 AUC: 0.7389
+2026-03-25 13:49:38 [INFO] Linear  67/100 | Train Loss: 0.6051 Acc: 0.6788 | Val Loss: 0.6080 Acc: 0.6749 AUC: 0.7391
+2026-03-25 13:49:40 [INFO] Linear  68/100 | Train Loss: 0.6058 Acc: 0.6787 | Val Loss: 0.6045 Acc: 0.6801 AUC: 0.7398
+2026-03-25 13:49:41 [INFO] Linear  69/100 | Train Loss: 0.6024 Acc: 0.6810 | Val Loss: 0.6032 Acc: 0.6832 AUC: 0.7407
+2026-03-25 13:49:42 [INFO] Linear  70/100 | Train Loss: 0.6037 Acc: 0.6800 | Val Loss: 0.6027 Acc: 0.6832 AUC: 0.7399
+2026-03-25 13:49:43 [INFO] Linear  71/100 | Train Loss: 0.5995 Acc: 0.6836 | Val Loss: 0.6039 Acc: 0.6799 AUC: 0.7380
+2026-03-25 13:49:44 [INFO] Linear  72/100 | Train Loss: 0.6011 Acc: 0.6829 | Val Loss: 0.6062 Acc: 0.6764 AUC: 0.7418 *
+2026-03-25 13:49:44 [INFO] Linear  73/100 | Train Loss: 0.6009 Acc: 0.6828 | Val Loss: 0.6025 Acc: 0.6847 AUC: 0.7417
+2026-03-25 13:49:45 [INFO] Linear  74/100 | Train Loss: 0.6016 Acc: 0.6811 | Val Loss: 0.6019 Acc: 0.6844 AUC: 0.7413
+2026-03-25 13:49:46 [INFO] Linear  75/100 | Train Loss: 0.6004 Acc: 0.6829 | Val Loss: 0.6067 Acc: 0.6795 AUC: 0.7408
+2026-03-25 13:49:47 [INFO] Linear  76/100 | Train Loss: 0.6005 Acc: 0.6822 | Val Loss: 0.6036 Acc: 0.6811 AUC: 0.7409
+2026-03-25 13:49:48 [INFO] Linear  77/100 | Train Loss: 0.5983 Acc: 0.6852 | Val Loss: 0.6009 Acc: 0.6847 AUC: 0.7421 *
+2026-03-25 13:49:49 [INFO] Linear  78/100 | Train Loss: 0.6018 Acc: 0.6824 | Val Loss: 0.6151 Acc: 0.6667 AUC: 0.7412
+2026-03-25 13:49:50 [INFO] Linear  79/100 | Train Loss: 0.5991 Acc: 0.6836 | Val Loss: 0.6063 Acc: 0.6755 AUC: 0.7405
+2026-03-25 13:49:51 [INFO] Linear  80/100 | Train Loss: 0.5961 Acc: 0.6859 | Val Loss: 0.6084 Acc: 0.6791 AUC: 0.7411
+2026-03-25 13:49:52 [INFO] Linear  81/100 | Train Loss: 0.5979 Acc: 0.6852 | Val Loss: 0.6135 Acc: 0.6726 AUC: 0.7405
+2026-03-25 13:49:53 [INFO] Linear  82/100 | Train Loss: 0.5967 Acc: 0.6860 | Val Loss: 0.6066 Acc: 0.6755 AUC: 0.7418
+2026-03-25 13:49:54 [INFO] Linear  83/100 | Train Loss: 0.5953 Acc: 0.6879 | Val Loss: 0.6013 Acc: 0.6858 AUC: 0.7426 *
+2026-03-25 13:49:55 [INFO] Linear  84/100 | Train Loss: 0.5965 Acc: 0.6866 | Val Loss: 0.6085 Acc: 0.6737 AUC: 0.7421
+2026-03-25 13:49:56 [INFO] Linear  85/100 | Train Loss: 0.5962 Acc: 0.6867 | Val Loss: 0.6011 Acc: 0.6825 AUC: 0.7426
+2026-03-25 13:49:57 [INFO] Linear  86/100 | Train Loss: 0.5951 Acc: 0.6879 | Val Loss: 0.6056 Acc: 0.6763 AUC: 0.7423
+2026-03-25 13:49:58 [INFO] Linear  87/100 | Train Loss: 0.5961 Acc: 0.6866 | Val Loss: 0.6034 Acc: 0.6796 AUC: 0.7420
+2026-03-25 13:49:59 [INFO] Linear  88/100 | Train Loss: 0.5945 Acc: 0.6889 | Val Loss: 0.6007 Acc: 0.6839 AUC: 0.7419
+2026-03-25 13:50:00 [INFO] Linear  89/100 | Train Loss: 0.5950 Acc: 0.6885 | Val Loss: 0.6008 Acc: 0.6867 AUC: 0.7420
+2026-03-25 13:50:01 [INFO] Linear  90/100 | Train Loss: 0.5949 Acc: 0.6885 | Val Loss: 0.6007 Acc: 0.6868 AUC: 0.7423
+2026-03-25 13:50:02 [INFO] Linear  91/100 | Train Loss: 0.5937 Acc: 0.6889 | Val Loss: 0.6020 Acc: 0.6820 AUC: 0.7426
+2026-03-25 13:50:03 [INFO] Linear  92/100 | Train Loss: 0.5936 Acc: 0.6892 | Val Loss: 0.6037 Acc: 0.6822 AUC: 0.7426
+2026-03-25 13:50:04 [INFO] Linear  93/100 | Train Loss: 0.5939 Acc: 0.6891 | Val Loss: 0.6006 Acc: 0.6867 AUC: 0.7427 *
+2026-03-25 13:50:05 [INFO] Linear  94/100 | Train Loss: 0.5932 Acc: 0.6897 | Val Loss: 0.5998 Acc: 0.6870 AUC: 0.7429 *
+2026-03-25 13:50:06 [INFO] Linear  95/100 | Train Loss: 0.5933 Acc: 0.6906 | Val Loss: 0.6003 Acc: 0.6837 AUC: 0.7428
+2026-03-25 13:50:07 [INFO] Linear  96/100 | Train Loss: 0.5933 Acc: 0.6898 | Val Loss: 0.6014 Acc: 0.6842 AUC: 0.7428
+2026-03-25 13:50:08 [INFO] Linear  97/100 | Train Loss: 0.5927 Acc: 0.6911 | Val Loss: 0.6003 Acc: 0.6860 AUC: 0.7426
+2026-03-25 13:50:09 [INFO] Linear  98/100 | Train Loss: 0.5927 Acc: 0.6899 | Val Loss: 0.6001 Acc: 0.6864 AUC: 0.7426
+2026-03-25 13:50:10 [INFO] Linear  99/100 | Train Loss: 0.5925 Acc: 0.6911 | Val Loss: 0.6005 Acc: 0.6845 AUC: 0.7425
+2026-03-25 13:50:11 [INFO] Linear 100/100 | Train Loss: 0.5926 Acc: 0.6903 | Val Loss: 0.6001 Acc: 0.6857 AUC: 0.7425
+2026-03-25 13:50:11 [INFO] Linear probe done. Best val AUC: 0.7429
+2026-03-25 13:50:11 [INFO] === Phase 3: Test Evaluation ===
+2026-03-25 13:50:11 [INFO] Test AUC: 0.7477
+2026-03-25 13:50:11 [INFO] Test Acc: 0.6875
+2026-03-25 13:50:11 [INFO] Done!

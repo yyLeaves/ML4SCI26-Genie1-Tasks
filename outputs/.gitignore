@@ -1,0 +1,6 @@
+# Ignore checkpoints and large files
+*.pt
+*.npy
+
+# Keep logs, plots, and directory structure
+!.gitignore

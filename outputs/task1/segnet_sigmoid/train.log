@@ -1,0 +1,10 @@
+2026-03-23 14:16:28 [INFO] Experiment: segnet_sigmoid
+2026-03-23 14:16:28 [INFO] Config: {'experiment_name': 'segnet_sigmoid', 'model': 'segnet', 'data_path': 'data/processed/percentile/all_images.npy', 'train_split': 0.8, 'latent_dim': 512, 'encoder_channels': [32, 64, 128], 'output_act': 'sigmoid', 'batch_size': 512, 'learning_rate': 0.003, 'min_lr': 1e-05, 'weight_decay': 1e-05, 'num_epochs': 100, 'patience': 10, 'seed': 42}
+2026-03-23 14:16:28 [INFO] Data: 139306 samples
+2026-03-23 14:16:29 [INFO] Parameters: 33,774,723
+2026-03-23 14:16:29 [INFO] Loss: MSE
+2026-03-23 14:20:16 [INFO] Experiment: segnet_sigmoid
+2026-03-23 14:20:16 [INFO] Config: {'experiment_name': 'segnet_sigmoid', 'model': 'segnet', 'data_path': 'data/processed/percentile/all_images.npy', 'train_split': 0.8, 'latent_dim': 512, 'encoder_channels': [32, 64, 128], 'output_act': 'sigmoid', 'batch_size': 128, 'learning_rate': 0.003, 'min_lr': 1e-05, 'weight_decay': 1e-05, 'num_epochs': 100, 'patience': 10, 'seed': 42}
+2026-03-23 14:20:16 [INFO] Data: 139306 samples
+2026-03-23 14:20:16 [INFO] Parameters: 33,774,723
+2026-03-23 14:20:16 [INFO] Loss: MSE

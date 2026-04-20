@@ -1,0 +1,78 @@
+2026-03-24 05:56:13 [INFO] Loaded model from epoch 62, val_loss=0.000042
+2026-03-24 05:56:13 [INFO] Data: 139306 samples (train: 111444, val: 27862)
+2026-03-24 05:56:13 [INFO] --- Validation Metrics ---
+2026-03-24 05:56:29 [INFO]   MSE:  0.000042
+2026-03-24 05:56:29 [INFO]   MAE:  0.000548
+2026-03-24 05:56:29 [INFO]   MSE (Tracks): 0.000017
+2026-03-24 05:56:29 [INFO]   MSE (ECAL  ): 0.000072
+2026-03-24 05:56:29 [INFO]   MSE (HCAL  ): 0.000036
+2026-03-24 05:56:29 [INFO] --- Train Metrics ---
+2026-03-24 05:57:57 [INFO]   MSE:  0.000035
+2026-03-24 05:57:57 [INFO]   MAE:  0.000498
+2026-03-24 05:57:57 [INFO] Loading raw total pT for inverse transform...
+2026-03-24 05:59:13 [INFO] Loaded total_pt: (139306, 3)
+2026-03-24 05:59:17 [INFO] Saved reconstruction plots (normalized + raw)
+2026-03-24 05:59:23 [INFO] Saved jet event plots
+2026-03-24 05:59:24 [INFO] Saved scatter comparison plot
+2026-03-24 06:00:00 [INFO] Saved: outputs\task1\segnet_ptlogpct\avg_reconstruction.png (normalized + raw)
+2026-03-24 06:00:07 [INFO] Saved: outputs\task1\segnet_ptlogpct\loss_distribution.png
+2026-03-24 06:00:07 [INFO] Done!
+2026-03-24 06:07:42 [INFO] Loaded model from epoch 62, val_loss=0.000042
+2026-03-24 06:07:42 [INFO] Data: 139306 samples (train: 111444, val: 27862)
+2026-03-24 06:07:42 [INFO] --- Validation Metrics ---
+2026-03-24 06:07:55 [INFO]   MSE:  0.000042
+2026-03-24 06:07:55 [INFO]   MAE:  0.000548
+2026-03-24 06:07:55 [INFO]   MSE (Tracks): 0.000017
+2026-03-24 06:07:55 [INFO]   MSE (ECAL  ): 0.000072
+2026-03-24 06:07:55 [INFO]   MSE (HCAL  ): 0.000036
+2026-03-24 06:07:55 [INFO] --- Train Metrics ---
+2026-03-24 06:09:12 [INFO]   MSE:  0.000035
+2026-03-24 06:09:12 [INFO]   MAE:  0.000498
+2026-03-24 06:09:12 [INFO] Loading raw total pT for inverse transform...
+2026-03-24 06:10:31 [INFO] Loaded total_pt: (139306, 3)
+2026-03-24 06:10:35 [INFO] Saved reconstruction plots (normalized + raw)
+2026-03-24 06:10:40 [INFO] Saved jet event plots
+2026-03-24 06:10:42 [INFO] Saved scatter comparison plot
+2026-03-24 06:11:25 [INFO] Saved: outputs\task1\segnet_ptlogpct\avg_reconstruction.png (normalized + raw)
+2026-03-24 06:11:32 [INFO] Saved: outputs\task1\segnet_ptlogpct\loss_distribution.png
+2026-03-24 06:11:32 [INFO] Done!
+2026-03-24 06:12:55 [INFO] Loaded model from epoch 62, val_loss=0.000042
+2026-03-24 06:12:55 [INFO] Data: 139306 samples (train: 111444, val: 27862)
+2026-03-24 06:12:55 [INFO] --- Validation Metrics ---
+2026-03-24 06:13:08 [INFO]   MSE:  0.000042
+2026-03-24 06:13:08 [INFO]   MAE:  0.000548
+2026-03-24 06:13:08 [INFO]   MSE (Tracks): 0.000017
+2026-03-24 06:13:08 [INFO]   MSE (ECAL  ): 0.000072
+2026-03-24 06:13:08 [INFO]   MSE (HCAL  ): 0.000036
+2026-03-24 06:13:08 [INFO] --- Train Metrics ---
+2026-03-24 06:14:23 [INFO]   MSE:  0.000035
+2026-03-24 06:14:23 [INFO]   MAE:  0.000498
+2026-03-24 06:14:23 [INFO] Loading raw total pT for inverse transform...
+2026-03-24 06:15:50 [INFO] Loaded total_pt: (139306, 3)
+2026-03-24 06:15:54 [INFO] Saved reconstruction plots (normalized + raw)
+2026-03-24 06:16:01 [INFO] Saved jet event plots
+2026-03-24 06:16:02 [INFO] Saved scatter comparison plot
+2026-03-24 06:16:43 [INFO] Loaded model from epoch 62, val_loss=0.000042
+2026-03-24 06:16:43 [INFO] Data: 139306 samples (train: 111444, val: 27862)
+2026-03-24 06:16:43 [INFO] --- Validation Metrics ---
+2026-03-24 06:16:50 [INFO] Saved: outputs\task1\segnet_ptlogpct\avg_reconstruction.png (normalized + raw)
+2026-03-24 06:16:58 [INFO]   MSE:  0.000042
+2026-03-24 06:16:58 [INFO]   MAE:  0.000548
+2026-03-24 06:16:58 [INFO]   MSE (Tracks): 0.000017
+2026-03-24 06:16:58 [INFO]   MSE (ECAL  ): 0.000072
+2026-03-24 06:16:58 [INFO]   MSE (HCAL  ): 0.000036
+2026-03-24 06:16:58 [INFO] --- Train Metrics ---
+2026-03-24 06:17:01 [INFO] Saved: outputs\task1\segnet_ptlogpct\loss_distribution.png
+2026-03-24 06:18:19 [INFO]   MSE:  0.000035
+2026-03-24 06:18:19 [INFO]   MAE:  0.000498
+2026-03-24 06:18:19 [INFO] Loading raw total pT for inverse transform...
+2026-03-24 06:18:46 [INFO] Saved quark/gluon avg reconstruction plots
+2026-03-24 06:18:46 [INFO] Done!
+2026-03-24 06:20:05 [INFO] Loaded total_pt: (139306, 3)
+2026-03-24 06:20:09 [INFO] Saved reconstruction plots (normalized + raw)
+2026-03-24 06:20:15 [INFO] Saved jet event plots
+2026-03-24 06:20:17 [INFO] Saved scatter comparison plot
+2026-03-24 06:20:53 [INFO] Saved: outputs\task1\segnet_ptlogpct\avg_reconstruction.png (normalized + raw)
+2026-03-24 06:21:03 [INFO] Saved: outputs\task1\segnet_ptlogpct\loss_distribution.png
+2026-03-24 06:22:36 [INFO] Saved quark/gluon x train/val avg reconstruction plots
+2026-03-24 06:22:36 [INFO] Done!

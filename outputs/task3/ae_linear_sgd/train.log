@@ -1,0 +1,891 @@
+2026-03-25 11:10:05 [INFO] Experiment: ae_linear_sgd
+2026-03-25 11:10:05 [INFO] Config: {'experiment_name': 'ae_linear_sgd', 'ae_checkpoint': 'outputs/task1/segnet_ptlogpct/best.pt', 'batch_size': 256, 'optimizer': 'sgd', 'linear_lr': 0.1, 'min_lr': 0.001, 'weight_decay': 0, 'linear_epochs': 200, 'seed': 42}
+2026-03-25 11:10:05 [INFO] Loaded SegNet encoder from segnet_ptlogpct (epoch 61)
+2026-03-25 11:10:05 [INFO] Data: 139306 images
+2026-03-25 11:10:05 [INFO] Split: train=111444, val=13931, test=13931
+2026-03-25 11:10:05 [INFO] === Phase 1: Feature Extraction ===
+2026-03-25 11:10:05 [INFO] Extracting train features...
+2026-03-25 11:10:13 [INFO]   Extracted 12800/111444
+2026-03-25 11:10:21 [INFO]   Extracted 25600/111444
+2026-03-25 11:10:29 [INFO]   Extracted 38400/111444
+2026-03-25 11:10:36 [INFO]   Extracted 51200/111444
+2026-03-25 11:10:43 [INFO]   Extracted 64000/111444
+2026-03-25 11:10:53 [INFO]   Extracted 76800/111444
+2026-03-25 11:11:05 [INFO]   Extracted 89600/111444
+2026-03-25 11:11:18 [INFO]   Extracted 102400/111444
+2026-03-25 11:11:27 [INFO] Extracting val features...
+2026-03-25 11:11:40 [INFO]   Extracted 12800/13931
+2026-03-25 11:11:41 [INFO] Extracting test features...
+2026-03-25 11:11:52 [INFO]   Extracted 12800/13931
+2026-03-25 11:11:53 [INFO] Feature dim: 512
+2026-03-25 11:11:53 [INFO] === Phase 2: Linear Classification ===
+2026-03-25 11:11:55 [INFO] Optimizer: sgd, lr=0.1, wd=0, min_lr=0.001
+2026-03-25 11:11:56 [INFO] Epoch   1/200 | Train Loss: 418.3924 Acc: 0.5970 AUC: 0.5582 | Val Loss: 402.4877 Acc: 0.5506 AUC: 0.5529 | LR: 1.00e-01 *
+2026-03-25 11:11:58 [INFO] Epoch   2/200 | Train Loss: 558.5071 Acc: 0.5965 AUC: 0.5689 | Val Loss: 689.9271 Acc: 0.5630 AUC: 0.5640 | LR: 1.00e-01 *
+2026-03-25 11:12:00 [INFO] Epoch   3/200 | Train Loss: 436.9551 Acc: 0.6059 AUC: 0.6746 | Val Loss: 202.9764 Acc: 0.6666 AUC: 0.6710 | LR: 9.99e-02 *
+2026-03-25 11:12:02 [INFO] Epoch   4/200 | Train Loss: 444.1002 Acc: 0.6017 AUC: 0.6392 | Val Loss: 302.7827 Acc: 0.6170 AUC: 0.6330 | LR: 9.99e-02
+2026-03-25 11:12:04 [INFO] Epoch   5/200 | Train Loss: 504.7926 Acc: 0.6021 AUC: 0.6929 | Val Loss: 225.7033 Acc: 0.6771 AUC: 0.6858 | LR: 9.98e-02 *
+2026-03-25 11:12:05 [INFO] Epoch   6/200 | Train Loss: 437.8395 Acc: 0.6040 AUC: 0.5000 | Val Loss: 1813.7531 Acc: 0.5000 AUC: 0.5000 | LR: 9.98e-02
+2026-03-25 11:12:07 [INFO] Epoch   7/200 | Train Loss: 484.7558 Acc: 0.5994 AUC: 0.6435 | Val Loss: 838.8889 Acc: 0.6298 AUC: 0.6344 | LR: 9.97e-02
+2026-03-25 11:12:09 [INFO] Epoch   8/200 | Train Loss: 389.9277 Acc: 0.6081 AUC: 0.6886 | Val Loss: 172.2271 Acc: 0.6727 AUC: 0.6793 | LR: 9.96e-02
+2026-03-25 11:12:11 [INFO] Epoch   9/200 | Train Loss: 409.5305 Acc: 0.6018 AUC: 0.6739 | Val Loss: 216.4283 Acc: 0.6612 AUC: 0.6653 | LR: 9.95e-02
+2026-03-25 11:12:13 [INFO] Epoch  10/200 | Train Loss: 518.4560 Acc: 0.6008 AUC: 0.6276 | Val Loss: 267.5470 Acc: 0.6154 AUC: 0.6193 | LR: 9.94e-02
+2026-03-25 11:12:14 [INFO] Epoch  11/200 | Train Loss: 449.9899 Acc: 0.6047 AUC: 0.5000 | Val Loss: 2406.5753 Acc: 0.5000 AUC: 0.5000 | LR: 9.93e-02
+2026-03-25 11:12:16 [INFO] Epoch  12/200 | Train Loss: 518.0203 Acc: 0.6018 AUC: 0.5764 | Val Loss: 414.4644 Acc: 0.5560 AUC: 0.5696 | LR: 9.91e-02
+2026-03-25 11:12:18 [INFO] Epoch  13/200 | Train Loss: 386.8902 Acc: 0.6027 AUC: 0.5492 | Val Loss: 502.6542 Acc: 0.5474 AUC: 0.5482 | LR: 9.90e-02
+2026-03-25 11:12:20 [INFO] Epoch  14/200 | Train Loss: 575.9599 Acc: 0.5998 AUC: 0.5126 | Val Loss: 913.5213 Acc: 0.5121 AUC: 0.5126 | LR: 9.88e-02
+2026-03-25 11:12:22 [INFO] Epoch  15/200 | Train Loss: 375.2489 Acc: 0.6034 AUC: 0.5981 | Val Loss: 389.7267 Acc: 0.5890 AUC: 0.5914 | LR: 9.86e-02
+2026-03-25 11:12:24 [INFO] Epoch  16/200 | Train Loss: 445.1696 Acc: 0.6026 AUC: 0.6115 | Val Loss: 351.4134 Acc: 0.5888 AUC: 0.6052 | LR: 9.84e-02
+2026-03-25 11:12:26 [INFO] Epoch  17/200 | Train Loss: 476.0701 Acc: 0.6013 AUC: 0.5543 | Val Loss: 1001.8120 Acc: 0.5479 AUC: 0.5491 | LR: 9.82e-02
+2026-03-25 11:12:28 [INFO] Epoch  18/200 | Train Loss: 423.7015 Acc: 0.6074 AUC: 0.6213 | Val Loss: 266.7131 Acc: 0.6104 AUC: 0.6133 | LR: 9.80e-02
+2026-03-25 11:12:29 [INFO] Epoch  19/200 | Train Loss: 454.2162 Acc: 0.6038 AUC: 0.6610 | Val Loss: 197.8498 Acc: 0.6529 AUC: 0.6574 | LR: 9.78e-02
+2026-03-25 11:12:31 [INFO] Epoch  20/200 | Train Loss: 346.9067 Acc: 0.6040 AUC: 0.6889 | Val Loss: 206.2141 Acc: 0.6659 AUC: 0.6803 | LR: 9.76e-02
+2026-03-25 11:12:33 [INFO] Epoch  21/200 | Train Loss: 652.5175 Acc: 0.6010 AUC: 0.5443 | Val Loss: 781.4703 Acc: 0.5403 AUC: 0.5412 | LR: 9.73e-02
+2026-03-25 11:12:35 [INFO] Epoch  22/200 | Train Loss: 445.8616 Acc: 0.6026 AUC: 0.6623 | Val Loss: 262.1934 Acc: 0.6407 AUC: 0.6557 | LR: 9.71e-02
+2026-03-25 11:12:37 [INFO] Epoch  23/200 | Train Loss: 509.6093 Acc: 0.6010 AUC: 0.6039 | Val Loss: 914.5014 Acc: 0.5906 AUC: 0.5964 | LR: 9.68e-02
+2026-03-25 11:12:39 [INFO] Epoch  24/200 | Train Loss: 462.3631 Acc: 0.6031 AUC: 0.5045 | Val Loss: 1429.4374 Acc: 0.5036 AUC: 0.5050 | LR: 9.65e-02
+2026-03-25 11:12:41 [INFO] Epoch  25/200 | Train Loss: 466.6216 Acc: 0.6030 AUC: 0.6521 | Val Loss: 222.2533 Acc: 0.6399 AUC: 0.6447 | LR: 9.62e-02
+2026-03-25 11:12:43 [INFO] Epoch  26/200 | Train Loss: 430.6180 Acc: 0.5990 AUC: 0.6761 | Val Loss: 425.2479 Acc: 0.6644 AUC: 0.6674 | LR: 9.59e-02
+2026-03-25 11:12:45 [INFO] Epoch  27/200 | Train Loss: 424.0549 Acc: 0.6082 AUC: 0.5159 | Val Loss: 561.5585 Acc: 0.5156 AUC: 0.5170 | LR: 9.56e-02
+2026-03-25 11:12:47 [INFO] Epoch  28/200 | Train Loss: 401.1473 Acc: 0.6025 AUC: 0.6972 | Val Loss: 169.2546 Acc: 0.6830 AUC: 0.6919 | LR: 9.53e-02 *
+2026-03-25 11:12:48 [INFO] Epoch  29/200 | Train Loss: 450.3603 Acc: 0.6048 AUC: 0.5838 | Val Loss: 367.1202 Acc: 0.5626 AUC: 0.5771 | LR: 9.50e-02
+2026-03-25 11:12:50 [INFO] Epoch  30/200 | Train Loss: 391.0689 Acc: 0.6013 AUC: 0.6072 | Val Loss: 384.8821 Acc: 0.5930 AUC: 0.5946 | LR: 9.46e-02
+2026-03-25 11:12:52 [INFO] Epoch  31/200 | Train Loss: 364.9257 Acc: 0.6035 AUC: 0.5160 | Val Loss: 561.0343 Acc: 0.5155 AUC: 0.5163 | LR: 9.42e-02
+2026-03-25 11:12:54 [INFO] Epoch  32/200 | Train Loss: 418.5971 Acc: 0.6016 AUC: 0.6385 | Val Loss: 219.5998 Acc: 0.6188 AUC: 0.6307 | LR: 9.39e-02
+2026-03-25 11:12:56 [INFO] Epoch  33/200 | Train Loss: 568.7643 Acc: 0.6012 AUC: 0.5342 | Val Loss: 487.2456 Acc: 0.5290 AUC: 0.5301 | LR: 9.35e-02
+2026-03-25 11:12:58 [INFO] Epoch  34/200 | Train Loss: 468.9678 Acc: 0.6028 AUC: 0.6136 | Val Loss: 339.0456 Acc: 0.6047 AUC: 0.6060 | LR: 9.31e-02
+2026-03-25 11:13:00 [INFO] Epoch  35/200 | Train Loss: 357.6986 Acc: 0.6027 AUC: 0.6957 | Val Loss: 172.2738 Acc: 0.6730 AUC: 0.6886 | LR: 9.27e-02
+2026-03-25 11:13:02 [INFO] Epoch  36/200 | Train Loss: 423.2333 Acc: 0.6010 AUC: 0.5848 | Val Loss: 343.9276 Acc: 0.5781 AUC: 0.5810 | LR: 9.23e-02
+2026-03-25 11:13:03 [INFO] Epoch  37/200 | Train Loss: 463.0974 Acc: 0.6031 AUC: 0.6769 | Val Loss: 227.9585 Acc: 0.6643 AUC: 0.6703 | LR: 9.19e-02
+2026-03-25 11:13:05 [INFO] Epoch  38/200 | Train Loss: 467.1111 Acc: 0.6048 AUC: 0.5908 | Val Loss: 436.9759 Acc: 0.5737 AUC: 0.5863 | LR: 9.14e-02
+2026-03-25 11:13:07 [INFO] Epoch  39/200 | Train Loss: 428.2053 Acc: 0.6025 AUC: 0.6442 | Val Loss: 236.5751 Acc: 0.6330 AUC: 0.6378 | LR: 9.10e-02
+2026-03-25 11:13:09 [INFO] Epoch  40/200 | Train Loss: 482.1876 Acc: 0.6019 AUC: 0.6556 | Val Loss: 316.2750 Acc: 0.6445 AUC: 0.6485 | LR: 9.05e-02
+2026-03-25 11:13:11 [INFO] Epoch  41/200 | Train Loss: 402.8890 Acc: 0.6075 AUC: 0.5079 | Val Loss: 529.6376 Acc: 0.5076 AUC: 0.5080 | LR: 9.01e-02
+2026-03-25 11:13:13 [INFO] Epoch  42/200 | Train Loss: 352.0219 Acc: 0.6000 AUC: 0.6438 | Val Loss: 426.9185 Acc: 0.6336 AUC: 0.6360 | LR: 8.96e-02
+2026-03-25 11:13:15 [INFO] Epoch  43/200 | Train Loss: 410.6867 Acc: 0.6048 AUC: 0.6563 | Val Loss: 236.0225 Acc: 0.6399 AUC: 0.6546 | LR: 8.91e-02
+2026-03-25 11:13:17 [INFO] Epoch  44/200 | Train Loss: 530.5584 Acc: 0.6027 AUC: 0.6698 | Val Loss: 297.2017 Acc: 0.6579 AUC: 0.6618 | LR: 8.86e-02
+2026-03-25 11:13:18 [INFO] Epoch  45/200 | Train Loss: 344.7714 Acc: 0.6051 AUC: 0.6821 | Val Loss: 339.5222 Acc: 0.6732 AUC: 0.6770 | LR: 8.81e-02
+2026-03-25 11:13:20 [INFO] Epoch  46/200 | Train Loss: 441.6004 Acc: 0.6024 AUC: 0.5898 | Val Loss: 1092.5437 Acc: 0.5804 AUC: 0.5860 | LR: 8.76e-02
+2026-03-25 11:13:22 [INFO] Epoch  47/200 | Train Loss: 357.5194 Acc: 0.6030 AUC: 0.5363 | Val Loss: 737.3187 Acc: 0.5344 AUC: 0.5352 | LR: 8.71e-02
+2026-03-25 11:13:24 [INFO] Epoch  48/200 | Train Loss: 401.1068 Acc: 0.6013 AUC: 0.5021 | Val Loss: 1557.9938 Acc: 0.5019 AUC: 0.5021 | LR: 8.66e-02
+2026-03-25 11:13:26 [INFO] Epoch  49/200 | Train Loss: 413.8027 Acc: 0.6053 AUC: 0.6344 | Val Loss: 275.6501 Acc: 0.6242 AUC: 0.6283 | LR: 8.60e-02
+2026-03-25 11:13:28 [INFO] Epoch  50/200 | Train Loss: 327.1327 Acc: 0.6055 AUC: 0.5818 | Val Loss: 373.9122 Acc: 0.5589 AUC: 0.5746 | LR: 8.55e-02
+2026-03-25 11:13:30 [INFO] Epoch  51/200 | Train Loss: 389.3286 Acc: 0.6022 AUC: 0.6870 | Val Loss: 176.5162 Acc: 0.6666 AUC: 0.6810 | LR: 8.49e-02
+2026-03-25 11:13:32 [INFO] Epoch  52/200 | Train Loss: 331.6872 Acc: 0.6016 AUC: 0.6240 | Val Loss: 253.2516 Acc: 0.6135 AUC: 0.6164 | LR: 8.44e-02
+2026-03-25 11:13:34 [INFO] Epoch  53/200 | Train Loss: 365.5263 Acc: 0.6050 AUC: 0.6200 | Val Loss: 246.9200 Acc: 0.6118 AUC: 0.6140 | LR: 8.38e-02
+2026-03-25 11:13:36 [INFO] Epoch  54/200 | Train Loss: 592.8137 Acc: 0.6022 AUC: 0.5933 | Val Loss: 471.2565 Acc: 0.5738 AUC: 0.5858 | LR: 8.32e-02
+2026-03-25 11:13:38 [INFO] Epoch  55/200 | Train Loss: 344.8420 Acc: 0.6046 AUC: 0.6979 | Val Loss: 147.0847 Acc: 0.6857 AUC: 0.6952 | LR: 8.26e-02 *
+2026-03-25 11:13:40 [INFO] Epoch  56/200 | Train Loss: 445.1113 Acc: 0.6036 AUC: 0.6956 | Val Loss: 147.2788 Acc: 0.6779 AUC: 0.6933 | LR: 8.21e-02
+2026-03-25 11:13:42 [INFO] Epoch  57/200 | Train Loss: 489.0834 Acc: 0.5990 AUC: 0.5889 | Val Loss: 748.0315 Acc: 0.5745 AUC: 0.5819 | LR: 8.14e-02
+2026-03-25 11:13:44 [INFO] Epoch  58/200 | Train Loss: 334.7907 Acc: 0.6066 AUC: 0.6717 | Val Loss: 223.6845 Acc: 0.6480 AUC: 0.6633 | LR: 8.08e-02
+2026-03-25 11:13:45 [INFO] Epoch  59/200 | Train Loss: 360.2215 Acc: 0.6051 AUC: 0.5004 | Val Loss: 889.4847 Acc: 0.5003 AUC: 0.5006 | LR: 8.02e-02
+2026-03-25 11:13:47 [INFO] Epoch  60/200 | Train Loss: 344.0265 Acc: 0.6005 AUC: 0.6271 | Val Loss: 250.1033 Acc: 0.6197 AUC: 0.6229 | LR: 7.96e-02
+2026-03-25 11:13:49 [INFO] Epoch  61/200 | Train Loss: 396.0801 Acc: 0.6024 AUC: 0.6247 | Val Loss: 538.1910 Acc: 0.6160 AUC: 0.6179 | LR: 7.90e-02
+2026-03-25 11:13:51 [INFO] Epoch  62/200 | Train Loss: 351.5375 Acc: 0.6069 AUC: 0.5003 | Val Loss: 717.7169 Acc: 0.5002 AUC: 0.5001 | LR: 7.83e-02
+2026-03-25 11:13:53 [INFO] Epoch  63/200 | Train Loss: 351.1971 Acc: 0.6031 AUC: 0.6862 | Val Loss: 194.8309 Acc: 0.6610 AUC: 0.6753 | LR: 7.77e-02
+2026-03-25 11:13:56 [INFO] Epoch  64/200 | Train Loss: 343.5007 Acc: 0.6027 AUC: 0.5120 | Val Loss: 923.5773 Acc: 0.5109 AUC: 0.5117 | LR: 7.70e-02
+2026-03-25 11:14:39 [INFO] Experiment: ae_linear_sgd
+2026-03-25 11:14:39 [INFO] Config: {'experiment_name': 'ae_linear_sgd', 'ae_checkpoint': 'outputs/task1/segnet_ptlogpct/best.pt', 'batch_size': 256, 'optimizer': 'sgd', 'linear_lr': 0.01, 'min_lr': 0.0001, 'weight_decay': 0, 'linear_epochs': 200, 'seed': 42}
+2026-03-25 11:14:40 [INFO] Loaded SegNet encoder from segnet_ptlogpct (epoch 61)
+2026-03-25 11:14:40 [INFO] Data: 139306 images
+2026-03-25 11:14:40 [INFO] Split: train=111444, val=13931, test=13931
+2026-03-25 11:14:40 [INFO] === Phase 1: Feature Extraction ===
+2026-03-25 11:14:40 [INFO] Extracting train features...
+2026-03-25 11:14:49 [INFO]   Extracted 12800/111444
+2026-03-25 11:14:59 [INFO]   Extracted 25600/111444
+2026-03-25 11:15:05 [INFO]   Extracted 38400/111444
+2026-03-25 11:15:12 [INFO]   Extracted 51200/111444
+2026-03-25 11:15:18 [INFO]   Extracted 64000/111444
+2026-03-25 11:15:25 [INFO]   Extracted 76800/111444
+2026-03-25 11:15:33 [INFO]   Extracted 89600/111444
+2026-03-25 11:15:40 [INFO]   Extracted 102400/111444
+2026-03-25 11:15:47 [INFO] Extracting val features...
+2026-03-25 11:15:58 [INFO]   Extracted 12800/13931
+2026-03-25 11:15:59 [INFO] Extracting test features...
+2026-03-25 11:16:09 [INFO]   Extracted 12800/13931
+2026-03-25 11:16:10 [INFO] Feature dim: 512
+2026-03-25 11:16:10 [INFO] === Phase 2: Linear Classification ===
+2026-03-25 11:16:12 [INFO] Optimizer: sgd, lr=0.01, wd=0, min_lr=0.0001
+2026-03-25 11:16:14 [INFO] Epoch   1/200 | Train Loss: 59.3743 Acc: 0.5948 AUC: 0.7015 | Val Loss: 48.0232 Acc: 0.5384 AUC: 0.6924 | LR: 1.00e-02 *
+2026-03-25 11:16:16 [INFO] Epoch   2/200 | Train Loss: 47.9592 Acc: 0.6027 AUC: 0.5000 | Val Loss: 260.1944 Acc: 0.5000 AUC: 0.5000 | LR: 1.00e-02
+2026-03-25 11:16:18 [INFO] Epoch   3/200 | Train Loss: 54.2512 Acc: 0.6051 AUC: 0.5000 | Val Loss: 164.9656 Acc: 0.5000 AUC: 0.5000 | LR: 9.99e-03
+2026-03-25 11:16:20 [INFO] Epoch   4/200 | Train Loss: 54.3833 Acc: 0.5996 AUC: 0.7219 | Val Loss: 17.9035 Acc: 0.6804 AUC: 0.7143 | LR: 9.99e-03 *
+2026-03-25 11:16:22 [INFO] Epoch   5/200 | Train Loss: 63.3899 Acc: 0.6011 AUC: 0.6657 | Val Loss: 26.3318 Acc: 0.6358 AUC: 0.6590 | LR: 9.98e-03
+2026-03-25 11:16:24 [INFO] Epoch   6/200 | Train Loss: 48.6645 Acc: 0.6033 AUC: 0.5633 | Val Loss: 41.7992 Acc: 0.5374 AUC: 0.5605 | LR: 9.98e-03
+2026-03-25 11:16:26 [INFO] Epoch   7/200 | Train Loss: 43.4383 Acc: 0.6041 AUC: 0.7311 | Val Loss: 17.9698 Acc: 0.6526 AUC: 0.7217 | LR: 9.97e-03 *
+2026-03-25 11:16:27 [INFO] Epoch   8/200 | Train Loss: 49.2503 Acc: 0.6000 AUC: 0.7118 | Val Loss: 21.2874 Acc: 0.6409 AUC: 0.6991 | LR: 9.96e-03
+2026-03-25 11:16:29 [INFO] Epoch   9/200 | Train Loss: 50.3902 Acc: 0.6021 AUC: 0.7184 | Val Loss: 16.1769 Acc: 0.6743 AUC: 0.7100 | LR: 9.95e-03
+2026-03-25 11:16:31 [INFO] Epoch  10/200 | Train Loss: 50.2807 Acc: 0.6032 AUC: 0.7230 | Val Loss: 35.0606 Acc: 0.6300 AUC: 0.7145 | LR: 9.94e-03
+2026-03-25 11:16:33 [INFO] Epoch  11/200 | Train Loss: 48.3409 Acc: 0.6063 AUC: 0.5063 | Val Loss: 71.6299 Acc: 0.5040 AUC: 0.5070 | LR: 9.93e-03
+2026-03-25 11:16:35 [INFO] Epoch  12/200 | Train Loss: 34.9594 Acc: 0.6016 AUC: 0.7310 | Val Loss: 18.4754 Acc: 0.6811 AUC: 0.7216 | LR: 9.91e-03
+2026-03-25 11:16:37 [INFO] Epoch  13/200 | Train Loss: 39.4771 Acc: 0.6002 AUC: 0.6689 | Val Loss: 25.3215 Acc: 0.6323 AUC: 0.6623 | LR: 9.90e-03
+2026-03-25 11:16:38 [INFO] Epoch  14/200 | Train Loss: 55.5382 Acc: 0.6040 AUC: 0.6905 | Val Loss: 22.2052 Acc: 0.6549 AUC: 0.6825 | LR: 9.88e-03
+2026-03-25 11:16:40 [INFO] Epoch  15/200 | Train Loss: 61.6040 Acc: 0.6016 AUC: 0.7108 | Val Loss: 45.6887 Acc: 0.6128 AUC: 0.7059 | LR: 9.86e-03
+2026-03-25 11:16:42 [INFO] Epoch  16/200 | Train Loss: 56.5357 Acc: 0.6058 AUC: 0.7098 | Val Loss: 44.8723 Acc: 0.5916 AUC: 0.7005 | LR: 9.84e-03
+2026-03-25 11:16:44 [INFO] Epoch  17/200 | Train Loss: 42.7166 Acc: 0.6027 AUC: 0.5000 | Val Loss: 167.6891 Acc: 0.5000 AUC: 0.5000 | LR: 9.82e-03
+2026-03-25 11:16:46 [INFO] Epoch  18/200 | Train Loss: 40.4638 Acc: 0.6049 AUC: 0.6366 | Val Loss: 66.2827 Acc: 0.5128 AUC: 0.6289 | LR: 9.80e-03
+2026-03-25 11:16:48 [INFO] Epoch  19/200 | Train Loss: 50.4510 Acc: 0.6019 AUC: 0.6871 | Val Loss: 22.0250 Acc: 0.6572 AUC: 0.6828 | LR: 9.78e-03
+2026-03-25 11:16:50 [INFO] Epoch  20/200 | Train Loss: 46.4780 Acc: 0.6048 AUC: 0.5701 | Val Loss: 77.8462 Acc: 0.5014 AUC: 0.5654 | LR: 9.76e-03
+2026-03-25 11:16:51 [INFO] Epoch  21/200 | Train Loss: 45.1329 Acc: 0.6026 AUC: 0.7266 | Val Loss: 22.2589 Acc: 0.6688 AUC: 0.7170 | LR: 9.73e-03
+2026-03-25 11:16:53 [INFO] Epoch  22/200 | Train Loss: 44.5574 Acc: 0.6039 AUC: 0.7124 | Val Loss: 19.8255 Acc: 0.6539 AUC: 0.6984 | LR: 9.71e-03
+2026-03-25 11:16:55 [INFO] Epoch  23/200 | Train Loss: 49.6416 Acc: 0.6043 AUC: 0.7272 | Val Loss: 17.9493 Acc: 0.6855 AUC: 0.7208 | LR: 9.68e-03
+2026-03-25 11:16:57 [INFO] Epoch  24/200 | Train Loss: 39.9012 Acc: 0.6033 AUC: 0.5918 | Val Loss: 79.7031 Acc: 0.5029 AUC: 0.5887 | LR: 9.65e-03
+2026-03-25 11:16:59 [INFO] Epoch  25/200 | Train Loss: 44.9037 Acc: 0.6009 AUC: 0.5622 | Val Loss: 145.4466 Acc: 0.5144 AUC: 0.5584 | LR: 9.62e-03
+2026-03-25 11:17:01 [INFO] Epoch  26/200 | Train Loss: 40.8609 Acc: 0.6069 AUC: 0.6697 | Val Loss: 23.5723 Acc: 0.6350 AUC: 0.6606 | LR: 9.59e-03
+2026-03-25 11:17:03 [INFO] Epoch  27/200 | Train Loss: 49.4572 Acc: 0.6035 AUC: 0.6659 | Val Loss: 29.5681 Acc: 0.6364 AUC: 0.6569 | LR: 9.56e-03
+2026-03-25 11:17:04 [INFO] Epoch  28/200 | Train Loss: 42.6602 Acc: 0.6050 AUC: 0.6386 | Val Loss: 70.6659 Acc: 0.5139 AUC: 0.6300 | LR: 9.53e-03
+2026-03-25 11:17:06 [INFO] Epoch  29/200 | Train Loss: 45.7962 Acc: 0.6005 AUC: 0.5031 | Val Loss: 140.8655 Acc: 0.5020 AUC: 0.5031 | LR: 9.50e-03
+2026-03-25 11:17:08 [INFO] Epoch  30/200 | Train Loss: 59.5136 Acc: 0.6042 AUC: 0.5200 | Val Loss: 265.7991 Acc: 0.5048 AUC: 0.5207 | LR: 9.46e-03
+2026-03-25 11:17:10 [INFO] Epoch  31/200 | Train Loss: 49.8615 Acc: 0.6099 AUC: 0.6971 | Val Loss: 47.2466 Acc: 0.5280 AUC: 0.6869 | LR: 9.42e-03
+2026-03-25 11:17:12 [INFO] Epoch  32/200 | Train Loss: 53.5155 Acc: 0.6009 AUC: 0.6650 | Val Loss: 62.5294 Acc: 0.5455 AUC: 0.6549 | LR: 9.39e-03
+2026-03-25 11:17:14 [INFO] Epoch  33/200 | Train Loss: 52.9061 Acc: 0.6033 AUC: 0.6416 | Val Loss: 27.1986 Acc: 0.6111 AUC: 0.6347 | LR: 9.35e-03
+2026-03-25 11:17:16 [INFO] Epoch  34/200 | Train Loss: 63.9068 Acc: 0.5969 AUC: 0.6961 | Val Loss: 84.6721 Acc: 0.6699 AUC: 0.6887 | LR: 9.31e-03
+2026-03-25 11:17:18 [INFO] Epoch  35/200 | Train Loss: 45.9740 Acc: 0.6091 AUC: 0.7260 | Val Loss: 19.1597 Acc: 0.6801 AUC: 0.7159 | LR: 9.27e-03
+2026-03-25 11:17:20 [INFO] Epoch  36/200 | Train Loss: 35.0125 Acc: 0.6038 AUC: 0.7356 | Val Loss: 18.1814 Acc: 0.6810 AUC: 0.7296 | LR: 9.23e-03 *
+2026-03-25 11:17:22 [INFO] Epoch  37/200 | Train Loss: 43.4931 Acc: 0.6047 AUC: 0.7214 | Val Loss: 19.1770 Acc: 0.6662 AUC: 0.7094 | LR: 9.19e-03
+2026-03-25 11:17:24 [INFO] Epoch  38/200 | Train Loss: 50.0262 Acc: 0.6047 AUC: 0.5957 | Val Loss: 72.9479 Acc: 0.5025 AUC: 0.5900 | LR: 9.14e-03
+2026-03-25 11:17:26 [INFO] Epoch  39/200 | Train Loss: 50.5256 Acc: 0.5994 AUC: 0.7279 | Val Loss: 17.8370 Acc: 0.6870 AUC: 0.7236 | LR: 9.10e-03
+2026-03-25 11:18:07 [INFO] Experiment: ae_linear_sgd
+2026-03-25 11:18:07 [INFO] Config: {'experiment_name': 'ae_linear_sgd', 'ae_checkpoint': 'outputs/task1/segnet_ptlogpct/best.pt', 'batch_size': 256, 'optimizer': 'sgd', 'linear_lr': 0.001, 'min_lr': 1e-05, 'weight_decay': 0, 'linear_epochs': 200, 'seed': 42}
+2026-03-25 11:18:07 [INFO] Loaded SegNet encoder from segnet_ptlogpct (epoch 61)
+2026-03-25 11:18:07 [INFO] Data: 139306 images
+2026-03-25 11:18:07 [INFO] Split: train=111444, val=13931, test=13931
+2026-03-25 11:18:07 [INFO] === Phase 1: Feature Extraction ===
+2026-03-25 11:18:07 [INFO] Extracting train features...
+2026-03-25 11:18:15 [INFO]   Extracted 12800/111444
+2026-03-25 11:18:23 [INFO]   Extracted 25600/111444
+2026-03-25 11:18:29 [INFO]   Extracted 38400/111444
+2026-03-25 11:18:36 [INFO]   Extracted 51200/111444
+2026-03-25 11:18:42 [INFO]   Extracted 64000/111444
+2026-03-25 11:18:49 [INFO]   Extracted 76800/111444
+2026-03-25 11:18:56 [INFO]   Extracted 89600/111444
+2026-03-25 11:19:04 [INFO]   Extracted 102400/111444
+2026-03-25 11:19:10 [INFO] Extracting val features...
+2026-03-25 11:19:21 [INFO]   Extracted 12800/13931
+2026-03-25 11:19:22 [INFO] Extracting test features...
+2026-03-25 11:19:33 [INFO]   Extracted 12800/13931
+2026-03-25 11:19:34 [INFO] Feature dim: 512
+2026-03-25 11:19:34 [INFO] === Phase 2: Linear Classification ===
+2026-03-25 11:19:35 [INFO] Optimizer: sgd, lr=0.001, wd=0, min_lr=1e-05
+2026-03-25 11:19:37 [INFO] Epoch   1/200 | Train Loss: 4.4249 Acc: 0.5972 AUC: 0.7451 | Val Loss: 2.4365 Acc: 0.6567 AUC: 0.7333 | LR: 1.00e-03 *
+2026-03-25 11:19:39 [INFO] Epoch   2/200 | Train Loss: 3.9758 Acc: 0.6023 AUC: 0.7425 | Val Loss: 2.6631 Acc: 0.6133 AUC: 0.7318 | LR: 1.00e-03
+2026-03-25 11:19:41 [INFO] Epoch   3/200 | Train Loss: 3.7701 Acc: 0.6033 AUC: 0.7395 | Val Loss: 12.6963 Acc: 0.5005 AUC: 0.7294 | LR: 9.99e-04
+2026-03-25 11:19:43 [INFO] Epoch   4/200 | Train Loss: 4.6665 Acc: 0.6074 AUC: 0.6930 | Val Loss: 2.4246 Acc: 0.5786 AUC: 0.6827 | LR: 9.99e-04
+2026-03-25 11:19:45 [INFO] Epoch   5/200 | Train Loss: 3.7674 Acc: 0.6019 AUC: 0.6961 | Val Loss: 7.3590 Acc: 0.5981 AUC: 0.6871 | LR: 9.98e-04
+2026-03-25 11:19:46 [INFO] Epoch   6/200 | Train Loss: 4.5457 Acc: 0.6035 AUC: 0.7542 | Val Loss: 5.7442 Acc: 0.5549 AUC: 0.7437 | LR: 9.98e-04 *
+2026-03-25 11:19:48 [INFO] Epoch   7/200 | Train Loss: 4.0392 Acc: 0.6043 AUC: 0.7523 | Val Loss: 5.7281 Acc: 0.5266 AUC: 0.7439 | LR: 9.97e-04 *
+2026-03-25 11:19:50 [INFO] Epoch   8/200 | Train Loss: 3.6351 Acc: 0.6046 AUC: 0.7084 | Val Loss: 6.8846 Acc: 0.5272 AUC: 0.7000 | LR: 9.96e-04
+2026-03-25 11:19:52 [INFO] Epoch   9/200 | Train Loss: 5.1859 Acc: 0.6026 AUC: 0.7396 | Val Loss: 4.9408 Acc: 0.5343 AUC: 0.7296 | LR: 9.95e-04
+2026-03-25 11:19:54 [INFO] Epoch  10/200 | Train Loss: 4.4428 Acc: 0.6017 AUC: 0.7003 | Val Loss: 7.1536 Acc: 0.6168 AUC: 0.6918 | LR: 9.94e-04
+2026-03-25 11:19:56 [INFO] Epoch  11/200 | Train Loss: 5.2980 Acc: 0.6063 AUC: 0.7371 | Val Loss: 5.6325 Acc: 0.5142 AUC: 0.7249 | LR: 9.93e-04
+2026-03-25 11:19:57 [INFO] Epoch  12/200 | Train Loss: 4.7571 Acc: 0.6001 AUC: 0.7381 | Val Loss: 5.7496 Acc: 0.5688 AUC: 0.7292 | LR: 9.91e-04
+2026-03-25 11:19:59 [INFO] Epoch  13/200 | Train Loss: 5.2156 Acc: 0.6068 AUC: 0.7443 | Val Loss: 1.9637 Acc: 0.6743 AUC: 0.7358 | LR: 9.90e-04
+2026-03-25 11:20:01 [INFO] Epoch  14/200 | Train Loss: 4.9486 Acc: 0.6014 AUC: 0.7260 | Val Loss: 2.9247 Acc: 0.6336 AUC: 0.7175 | LR: 9.88e-04
+2026-03-25 11:20:03 [INFO] Epoch  15/200 | Train Loss: 4.2277 Acc: 0.6069 AUC: 0.7486 | Val Loss: 2.1576 Acc: 0.6828 AUC: 0.7381 | LR: 9.86e-04
+2026-03-25 11:20:05 [INFO] Epoch  16/200 | Train Loss: 4.3382 Acc: 0.6035 AUC: 0.7505 | Val Loss: 2.2929 Acc: 0.6572 AUC: 0.7370 | LR: 9.84e-04
+2026-03-25 11:20:06 [INFO] Epoch  17/200 | Train Loss: 4.4975 Acc: 0.6041 AUC: 0.7461 | Val Loss: 1.7765 Acc: 0.6783 AUC: 0.7349 | LR: 9.82e-04
+2026-03-25 11:20:08 [INFO] Epoch  18/200 | Train Loss: 4.3022 Acc: 0.6067 AUC: 0.7367 | Val Loss: 2.2879 Acc: 0.6405 AUC: 0.7243 | LR: 9.80e-04
+2026-03-25 11:20:10 [INFO] Epoch  19/200 | Train Loss: 4.4665 Acc: 0.6044 AUC: 0.7433 | Val Loss: 1.5407 Acc: 0.6790 AUC: 0.7361 | LR: 9.78e-04
+2026-03-25 11:20:12 [INFO] Epoch  20/200 | Train Loss: 4.6772 Acc: 0.6021 AUC: 0.7473 | Val Loss: 1.9993 Acc: 0.6768 AUC: 0.7365 | LR: 9.76e-04
+2026-03-25 11:20:14 [INFO] Epoch  21/200 | Train Loss: 4.9632 Acc: 0.6042 AUC: 0.7488 | Val Loss: 3.3404 Acc: 0.6002 AUC: 0.7387 | LR: 9.73e-04
+2026-03-25 11:20:15 [INFO] Epoch  22/200 | Train Loss: 5.4841 Acc: 0.6044 AUC: 0.7412 | Val Loss: 2.1418 Acc: 0.6450 AUC: 0.7293 | LR: 9.71e-04
+2026-03-25 11:20:17 [INFO] Epoch  23/200 | Train Loss: 5.1116 Acc: 0.6022 AUC: 0.7463 | Val Loss: 2.3667 Acc: 0.6320 AUC: 0.7366 | LR: 9.68e-04
+2026-03-25 11:20:19 [INFO] Epoch  24/200 | Train Loss: 3.8715 Acc: 0.6048 AUC: 0.7439 | Val Loss: 3.1523 Acc: 0.5828 AUC: 0.7353 | LR: 9.65e-04
+2026-03-25 11:20:21 [INFO] Epoch  25/200 | Train Loss: 4.2033 Acc: 0.6030 AUC: 0.7473 | Val Loss: 3.1379 Acc: 0.5925 AUC: 0.7364 | LR: 9.62e-04
+2026-03-25 11:20:23 [INFO] Epoch  26/200 | Train Loss: 4.3276 Acc: 0.6052 AUC: 0.7531 | Val Loss: 2.1384 Acc: 0.6768 AUC: 0.7411 | LR: 9.59e-04
+2026-03-25 11:20:25 [INFO] Epoch  27/200 | Train Loss: 4.7726 Acc: 0.6034 AUC: 0.7148 | Val Loss: 5.6707 Acc: 0.5412 AUC: 0.7100 | LR: 9.56e-04
+2026-03-25 11:20:26 [INFO] Epoch  28/200 | Train Loss: 3.4392 Acc: 0.6058 AUC: 0.7090 | Val Loss: 3.9134 Acc: 0.5647 AUC: 0.7000 | LR: 9.53e-04
+2026-03-25 11:20:28 [INFO] Epoch  29/200 | Train Loss: 4.2008 Acc: 0.5987 AUC: 0.7332 | Val Loss: 5.0033 Acc: 0.6330 AUC: 0.7247 | LR: 9.50e-04
+2026-03-25 11:20:30 [INFO] Epoch  30/200 | Train Loss: 3.8180 Acc: 0.6084 AUC: 0.7169 | Val Loss: 5.1369 Acc: 0.5203 AUC: 0.7082 | LR: 9.46e-04
+2026-03-25 11:20:32 [INFO] Epoch  31/200 | Train Loss: 3.2794 Acc: 0.6061 AUC: 0.7399 | Val Loss: 5.8013 Acc: 0.5149 AUC: 0.7277 | LR: 9.42e-04
+2026-03-25 11:20:34 [INFO] Epoch  32/200 | Train Loss: 4.6426 Acc: 0.6054 AUC: 0.7267 | Val Loss: 1.9464 Acc: 0.6309 AUC: 0.7158 | LR: 9.39e-04
+2026-03-25 11:20:36 [INFO] Epoch  33/200 | Train Loss: 4.1293 Acc: 0.6021 AUC: 0.7459 | Val Loss: 2.0156 Acc: 0.6702 AUC: 0.7342 | LR: 9.35e-04
+2026-03-25 11:20:38 [INFO] Epoch  34/200 | Train Loss: 4.9506 Acc: 0.6010 AUC: 0.7490 | Val Loss: 2.5085 Acc: 0.6787 AUC: 0.7390 | LR: 9.31e-04
+2026-03-25 11:20:40 [INFO] Epoch  35/200 | Train Loss: 3.4091 Acc: 0.6073 AUC: 0.7549 | Val Loss: 1.8861 Acc: 0.6712 AUC: 0.7429 | LR: 9.27e-04
+2026-03-25 11:20:42 [INFO] Epoch  36/200 | Train Loss: 4.4636 Acc: 0.6004 AUC: 0.7521 | Val Loss: 3.1935 Acc: 0.5985 AUC: 0.7425 | LR: 9.23e-04
+2026-03-25 11:20:43 [INFO] Epoch  37/200 | Train Loss: 3.1763 Acc: 0.6062 AUC: 0.7478 | Val Loss: 2.4076 Acc: 0.6093 AUC: 0.7374 | LR: 9.19e-04
+2026-03-25 11:20:45 [INFO] Epoch  38/200 | Train Loss: 5.5517 Acc: 0.6032 AUC: 0.7382 | Val Loss: 1.9422 Acc: 0.6460 AUC: 0.7283 | LR: 9.14e-04
+2026-03-25 11:20:48 [INFO] Epoch  39/200 | Train Loss: 3.7857 Acc: 0.6028 AUC: 0.7439 | Val Loss: 2.2066 Acc: 0.6561 AUC: 0.7328 | LR: 9.10e-04
+2026-03-25 11:20:50 [INFO] Epoch  40/200 | Train Loss: 3.7353 Acc: 0.6043 AUC: 0.7444 | Val Loss: 7.6589 Acc: 0.5092 AUC: 0.7296 | LR: 9.05e-04
+2026-03-25 11:20:52 [INFO] Epoch  41/200 | Train Loss: 4.5823 Acc: 0.6032 AUC: 0.7482 | Val Loss: 2.1318 Acc: 0.6433 AUC: 0.7385 | LR: 9.01e-04
+2026-03-25 11:22:08 [INFO] Experiment: ae_linear_sgd
+2026-03-25 11:22:08 [INFO] Config: {'experiment_name': 'ae_linear_sgd', 'ae_checkpoint': 'outputs/task1/segnet_ptlogpct/best.pt', 'batch_size': 256, 'optimizer': 'sgd', 'linear_lr': 0.0001, 'min_lr': 1e-06, 'weight_decay': 0, 'linear_epochs': 200, 'seed': 42}
+2026-03-25 11:22:09 [INFO] Loaded SegNet encoder from segnet_ptlogpct (epoch 61)
+2026-03-25 11:22:09 [INFO] Data: 139306 images
+2026-03-25 11:22:09 [INFO] Split: train=111444, val=13931, test=13931
+2026-03-25 11:22:09 [INFO] === Phase 1: Feature Extraction ===
+2026-03-25 11:22:09 [INFO] Extracting train features...
+2026-03-25 11:22:18 [INFO]   Extracted 12800/111444
+2026-03-25 11:22:26 [INFO]   Extracted 25600/111444
+2026-03-25 11:22:32 [INFO]   Extracted 38400/111444
+2026-03-25 11:22:41 [INFO]   Extracted 51200/111444
+2026-03-25 11:22:51 [INFO]   Extracted 64000/111444
+2026-03-25 11:23:02 [INFO]   Extracted 76800/111444
+2026-03-25 11:23:12 [INFO]   Extracted 89600/111444
+2026-03-25 11:23:24 [INFO]   Extracted 102400/111444
+2026-03-25 11:23:33 [INFO] Extracting val features...
+2026-03-25 11:23:44 [INFO]   Extracted 12800/13931
+2026-03-25 11:23:45 [INFO] Extracting test features...
+2026-03-25 11:23:56 [INFO]   Extracted 12800/13931
+2026-03-25 11:23:57 [INFO] Feature dim: 512
+2026-03-25 11:23:57 [INFO] === Phase 2: Linear Classification ===
+2026-03-25 11:23:58 [INFO] Optimizer: sgd, lr=0.0001, wd=0, min_lr=1e-06
+2026-03-25 11:24:00 [INFO] Epoch   1/200 | Train Loss: 1.1522 Acc: 0.6185 AUC: 0.7143 | Val Loss: 0.6985 Acc: 0.6478 AUC: 0.7029 | LR: 1.00e-04 *
+2026-03-25 11:24:02 [INFO] Epoch   2/200 | Train Loss: 0.6551 Acc: 0.6602 AUC: 0.7460 | Val Loss: 0.6258 Acc: 0.6747 AUC: 0.7352 | LR: 1.00e-04 *
+2026-03-25 11:24:04 [INFO] Epoch   3/200 | Train Loss: 0.6189 Acc: 0.6748 AUC: 0.7514 | Val Loss: 0.6058 Acc: 0.6848 AUC: 0.7419 | LR: 9.99e-05 *
+2026-03-25 11:24:06 [INFO] Epoch   4/200 | Train Loss: 0.6161 Acc: 0.6758 AUC: 0.7559 | Val Loss: 0.6083 Acc: 0.6807 AUC: 0.7456 | LR: 9.99e-05 *
+2026-03-25 11:24:08 [INFO] Epoch   5/200 | Train Loss: 0.6048 Acc: 0.6826 AUC: 0.7593 | Val Loss: 0.5995 Acc: 0.6883 AUC: 0.7484 | LR: 9.98e-05 *
+2026-03-25 11:24:10 [INFO] Epoch   6/200 | Train Loss: 0.6085 Acc: 0.6807 AUC: 0.7589 | Val Loss: 0.6105 Acc: 0.6846 AUC: 0.7467 | LR: 9.98e-05
+2026-03-25 11:24:12 [INFO] Epoch   7/200 | Train Loss: 0.6071 Acc: 0.6822 AUC: 0.7608 | Val Loss: 0.6183 Acc: 0.6725 AUC: 0.7495 | LR: 9.97e-05 *
+2026-03-25 11:24:13 [INFO] Epoch   8/200 | Train Loss: 0.6071 Acc: 0.6820 AUC: 0.7593 | Val Loss: 0.6756 Acc: 0.6379 AUC: 0.7472 | LR: 9.96e-05
+2026-03-25 11:24:15 [INFO] Epoch   9/200 | Train Loss: 0.6062 Acc: 0.6829 AUC: 0.7611 | Val Loss: 0.5969 Acc: 0.6918 AUC: 0.7495 | LR: 9.95e-05 *
+2026-03-25 11:24:17 [INFO] Epoch  10/200 | Train Loss: 0.6112 Acc: 0.6782 AUC: 0.7569 | Val Loss: 0.6071 Acc: 0.6849 AUC: 0.7449 | LR: 9.94e-05
+2026-03-25 11:24:19 [INFO] Epoch  11/200 | Train Loss: 0.5996 Acc: 0.6860 AUC: 0.7592 | Val Loss: 0.6276 Acc: 0.6668 AUC: 0.7483 | LR: 9.93e-05
+2026-03-25 11:24:21 [INFO] Epoch  12/200 | Train Loss: 0.6147 Acc: 0.6768 AUC: 0.7592 | Val Loss: 0.6394 Acc: 0.6550 AUC: 0.7477 | LR: 9.91e-05
+2026-03-25 11:24:23 [INFO] Epoch  13/200 | Train Loss: 0.6174 Acc: 0.6747 AUC: 0.7610 | Val Loss: 0.6281 Acc: 0.6586 AUC: 0.7496 | LR: 9.90e-05 *
+2026-03-25 11:24:25 [INFO] Epoch  14/200 | Train Loss: 0.6079 Acc: 0.6807 AUC: 0.7597 | Val Loss: 0.6015 Acc: 0.6852 AUC: 0.7488 | LR: 9.88e-05
+2026-03-25 11:24:27 [INFO] Epoch  15/200 | Train Loss: 0.5993 Acc: 0.6861 AUC: 0.7582 | Val Loss: 0.6047 Acc: 0.6865 AUC: 0.7485 | LR: 9.86e-05
+2026-03-25 11:24:28 [INFO] Epoch  16/200 | Train Loss: 0.6145 Acc: 0.6775 AUC: 0.7591 | Val Loss: 0.6142 Acc: 0.6844 AUC: 0.7467 | LR: 9.84e-05
+2026-03-25 11:24:30 [INFO] Epoch  17/200 | Train Loss: 0.6139 Acc: 0.6778 AUC: 0.7621 | Val Loss: 0.6000 Acc: 0.6911 AUC: 0.7498 | LR: 9.82e-05 *
+2026-03-25 11:24:32 [INFO] Epoch  18/200 | Train Loss: 0.6074 Acc: 0.6822 AUC: 0.7601 | Val Loss: 0.6032 Acc: 0.6862 AUC: 0.7486 | LR: 9.80e-05
+2026-03-25 11:24:34 [INFO] Epoch  19/200 | Train Loss: 0.5973 Acc: 0.6891 AUC: 0.7598 | Val Loss: 0.6299 Acc: 0.6656 AUC: 0.7507 | LR: 9.78e-05 *
+2026-03-25 11:24:36 [INFO] Epoch  20/200 | Train Loss: 0.6079 Acc: 0.6802 AUC: 0.7608 | Val Loss: 0.6073 Acc: 0.6839 AUC: 0.7493 | LR: 9.76e-05
+2026-03-25 11:24:38 [INFO] Epoch  21/200 | Train Loss: 0.6040 Acc: 0.6833 AUC: 0.7616 | Val Loss: 0.6000 Acc: 0.6901 AUC: 0.7494 | LR: 9.73e-05
+2026-03-25 11:24:39 [INFO] Epoch  22/200 | Train Loss: 0.6113 Acc: 0.6800 AUC: 0.7604 | Val Loss: 0.6390 Acc: 0.6602 AUC: 0.7479 | LR: 9.71e-05
+2026-03-25 11:24:41 [INFO] Epoch  23/200 | Train Loss: 0.6063 Acc: 0.6821 AUC: 0.7606 | Val Loss: 0.5958 Acc: 0.6926 AUC: 0.7498 | LR: 9.68e-05
+2026-03-25 11:24:43 [INFO] Epoch  24/200 | Train Loss: 0.6020 Acc: 0.6847 AUC: 0.7598 | Val Loss: 0.6357 Acc: 0.6572 AUC: 0.7496 | LR: 9.65e-05
+2026-03-25 11:24:45 [INFO] Epoch  25/200 | Train Loss: 0.6035 Acc: 0.6838 AUC: 0.7607 | Val Loss: 0.5965 Acc: 0.6917 AUC: 0.7491 | LR: 9.62e-05
+2026-03-25 11:24:47 [INFO] Epoch  26/200 | Train Loss: 0.6073 Acc: 0.6821 AUC: 0.7606 | Val Loss: 0.6025 Acc: 0.6891 AUC: 0.7477 | LR: 9.59e-05
+2026-03-25 11:24:49 [INFO] Epoch  27/200 | Train Loss: 0.6089 Acc: 0.6793 AUC: 0.7610 | Val Loss: 0.5968 Acc: 0.6942 AUC: 0.7485 | LR: 9.56e-05
+2026-03-25 11:24:51 [INFO] Epoch  28/200 | Train Loss: 0.5998 Acc: 0.6873 AUC: 0.7615 | Val Loss: 0.5999 Acc: 0.6894 AUC: 0.7497 | LR: 9.53e-05
+2026-03-25 11:24:53 [INFO] Epoch  29/200 | Train Loss: 0.6022 Acc: 0.6845 AUC: 0.7599 | Val Loss: 0.6582 Acc: 0.6402 AUC: 0.7470 | LR: 9.50e-05
+2026-03-25 11:24:54 [INFO] Epoch  30/200 | Train Loss: 0.6043 Acc: 0.6842 AUC: 0.7617 | Val Loss: 0.6304 Acc: 0.6607 AUC: 0.7502 | LR: 9.46e-05
+2026-03-25 11:24:56 [INFO] Epoch  31/200 | Train Loss: 0.6068 Acc: 0.6812 AUC: 0.7590 | Val Loss: 0.6016 Acc: 0.6843 AUC: 0.7466 | LR: 9.42e-05
+2026-03-25 11:24:58 [INFO] Epoch  32/200 | Train Loss: 0.6043 Acc: 0.6831 AUC: 0.7597 | Val Loss: 0.5985 Acc: 0.6908 AUC: 0.7484 | LR: 9.39e-05
+2026-03-25 11:25:00 [INFO] Epoch  33/200 | Train Loss: 0.6023 Acc: 0.6841 AUC: 0.7609 | Val Loss: 0.6244 Acc: 0.6701 AUC: 0.7497 | LR: 9.35e-05
+2026-03-25 11:25:02 [INFO] Epoch  34/200 | Train Loss: 0.5977 Acc: 0.6884 AUC: 0.7598 | Val Loss: 0.6565 Acc: 0.6447 AUC: 0.7492 | LR: 9.31e-05
+2026-03-25 11:25:04 [INFO] Epoch  35/200 | Train Loss: 0.6067 Acc: 0.6826 AUC: 0.7613 | Val Loss: 0.6013 Acc: 0.6908 AUC: 0.7490 | LR: 9.27e-05
+2026-03-25 11:25:06 [INFO] Epoch  36/200 | Train Loss: 0.6100 Acc: 0.6807 AUC: 0.7619 | Val Loss: 0.6142 Acc: 0.6745 AUC: 0.7523 | LR: 9.23e-05 *
+2026-03-25 11:25:08 [INFO] Epoch  37/200 | Train Loss: 0.6006 Acc: 0.6871 AUC: 0.7598 | Val Loss: 0.5968 Acc: 0.6925 AUC: 0.7480 | LR: 9.19e-05
+2026-03-25 11:25:10 [INFO] Epoch  38/200 | Train Loss: 0.6034 Acc: 0.6845 AUC: 0.7603 | Val Loss: 0.6112 Acc: 0.6828 AUC: 0.7500 | LR: 9.14e-05
+2026-03-25 11:25:12 [INFO] Epoch  39/200 | Train Loss: 0.5982 Acc: 0.6882 AUC: 0.7605 | Val Loss: 0.5995 Acc: 0.6890 AUC: 0.7494 | LR: 9.10e-05
+2026-03-25 11:25:14 [INFO] Epoch  40/200 | Train Loss: 0.6053 Acc: 0.6821 AUC: 0.7605 | Val Loss: 0.6263 Acc: 0.6701 AUC: 0.7481 | LR: 9.05e-05
+2026-03-25 11:25:16 [INFO] Epoch  41/200 | Train Loss: 0.5981 Acc: 0.6872 AUC: 0.7624 | Val Loss: 0.6147 Acc: 0.6783 AUC: 0.7528 | LR: 9.01e-05 *
+2026-03-25 11:25:18 [INFO] Epoch  42/200 | Train Loss: 0.6064 Acc: 0.6808 AUC: 0.7623 | Val Loss: 0.5944 Acc: 0.6938 AUC: 0.7510 | LR: 8.96e-05
+2026-03-25 11:25:19 [INFO] Epoch  43/200 | Train Loss: 0.6038 Acc: 0.6841 AUC: 0.7578 | Val Loss: 0.5986 Acc: 0.6902 AUC: 0.7486 | LR: 8.91e-05
+2026-03-25 11:25:21 [INFO] Epoch  44/200 | Train Loss: 0.6015 Acc: 0.6865 AUC: 0.7618 | Val Loss: 0.5946 Acc: 0.6961 AUC: 0.7518 | LR: 8.86e-05
+2026-03-25 11:25:23 [INFO] Epoch  45/200 | Train Loss: 0.5950 Acc: 0.6892 AUC: 0.7610 | Val Loss: 0.6118 Acc: 0.6763 AUC: 0.7493 | LR: 8.81e-05
+2026-03-25 11:25:25 [INFO] Epoch  46/200 | Train Loss: 0.6041 Acc: 0.6843 AUC: 0.7599 | Val Loss: 0.6318 Acc: 0.6643 AUC: 0.7495 | LR: 8.76e-05
+2026-03-25 11:25:27 [INFO] Epoch  47/200 | Train Loss: 0.6039 Acc: 0.6822 AUC: 0.7606 | Val Loss: 0.6197 Acc: 0.6699 AUC: 0.7489 | LR: 8.71e-05
+2026-03-25 11:25:28 [INFO] Epoch  48/200 | Train Loss: 0.5956 Acc: 0.6893 AUC: 0.7612 | Val Loss: 0.5987 Acc: 0.6883 AUC: 0.7511 | LR: 8.66e-05
+2026-03-25 11:25:30 [INFO] Epoch  49/200 | Train Loss: 0.6027 Acc: 0.6844 AUC: 0.7579 | Val Loss: 0.6240 Acc: 0.6637 AUC: 0.7464 | LR: 8.60e-05
+2026-03-25 11:25:32 [INFO] Epoch  50/200 | Train Loss: 0.6057 Acc: 0.6832 AUC: 0.7609 | Val Loss: 0.6278 Acc: 0.6659 AUC: 0.7494 | LR: 8.55e-05
+2026-03-25 11:25:34 [INFO] Epoch  51/200 | Train Loss: 0.6037 Acc: 0.6839 AUC: 0.7594 | Val Loss: 0.6900 Acc: 0.6142 AUC: 0.7499 | LR: 8.49e-05
+2026-03-25 11:25:36 [INFO] Epoch  52/200 | Train Loss: 0.5957 Acc: 0.6887 AUC: 0.7608 | Val Loss: 0.6009 Acc: 0.6873 AUC: 0.7487 | LR: 8.44e-05
+2026-03-25 11:25:38 [INFO] Epoch  53/200 | Train Loss: 0.6004 Acc: 0.6861 AUC: 0.7627 | Val Loss: 0.5987 Acc: 0.6856 AUC: 0.7505 | LR: 8.38e-05
+2026-03-25 11:25:39 [INFO] Epoch  54/200 | Train Loss: 0.6034 Acc: 0.6831 AUC: 0.7610 | Val Loss: 0.5975 Acc: 0.6940 AUC: 0.7512 | LR: 8.32e-05
+2026-03-25 11:25:41 [INFO] Epoch  55/200 | Train Loss: 0.5980 Acc: 0.6869 AUC: 0.7615 | Val Loss: 0.6331 Acc: 0.6610 AUC: 0.7513 | LR: 8.26e-05
+2026-03-25 11:25:43 [INFO] Epoch  56/200 | Train Loss: 0.5994 Acc: 0.6862 AUC: 0.7617 | Val Loss: 0.6187 Acc: 0.6703 AUC: 0.7498 | LR: 8.21e-05
+2026-03-25 11:25:45 [INFO] Epoch  57/200 | Train Loss: 0.6047 Acc: 0.6840 AUC: 0.7607 | Val Loss: 0.5978 Acc: 0.6931 AUC: 0.7485 | LR: 8.14e-05
+2026-03-25 11:25:47 [INFO] Epoch  58/200 | Train Loss: 0.6030 Acc: 0.6830 AUC: 0.7600 | Val Loss: 0.5953 Acc: 0.6944 AUC: 0.7501 | LR: 8.08e-05
+2026-03-25 11:25:49 [INFO] Epoch  59/200 | Train Loss: 0.6002 Acc: 0.6859 AUC: 0.7620 | Val Loss: 0.5965 Acc: 0.6939 AUC: 0.7502 | LR: 8.02e-05
+2026-03-25 11:25:51 [INFO] Epoch  60/200 | Train Loss: 0.6027 Acc: 0.6847 AUC: 0.7600 | Val Loss: 0.5984 Acc: 0.6926 AUC: 0.7487 | LR: 7.96e-05
+2026-03-25 11:25:52 [INFO] Epoch  61/200 | Train Loss: 0.6010 Acc: 0.6863 AUC: 0.7609 | Val Loss: 0.6287 Acc: 0.6600 AUC: 0.7514 | LR: 7.90e-05
+2026-03-25 11:25:54 [INFO] Epoch  62/200 | Train Loss: 0.5933 Acc: 0.6906 AUC: 0.7621 | Val Loss: 0.5962 Acc: 0.6929 AUC: 0.7509 | LR: 7.83e-05
+2026-03-25 11:25:56 [INFO] Epoch  63/200 | Train Loss: 0.6036 Acc: 0.6833 AUC: 0.7612 | Val Loss: 0.6056 Acc: 0.6844 AUC: 0.7489 | LR: 7.77e-05
+2026-03-25 11:25:58 [INFO] Epoch  64/200 | Train Loss: 0.5935 Acc: 0.6907 AUC: 0.7624 | Val Loss: 0.5947 Acc: 0.6969 AUC: 0.7510 | LR: 7.70e-05
+2026-03-25 11:26:00 [INFO] Epoch  65/200 | Train Loss: 0.5984 Acc: 0.6880 AUC: 0.7624 | Val Loss: 0.5950 Acc: 0.6924 AUC: 0.7507 | LR: 7.64e-05
+2026-03-25 11:26:02 [INFO] Epoch  66/200 | Train Loss: 0.5969 Acc: 0.6892 AUC: 0.7613 | Val Loss: 0.6020 Acc: 0.6855 AUC: 0.7498 | LR: 7.57e-05
+2026-03-25 11:26:04 [INFO] Epoch  67/200 | Train Loss: 0.6022 Acc: 0.6844 AUC: 0.7617 | Val Loss: 0.6257 Acc: 0.6639 AUC: 0.7504 | LR: 7.50e-05
+2026-03-25 11:26:06 [INFO] Epoch  68/200 | Train Loss: 0.5983 Acc: 0.6877 AUC: 0.7613 | Val Loss: 0.6291 Acc: 0.6610 AUC: 0.7504 | LR: 7.43e-05
+2026-03-25 11:26:08 [INFO] Epoch  69/200 | Train Loss: 0.5925 Acc: 0.6909 AUC: 0.7622 | Val Loss: 0.5952 Acc: 0.6908 AUC: 0.7500 | LR: 7.37e-05
+2026-03-25 11:26:10 [INFO] Epoch  70/200 | Train Loss: 0.5915 Acc: 0.6936 AUC: 0.7629 | Val Loss: 0.5953 Acc: 0.6931 AUC: 0.7505 | LR: 7.30e-05
+2026-03-25 11:26:12 [INFO] Epoch  71/200 | Train Loss: 0.5983 Acc: 0.6869 AUC: 0.7631 | Val Loss: 0.5949 Acc: 0.6945 AUC: 0.7511 | LR: 7.23e-05
+2026-03-25 11:26:15 [INFO] Epoch  72/200 | Train Loss: 0.5964 Acc: 0.6881 AUC: 0.7627 | Val Loss: 0.5964 Acc: 0.6918 AUC: 0.7518 | LR: 7.16e-05
+2026-03-25 11:26:17 [INFO] Epoch  73/200 | Train Loss: 0.5951 Acc: 0.6901 AUC: 0.7607 | Val Loss: 0.5999 Acc: 0.6871 AUC: 0.7511 | LR: 7.09e-05
+2026-03-25 11:26:19 [INFO] Epoch  74/200 | Train Loss: 0.5938 Acc: 0.6900 AUC: 0.7616 | Val Loss: 0.5950 Acc: 0.6966 AUC: 0.7505 | LR: 7.02e-05
+2026-03-25 11:26:21 [INFO] Epoch  75/200 | Train Loss: 0.5911 Acc: 0.6920 AUC: 0.7619 | Val Loss: 0.6039 Acc: 0.6883 AUC: 0.7503 | LR: 6.94e-05
+2026-03-25 11:26:23 [INFO] Epoch  76/200 | Train Loss: 0.5975 Acc: 0.6880 AUC: 0.7613 | Val Loss: 0.6021 Acc: 0.6860 AUC: 0.7490 | LR: 6.87e-05
+2026-03-25 11:26:26 [INFO] Epoch  77/200 | Train Loss: 0.5948 Acc: 0.6923 AUC: 0.7616 | Val Loss: 0.5970 Acc: 0.6892 AUC: 0.7509 | LR: 6.80e-05
+2026-03-25 11:26:28 [INFO] Epoch  78/200 | Train Loss: 0.5959 Acc: 0.6880 AUC: 0.7621 | Val Loss: 0.5945 Acc: 0.6939 AUC: 0.7512 | LR: 6.73e-05
+2026-03-25 11:26:30 [INFO] Epoch  79/200 | Train Loss: 0.5939 Acc: 0.6907 AUC: 0.7627 | Val Loss: 0.6334 Acc: 0.6554 AUC: 0.7505 | LR: 6.65e-05
+2026-03-25 11:26:32 [INFO] Epoch  80/200 | Train Loss: 0.5949 Acc: 0.6885 AUC: 0.7630 | Val Loss: 0.5952 Acc: 0.6946 AUC: 0.7511 | LR: 6.58e-05
+2026-03-25 11:26:34 [INFO] Epoch  81/200 | Train Loss: 0.5905 Acc: 0.6934 AUC: 0.7624 | Val Loss: 0.5950 Acc: 0.6905 AUC: 0.7509 | LR: 6.51e-05
+2026-03-25 11:26:36 [INFO] Epoch  82/200 | Train Loss: 0.6011 Acc: 0.6861 AUC: 0.7618 | Val Loss: 0.6072 Acc: 0.6815 AUC: 0.7503 | LR: 6.43e-05
+2026-03-25 11:26:38 [INFO] Epoch  83/200 | Train Loss: 0.5947 Acc: 0.6901 AUC: 0.7626 | Val Loss: 0.6124 Acc: 0.6809 AUC: 0.7506 | LR: 6.36e-05
+2026-03-25 11:26:41 [INFO] Epoch  84/200 | Train Loss: 0.5942 Acc: 0.6888 AUC: 0.7622 | Val Loss: 0.6018 Acc: 0.6882 AUC: 0.7522 | LR: 6.28e-05
+2026-03-25 11:26:43 [INFO] Epoch  85/200 | Train Loss: 0.5959 Acc: 0.6876 AUC: 0.7634 | Val Loss: 0.5953 Acc: 0.6951 AUC: 0.7508 | LR: 6.21e-05
+2026-03-25 11:26:45 [INFO] Epoch  86/200 | Train Loss: 0.5930 Acc: 0.6901 AUC: 0.7633 | Val Loss: 0.5957 Acc: 0.6961 AUC: 0.7523 | LR: 6.13e-05
+2026-03-25 11:26:47 [INFO] Epoch  87/200 | Train Loss: 0.5947 Acc: 0.6886 AUC: 0.7631 | Val Loss: 0.5953 Acc: 0.6962 AUC: 0.7524 | LR: 6.05e-05
+2026-03-25 11:26:49 [INFO] Epoch  88/200 | Train Loss: 0.5910 Acc: 0.6935 AUC: 0.7623 | Val Loss: 0.6033 Acc: 0.6885 AUC: 0.7510 | LR: 5.98e-05
+2026-03-25 11:26:51 [INFO] Epoch  89/200 | Train Loss: 0.5894 Acc: 0.6949 AUC: 0.7630 | Val Loss: 0.5947 Acc: 0.6945 AUC: 0.7513 | LR: 5.90e-05
+2026-03-25 11:26:53 [INFO] Epoch  90/200 | Train Loss: 0.5910 Acc: 0.6933 AUC: 0.7622 | Val Loss: 0.5977 Acc: 0.6909 AUC: 0.7504 | LR: 5.82e-05
+2026-03-25 11:26:55 [INFO] Epoch  91/200 | Train Loss: 0.5929 Acc: 0.6906 AUC: 0.7625 | Val Loss: 0.6041 Acc: 0.6814 AUC: 0.7502 | LR: 5.75e-05
+2026-03-25 11:26:57 [INFO] Epoch  92/200 | Train Loss: 0.5951 Acc: 0.6891 AUC: 0.7638 | Val Loss: 0.5950 Acc: 0.6966 AUC: 0.7520 | LR: 5.67e-05
+2026-03-25 11:26:59 [INFO] Epoch  93/200 | Train Loss: 0.5898 Acc: 0.6946 AUC: 0.7628 | Val Loss: 0.6048 Acc: 0.6823 AUC: 0.7510 | LR: 5.59e-05
+2026-03-25 11:27:01 [INFO] Epoch  94/200 | Train Loss: 0.5944 Acc: 0.6907 AUC: 0.7624 | Val Loss: 0.6005 Acc: 0.6866 AUC: 0.7507 | LR: 5.52e-05
+2026-03-25 11:27:03 [INFO] Epoch  95/200 | Train Loss: 0.5902 Acc: 0.6933 AUC: 0.7640 | Val Loss: 0.5940 Acc: 0.6951 AUC: 0.7522 | LR: 5.44e-05
+2026-03-25 11:27:05 [INFO] Epoch  96/200 | Train Loss: 0.5906 Acc: 0.6921 AUC: 0.7643 | Val Loss: 0.5929 Acc: 0.6945 AUC: 0.7527 | LR: 5.36e-05
+2026-03-25 11:27:07 [INFO] Epoch  97/200 | Train Loss: 0.5900 Acc: 0.6937 AUC: 0.7637 | Val Loss: 0.5946 Acc: 0.6958 AUC: 0.7522 | LR: 5.28e-05
+2026-03-25 11:27:09 [INFO] Epoch  98/200 | Train Loss: 0.5912 Acc: 0.6928 AUC: 0.7642 | Val Loss: 0.6030 Acc: 0.6834 AUC: 0.7519 | LR: 5.21e-05
+2026-03-25 11:27:11 [INFO] Epoch  99/200 | Train Loss: 0.5877 Acc: 0.6961 AUC: 0.7644 | Val Loss: 0.6071 Acc: 0.6779 AUC: 0.7524 | LR: 5.13e-05
+2026-03-25 11:27:13 [INFO] Epoch 100/200 | Train Loss: 0.5881 Acc: 0.6956 AUC: 0.7638 | Val Loss: 0.5930 Acc: 0.6945 AUC: 0.7525 | LR: 5.05e-05
+2026-03-25 11:27:16 [INFO] Epoch 101/200 | Train Loss: 0.5906 Acc: 0.6935 AUC: 0.7642 | Val Loss: 0.6002 Acc: 0.6882 AUC: 0.7533 | LR: 4.97e-05 *
+2026-03-25 11:27:18 [INFO] Epoch 102/200 | Train Loss: 0.5912 Acc: 0.6929 AUC: 0.7634 | Val Loss: 0.5922 Acc: 0.6961 AUC: 0.7529 | LR: 4.89e-05
+2026-03-25 11:27:20 [INFO] Epoch 103/200 | Train Loss: 0.5879 Acc: 0.6953 AUC: 0.7639 | Val Loss: 0.6008 Acc: 0.6895 AUC: 0.7536 | LR: 4.82e-05 *
+2026-03-25 11:27:22 [INFO] Epoch 104/200 | Train Loss: 0.5880 Acc: 0.6957 AUC: 0.7643 | Val Loss: 0.5938 Acc: 0.6939 AUC: 0.7526 | LR: 4.74e-05
+2026-03-25 11:27:24 [INFO] Epoch 105/200 | Train Loss: 0.5887 Acc: 0.6944 AUC: 0.7642 | Val Loss: 0.5935 Acc: 0.6933 AUC: 0.7524 | LR: 4.66e-05
+2026-03-25 11:27:26 [INFO] Epoch 106/200 | Train Loss: 0.5942 Acc: 0.6899 AUC: 0.7645 | Val Loss: 0.5973 Acc: 0.6880 AUC: 0.7525 | LR: 4.58e-05
+2026-03-25 11:27:28 [INFO] Epoch 107/200 | Train Loss: 0.5881 Acc: 0.6951 AUC: 0.7631 | Val Loss: 0.5945 Acc: 0.6936 AUC: 0.7516 | LR: 4.51e-05
+2026-03-25 11:27:30 [INFO] Epoch 108/200 | Train Loss: 0.5871 Acc: 0.6956 AUC: 0.7640 | Val Loss: 0.6131 Acc: 0.6791 AUC: 0.7518 | LR: 4.43e-05
+2026-03-25 11:27:32 [INFO] Epoch 109/200 | Train Loss: 0.5900 Acc: 0.6942 AUC: 0.7636 | Val Loss: 0.6158 Acc: 0.6771 AUC: 0.7524 | LR: 4.35e-05
+2026-03-25 11:27:34 [INFO] Epoch 110/200 | Train Loss: 0.5882 Acc: 0.6953 AUC: 0.7642 | Val Loss: 0.6074 Acc: 0.6840 AUC: 0.7528 | LR: 4.28e-05
+2026-03-25 11:27:36 [INFO] Epoch 111/200 | Train Loss: 0.5886 Acc: 0.6954 AUC: 0.7640 | Val Loss: 0.6071 Acc: 0.6842 AUC: 0.7532 | LR: 4.20e-05
+2026-03-25 11:27:38 [INFO] Epoch 112/200 | Train Loss: 0.5917 Acc: 0.6921 AUC: 0.7640 | Val Loss: 0.5984 Acc: 0.6880 AUC: 0.7519 | LR: 4.12e-05
+2026-03-25 11:27:40 [INFO] Epoch 113/200 | Train Loss: 0.5867 Acc: 0.6968 AUC: 0.7647 | Val Loss: 0.5921 Acc: 0.6943 AUC: 0.7539 | LR: 4.05e-05 *
+2026-03-25 11:27:42 [INFO] Epoch 114/200 | Train Loss: 0.5872 Acc: 0.6963 AUC: 0.7634 | Val Loss: 0.6104 Acc: 0.6743 AUC: 0.7506 | LR: 3.97e-05
+2026-03-25 11:27:45 [INFO] Epoch 115/200 | Train Loss: 0.5882 Acc: 0.6943 AUC: 0.7645 | Val Loss: 0.5916 Acc: 0.6977 AUC: 0.7536 | LR: 3.89e-05
+2026-03-25 11:27:47 [INFO] Epoch 116/200 | Train Loss: 0.5869 Acc: 0.6959 AUC: 0.7642 | Val Loss: 0.5960 Acc: 0.6923 AUC: 0.7524 | LR: 3.82e-05
+2026-03-25 11:27:49 [INFO] Epoch 117/200 | Train Loss: 0.5876 Acc: 0.6963 AUC: 0.7647 | Val Loss: 0.5994 Acc: 0.6890 AUC: 0.7526 | LR: 3.74e-05
+2026-03-25 11:27:51 [INFO] Epoch 118/200 | Train Loss: 0.5898 Acc: 0.6937 AUC: 0.7649 | Val Loss: 0.5944 Acc: 0.6920 AUC: 0.7526 | LR: 3.67e-05
+2026-03-25 11:27:53 [INFO] Epoch 119/200 | Train Loss: 0.5903 Acc: 0.6921 AUC: 0.7633 | Val Loss: 0.5921 Acc: 0.6956 AUC: 0.7525 | LR: 3.59e-05
+2026-03-25 11:27:54 [INFO] Epoch 120/200 | Train Loss: 0.5888 Acc: 0.6953 AUC: 0.7641 | Val Loss: 0.5931 Acc: 0.6951 AUC: 0.7526 | LR: 3.52e-05
+2026-03-25 11:27:56 [INFO] Epoch 121/200 | Train Loss: 0.5868 Acc: 0.6958 AUC: 0.7648 | Val Loss: 0.6022 Acc: 0.6891 AUC: 0.7529 | LR: 3.45e-05
+2026-03-25 11:27:59 [INFO] Epoch 122/200 | Train Loss: 0.5855 Acc: 0.6984 AUC: 0.7652 | Val Loss: 0.5920 Acc: 0.6982 AUC: 0.7530 | LR: 3.37e-05
+2026-03-25 11:28:01 [INFO] Epoch 123/200 | Train Loss: 0.5862 Acc: 0.6969 AUC: 0.7650 | Val Loss: 0.5936 Acc: 0.6958 AUC: 0.7535 | LR: 3.30e-05
+2026-03-25 11:28:03 [INFO] Epoch 124/200 | Train Loss: 0.5857 Acc: 0.6967 AUC: 0.7642 | Val Loss: 0.5931 Acc: 0.6952 AUC: 0.7522 | LR: 3.23e-05
+2026-03-25 11:28:05 [INFO] Epoch 125/200 | Train Loss: 0.5849 Acc: 0.6980 AUC: 0.7651 | Val Loss: 0.5983 Acc: 0.6865 AUC: 0.7533 | LR: 3.16e-05
+2026-03-25 11:28:07 [INFO] Epoch 126/200 | Train Loss: 0.5863 Acc: 0.6965 AUC: 0.7649 | Val Loss: 0.5929 Acc: 0.6951 AUC: 0.7529 | LR: 3.08e-05
+2026-03-25 11:28:09 [INFO] Epoch 127/200 | Train Loss: 0.5852 Acc: 0.6974 AUC: 0.7653 | Val Loss: 0.5985 Acc: 0.6885 AUC: 0.7533 | LR: 3.01e-05
+2026-03-25 11:28:11 [INFO] Epoch 128/200 | Train Loss: 0.5856 Acc: 0.6977 AUC: 0.7648 | Val Loss: 0.5933 Acc: 0.6935 AUC: 0.7521 | LR: 2.94e-05
+2026-03-25 11:28:13 [INFO] Epoch 129/200 | Train Loss: 0.5842 Acc: 0.6987 AUC: 0.7648 | Val Loss: 0.5936 Acc: 0.6958 AUC: 0.7534 | LR: 2.87e-05
+2026-03-25 11:28:15 [INFO] Epoch 130/200 | Train Loss: 0.5851 Acc: 0.6976 AUC: 0.7646 | Val Loss: 0.5938 Acc: 0.6953 AUC: 0.7539 | LR: 2.80e-05
+2026-03-25 11:28:17 [INFO] Epoch 131/200 | Train Loss: 0.5854 Acc: 0.6975 AUC: 0.7655 | Val Loss: 0.5919 Acc: 0.6962 AUC: 0.7536 | LR: 2.73e-05
+2026-03-25 11:28:19 [INFO] Epoch 132/200 | Train Loss: 0.5846 Acc: 0.6986 AUC: 0.7645 | Val Loss: 0.5921 Acc: 0.6972 AUC: 0.7532 | LR: 2.67e-05
+2026-03-25 11:28:21 [INFO] Epoch 133/200 | Train Loss: 0.5854 Acc: 0.6976 AUC: 0.7644 | Val Loss: 0.5909 Acc: 0.6978 AUC: 0.7537 | LR: 2.60e-05
+2026-03-25 11:28:23 [INFO] Epoch 134/200 | Train Loss: 0.5852 Acc: 0.6971 AUC: 0.7650 | Val Loss: 0.5938 Acc: 0.6949 AUC: 0.7532 | LR: 2.53e-05
+2026-03-25 11:28:25 [INFO] Epoch 135/200 | Train Loss: 0.5835 Acc: 0.6994 AUC: 0.7656 | Val Loss: 0.5908 Acc: 0.6978 AUC: 0.7544 | LR: 2.46e-05 *
+2026-03-25 11:28:27 [INFO] Epoch 136/200 | Train Loss: 0.5843 Acc: 0.6981 AUC: 0.7652 | Val Loss: 0.5925 Acc: 0.6955 AUC: 0.7533 | LR: 2.40e-05
+2026-03-25 11:28:29 [INFO] Epoch 137/200 | Train Loss: 0.5837 Acc: 0.6992 AUC: 0.7651 | Val Loss: 0.5919 Acc: 0.6969 AUC: 0.7530 | LR: 2.33e-05
+2026-03-25 11:28:32 [INFO] Epoch 138/200 | Train Loss: 0.5846 Acc: 0.6982 AUC: 0.7651 | Val Loss: 0.5980 Acc: 0.6911 AUC: 0.7533 | LR: 2.27e-05
+2026-03-25 11:28:34 [INFO] Epoch 139/200 | Train Loss: 0.5835 Acc: 0.6995 AUC: 0.7655 | Val Loss: 0.5986 Acc: 0.6875 AUC: 0.7535 | LR: 2.20e-05
+2026-03-25 11:28:36 [INFO] Epoch 140/200 | Train Loss: 0.5849 Acc: 0.6982 AUC: 0.7655 | Val Loss: 0.5921 Acc: 0.6979 AUC: 0.7536 | LR: 2.14e-05
+2026-03-25 11:28:38 [INFO] Epoch 141/200 | Train Loss: 0.5832 Acc: 0.6988 AUC: 0.7656 | Val Loss: 0.5934 Acc: 0.6960 AUC: 0.7533 | LR: 2.08e-05
+2026-03-25 11:28:40 [INFO] Epoch 142/200 | Train Loss: 0.5833 Acc: 0.6984 AUC: 0.7656 | Val Loss: 0.5923 Acc: 0.6979 AUC: 0.7536 | LR: 2.02e-05
+2026-03-25 11:28:42 [INFO] Epoch 143/200 | Train Loss: 0.5828 Acc: 0.6997 AUC: 0.7657 | Val Loss: 0.5912 Acc: 0.6969 AUC: 0.7538 | LR: 1.96e-05
+2026-03-25 11:28:44 [INFO] Epoch 144/200 | Train Loss: 0.5835 Acc: 0.6987 AUC: 0.7653 | Val Loss: 0.5916 Acc: 0.6966 AUC: 0.7536 | LR: 1.89e-05
+2026-03-25 11:28:46 [INFO] Epoch 145/200 | Train Loss: 0.5837 Acc: 0.6979 AUC: 0.7655 | Val Loss: 0.5930 Acc: 0.6954 AUC: 0.7538 | LR: 1.84e-05
+2026-03-25 11:28:48 [INFO] Epoch 146/200 | Train Loss: 0.5830 Acc: 0.7005 AUC: 0.7656 | Val Loss: 0.5910 Acc: 0.6968 AUC: 0.7540 | LR: 1.78e-05
+2026-03-25 11:28:50 [INFO] Epoch 147/200 | Train Loss: 0.5825 Acc: 0.7001 AUC: 0.7654 | Val Loss: 0.5925 Acc: 0.6958 AUC: 0.7540 | LR: 1.72e-05
+2026-03-25 11:28:52 [INFO] Epoch 148/200 | Train Loss: 0.5833 Acc: 0.6997 AUC: 0.7657 | Val Loss: 0.5909 Acc: 0.6972 AUC: 0.7540 | LR: 1.66e-05
+2026-03-25 11:28:54 [INFO] Epoch 149/200 | Train Loss: 0.5825 Acc: 0.7001 AUC: 0.7655 | Val Loss: 0.5919 Acc: 0.6973 AUC: 0.7535 | LR: 1.61e-05
+2026-03-25 11:28:56 [INFO] Epoch 150/200 | Train Loss: 0.5826 Acc: 0.7001 AUC: 0.7654 | Val Loss: 0.5922 Acc: 0.6957 AUC: 0.7543 | LR: 1.55e-05
+2026-03-25 11:28:58 [INFO] Epoch 151/200 | Train Loss: 0.5825 Acc: 0.6995 AUC: 0.7654 | Val Loss: 0.5917 Acc: 0.6962 AUC: 0.7537 | LR: 1.50e-05
+2026-03-25 11:29:01 [INFO] Epoch 152/200 | Train Loss: 0.5824 Acc: 0.7007 AUC: 0.7656 | Val Loss: 0.5912 Acc: 0.6966 AUC: 0.7542 | LR: 1.44e-05
+2026-03-25 11:29:03 [INFO] Epoch 153/200 | Train Loss: 0.5824 Acc: 0.6996 AUC: 0.7658 | Val Loss: 0.5929 Acc: 0.6948 AUC: 0.7543 | LR: 1.39e-05
+2026-03-25 11:29:04 [INFO] Epoch 154/200 | Train Loss: 0.5835 Acc: 0.6993 AUC: 0.7657 | Val Loss: 0.5911 Acc: 0.6975 AUC: 0.7543 | LR: 1.34e-05
+2026-03-25 11:29:06 [INFO] Epoch 155/200 | Train Loss: 0.5826 Acc: 0.6997 AUC: 0.7657 | Val Loss: 0.5908 Acc: 0.6975 AUC: 0.7542 | LR: 1.29e-05
+2026-03-25 11:29:08 [INFO] Epoch 156/200 | Train Loss: 0.5822 Acc: 0.7005 AUC: 0.7657 | Val Loss: 0.5949 Acc: 0.6916 AUC: 0.7540 | LR: 1.24e-05
+2026-03-25 11:29:10 [INFO] Epoch 157/200 | Train Loss: 0.5822 Acc: 0.6999 AUC: 0.7659 | Val Loss: 0.5954 Acc: 0.6911 AUC: 0.7540 | LR: 1.19e-05
+2026-03-25 11:29:12 [INFO] Epoch 158/200 | Train Loss: 0.5822 Acc: 0.7000 AUC: 0.7659 | Val Loss: 0.5922 Acc: 0.6959 AUC: 0.7540 | LR: 1.14e-05
+2026-03-25 11:29:14 [INFO] Epoch 159/200 | Train Loss: 0.5814 Acc: 0.7005 AUC: 0.7657 | Val Loss: 0.5916 Acc: 0.6970 AUC: 0.7542 | LR: 1.09e-05
+2026-03-25 11:29:16 [INFO] Epoch 160/200 | Train Loss: 0.5821 Acc: 0.6998 AUC: 0.7659 | Val Loss: 0.5934 Acc: 0.6932 AUC: 0.7543 | LR: 1.05e-05
+2026-03-25 11:29:18 [INFO] Epoch 161/200 | Train Loss: 0.5817 Acc: 0.6999 AUC: 0.7657 | Val Loss: 0.5912 Acc: 0.6979 AUC: 0.7538 | LR: 1.00e-05
+2026-03-25 11:29:20 [INFO] Epoch 162/200 | Train Loss: 0.5815 Acc: 0.7011 AUC: 0.7657 | Val Loss: 0.5910 Acc: 0.6977 AUC: 0.7539 | LR: 9.56e-06
+2026-03-25 11:29:22 [INFO] Epoch 163/200 | Train Loss: 0.5814 Acc: 0.6993 AUC: 0.7659 | Val Loss: 0.5910 Acc: 0.6975 AUC: 0.7539 | LR: 9.13e-06
+2026-03-25 11:29:24 [INFO] Epoch 164/200 | Train Loss: 0.5811 Acc: 0.7020 AUC: 0.7659 | Val Loss: 0.5903 Acc: 0.6977 AUC: 0.7546 | LR: 8.71e-06 *
+2026-03-25 11:29:26 [INFO] Epoch 165/200 | Train Loss: 0.5813 Acc: 0.7004 AUC: 0.7657 | Val Loss: 0.5915 Acc: 0.6971 AUC: 0.7540 | LR: 8.29e-06
+2026-03-25 11:29:29 [INFO] Epoch 166/200 | Train Loss: 0.5814 Acc: 0.7010 AUC: 0.7660 | Val Loss: 0.5906 Acc: 0.6972 AUC: 0.7543 | LR: 7.89e-06
+2026-03-25 11:29:30 [INFO] Epoch 167/200 | Train Loss: 0.5812 Acc: 0.7018 AUC: 0.7659 | Val Loss: 0.5910 Acc: 0.6976 AUC: 0.7544 | LR: 7.50e-06
+2026-03-25 11:29:32 [INFO] Epoch 168/200 | Train Loss: 0.5812 Acc: 0.7011 AUC: 0.7659 | Val Loss: 0.5907 Acc: 0.6975 AUC: 0.7544 | LR: 7.12e-06
+2026-03-25 11:29:34 [INFO] Epoch 169/200 | Train Loss: 0.5810 Acc: 0.7020 AUC: 0.7659 | Val Loss: 0.5911 Acc: 0.6968 AUC: 0.7541 | LR: 6.75e-06
+2026-03-25 11:29:36 [INFO] Epoch 170/200 | Train Loss: 0.5811 Acc: 0.7014 AUC: 0.7660 | Val Loss: 0.5911 Acc: 0.6973 AUC: 0.7544 | LR: 6.40e-06
+2026-03-25 11:29:39 [INFO] Epoch 171/200 | Train Loss: 0.5806 Acc: 0.7008 AUC: 0.7660 | Val Loss: 0.5906 Acc: 0.6966 AUC: 0.7543 | LR: 6.05e-06
+2026-03-25 11:29:41 [INFO] Epoch 172/200 | Train Loss: 0.5808 Acc: 0.7012 AUC: 0.7660 | Val Loss: 0.5908 Acc: 0.6970 AUC: 0.7542 | LR: 5.71e-06
+2026-03-25 11:29:43 [INFO] Epoch 173/200 | Train Loss: 0.5805 Acc: 0.7019 AUC: 0.7660 | Val Loss: 0.5906 Acc: 0.6972 AUC: 0.7543 | LR: 5.39e-06
+2026-03-25 11:29:45 [INFO] Epoch 174/200 | Train Loss: 0.5807 Acc: 0.7017 AUC: 0.7659 | Val Loss: 0.5910 Acc: 0.6974 AUC: 0.7542 | LR: 5.07e-06
+2026-03-25 11:29:47 [INFO] Epoch 175/200 | Train Loss: 0.5806 Acc: 0.7019 AUC: 0.7659 | Val Loss: 0.5903 Acc: 0.6977 AUC: 0.7544 | LR: 4.77e-06
+2026-03-25 11:29:49 [INFO] Epoch 176/200 | Train Loss: 0.5803 Acc: 0.7015 AUC: 0.7660 | Val Loss: 0.5905 Acc: 0.6972 AUC: 0.7544 | LR: 4.48e-06
+2026-03-25 11:29:51 [INFO] Epoch 177/200 | Train Loss: 0.5808 Acc: 0.7011 AUC: 0.7660 | Val Loss: 0.5906 Acc: 0.6977 AUC: 0.7543 | LR: 4.20e-06
+2026-03-25 11:29:53 [INFO] Epoch 178/200 | Train Loss: 0.5805 Acc: 0.7014 AUC: 0.7661 | Val Loss: 0.5904 Acc: 0.6962 AUC: 0.7544 | LR: 3.93e-06
+2026-03-25 11:29:55 [INFO] Epoch 179/200 | Train Loss: 0.5803 Acc: 0.7015 AUC: 0.7660 | Val Loss: 0.5907 Acc: 0.6969 AUC: 0.7544 | LR: 3.67e-06
+2026-03-25 11:29:57 [INFO] Epoch 180/200 | Train Loss: 0.5803 Acc: 0.7013 AUC: 0.7660 | Val Loss: 0.5903 Acc: 0.6973 AUC: 0.7544 | LR: 3.42e-06
+2026-03-25 11:29:59 [INFO] Epoch 181/200 | Train Loss: 0.5804 Acc: 0.7017 AUC: 0.7660 | Val Loss: 0.5912 Acc: 0.6975 AUC: 0.7544 | LR: 3.19e-06
+2026-03-25 11:30:01 [INFO] Epoch 182/200 | Train Loss: 0.5806 Acc: 0.7019 AUC: 0.7660 | Val Loss: 0.5906 Acc: 0.6979 AUC: 0.7544 | LR: 2.97e-06
+2026-03-25 11:30:02 [INFO] Epoch 183/200 | Train Loss: 0.5804 Acc: 0.7016 AUC: 0.7660 | Val Loss: 0.5904 Acc: 0.6967 AUC: 0.7544 | LR: 2.75e-06
+2026-03-25 11:30:04 [INFO] Epoch 184/200 | Train Loss: 0.5802 Acc: 0.7015 AUC: 0.7660 | Val Loss: 0.5912 Acc: 0.6973 AUC: 0.7544 | LR: 2.56e-06
+2026-03-25 11:30:06 [INFO] Epoch 185/200 | Train Loss: 0.5802 Acc: 0.7018 AUC: 0.7660 | Val Loss: 0.5904 Acc: 0.6971 AUC: 0.7544 | LR: 2.37e-06
+2026-03-25 11:30:08 [INFO] Epoch 186/200 | Train Loss: 0.5801 Acc: 0.7020 AUC: 0.7660 | Val Loss: 0.5904 Acc: 0.6972 AUC: 0.7544 | LR: 2.19e-06
+2026-03-25 11:30:10 [INFO] Epoch 187/200 | Train Loss: 0.5801 Acc: 0.7019 AUC: 0.7661 | Val Loss: 0.5905 Acc: 0.6966 AUC: 0.7544 | LR: 2.03e-06
+2026-03-25 11:30:12 [INFO] Epoch 188/200 | Train Loss: 0.5801 Acc: 0.7012 AUC: 0.7661 | Val Loss: 0.5903 Acc: 0.6970 AUC: 0.7544 | LR: 1.88e-06
+2026-03-25 11:30:14 [INFO] Epoch 189/200 | Train Loss: 0.5800 Acc: 0.7022 AUC: 0.7660 | Val Loss: 0.5913 Acc: 0.6965 AUC: 0.7544 | LR: 1.74e-06
+2026-03-25 11:30:16 [INFO] Epoch 190/200 | Train Loss: 0.5800 Acc: 0.7017 AUC: 0.7660 | Val Loss: 0.5905 Acc: 0.6972 AUC: 0.7544 | LR: 1.61e-06
+2026-03-25 11:30:18 [INFO] Epoch 191/200 | Train Loss: 0.5800 Acc: 0.7019 AUC: 0.7660 | Val Loss: 0.5905 Acc: 0.6976 AUC: 0.7543 | LR: 1.49e-06
+2026-03-25 11:30:20 [INFO] Epoch 192/200 | Train Loss: 0.5798 Acc: 0.7023 AUC: 0.7661 | Val Loss: 0.5904 Acc: 0.6971 AUC: 0.7544 | LR: 1.39e-06
+2026-03-25 11:30:22 [INFO] Epoch 193/200 | Train Loss: 0.5799 Acc: 0.7024 AUC: 0.7661 | Val Loss: 0.5905 Acc: 0.6967 AUC: 0.7544 | LR: 1.30e-06
+2026-03-25 11:30:24 [INFO] Epoch 194/200 | Train Loss: 0.5798 Acc: 0.7023 AUC: 0.7661 | Val Loss: 0.5904 Acc: 0.6973 AUC: 0.7544 | LR: 1.22e-06
+2026-03-25 11:30:26 [INFO] Epoch 195/200 | Train Loss: 0.5799 Acc: 0.7023 AUC: 0.7661 | Val Loss: 0.5904 Acc: 0.6968 AUC: 0.7544 | LR: 1.15e-06
+2026-03-25 11:30:28 [INFO] Epoch 196/200 | Train Loss: 0.5798 Acc: 0.7020 AUC: 0.7661 | Val Loss: 0.5904 Acc: 0.6971 AUC: 0.7544 | LR: 1.10e-06
+2026-03-25 11:30:30 [INFO] Epoch 197/200 | Train Loss: 0.5797 Acc: 0.7023 AUC: 0.7661 | Val Loss: 0.5904 Acc: 0.6973 AUC: 0.7544 | LR: 1.05e-06
+2026-03-25 11:30:32 [INFO] Epoch 198/200 | Train Loss: 0.5798 Acc: 0.7018 AUC: 0.7661 | Val Loss: 0.5905 Acc: 0.6969 AUC: 0.7544 | LR: 1.02e-06
+2026-03-25 11:30:34 [INFO] Epoch 199/200 | Train Loss: 0.5798 Acc: 0.7022 AUC: 0.7661 | Val Loss: 0.5904 Acc: 0.6973 AUC: 0.7544 | LR: 1.01e-06
+2026-03-25 11:30:36 [INFO] Epoch 200/200 | Train Loss: 0.5798 Acc: 0.7025 AUC: 0.7661 | Val Loss: 0.5905 Acc: 0.6965 AUC: 0.7544 | LR: 1.00e-06
+2026-03-25 11:30:36 [INFO] Linear probe done. Best val AUC: 0.7546
+2026-03-25 11:30:36 [INFO] === Phase 3: Test Evaluation ===
+2026-03-25 11:30:37 [INFO] Test AUC: 0.7613
+2026-03-25 11:30:37 [INFO] Test Acc: 0.7027
+2026-03-25 11:30:37 [INFO] Done!
+2026-03-25 11:31:38 [INFO] Experiment: ae_linear_sgd
+2026-03-25 11:31:38 [INFO] Config: {'experiment_name': 'ae_linear_sgd', 'ae_checkpoint': 'outputs/task1/segnet_ptlogpct/best.pt', 'batch_size': 256, 'optimizer': 'sgd', 'linear_lr': 5e-05, 'min_lr': 1e-07, 'weight_decay': 0.001, 'linear_epochs': 200, 'seed': 42}
+2026-03-25 11:31:39 [INFO] Loaded SegNet encoder from segnet_ptlogpct (epoch 61)
+2026-03-25 11:31:39 [INFO] Data: 139306 images
+2026-03-25 11:31:39 [INFO] Split: train=111444, val=13931, test=13931
+2026-03-25 11:31:39 [INFO] === Phase 1: Feature Extraction ===
+2026-03-25 11:31:39 [INFO] Extracting train features...
+2026-03-25 11:31:46 [INFO]   Extracted 12800/111444
+2026-03-25 11:31:53 [INFO]   Extracted 25600/111444
+2026-03-25 11:32:01 [INFO]   Extracted 38400/111444
+2026-03-25 11:32:09 [INFO]   Extracted 51200/111444
+2026-03-25 11:32:16 [INFO]   Extracted 64000/111444
+2026-03-25 11:32:23 [INFO]   Extracted 76800/111444
+2026-03-25 11:32:31 [INFO]   Extracted 89600/111444
+2026-03-25 11:32:39 [INFO]   Extracted 102400/111444
+2026-03-25 11:32:46 [INFO] Extracting val features...
+2026-03-25 11:32:56 [INFO]   Extracted 12800/13931
+2026-03-25 11:32:57 [INFO] Extracting test features...
+2026-03-25 11:33:08 [INFO]   Extracted 12800/13931
+2026-03-25 11:33:09 [INFO] Feature dim: 512
+2026-03-25 11:33:09 [INFO] === Phase 2: Linear Classification ===
+2026-03-25 11:33:10 [INFO] Optimizer: sgd, lr=5e-05, wd=0.001, min_lr=1e-07
+2026-03-25 11:33:12 [INFO] Epoch   1/200 | Train Loss: 1.3690 Acc: 0.5867 AUC: 0.6815 | Val Loss: 0.8329 Acc: 0.6309 AUC: 0.6730 | LR: 5.00e-05 *
+2026-03-25 11:33:13 [INFO] Epoch   2/200 | Train Loss: 0.7211 Acc: 0.6450 AUC: 0.7163 | Val Loss: 0.6689 Acc: 0.6529 AUC: 0.7076 | LR: 5.00e-05 *
+2026-03-25 11:33:15 [INFO] Epoch   3/200 | Train Loss: 0.6393 Acc: 0.6661 AUC: 0.7375 | Val Loss: 0.6333 Acc: 0.6651 AUC: 0.7286 | LR: 5.00e-05 *
+2026-03-25 11:33:17 [INFO] Epoch   4/200 | Train Loss: 0.6103 Acc: 0.6794 AUC: 0.7499 | Val Loss: 0.6188 Acc: 0.6720 AUC: 0.7408 | LR: 5.00e-05 *
+2026-03-25 11:33:18 [INFO] Epoch   5/200 | Train Loss: 0.6000 Acc: 0.6859 AUC: 0.7561 | Val Loss: 0.6138 Acc: 0.6783 AUC: 0.7460 | LR: 4.99e-05 *
+2026-03-25 11:33:20 [INFO] Epoch   6/200 | Train Loss: 0.5955 Acc: 0.6894 AUC: 0.7582 | Val Loss: 0.5995 Acc: 0.6879 AUC: 0.7474 | LR: 4.99e-05 *
+2026-03-25 11:33:22 [INFO] Epoch   7/200 | Train Loss: 0.5963 Acc: 0.6872 AUC: 0.7603 | Val Loss: 0.5959 Acc: 0.6928 AUC: 0.7499 | LR: 4.98e-05 *
+2026-03-25 11:33:23 [INFO] Epoch   8/200 | Train Loss: 0.5975 Acc: 0.6875 AUC: 0.7612 | Val Loss: 0.6201 Acc: 0.6755 AUC: 0.7507 | LR: 4.98e-05 *
+2026-03-25 11:33:25 [INFO] Epoch   9/200 | Train Loss: 0.5929 Acc: 0.6903 AUC: 0.7618 | Val Loss: 0.6001 Acc: 0.6877 AUC: 0.7511 | LR: 4.98e-05 *
+2026-03-25 11:33:27 [INFO] Epoch  10/200 | Train Loss: 0.5923 Acc: 0.6924 AUC: 0.7615 | Val Loss: 0.5954 Acc: 0.6924 AUC: 0.7503 | LR: 4.97e-05
+2026-03-25 11:33:28 [INFO] Epoch  11/200 | Train Loss: 0.5936 Acc: 0.6898 AUC: 0.7620 | Val Loss: 0.5936 Acc: 0.6936 AUC: 0.7516 | LR: 4.96e-05 *
+2026-03-25 11:33:30 [INFO] Epoch  12/200 | Train Loss: 0.5933 Acc: 0.6907 AUC: 0.7617 | Val Loss: 0.5991 Acc: 0.6887 AUC: 0.7510 | LR: 4.96e-05
+2026-03-25 11:33:32 [INFO] Epoch  13/200 | Train Loss: 0.5942 Acc: 0.6910 AUC: 0.7632 | Val Loss: 0.6081 Acc: 0.6793 AUC: 0.7524 | LR: 4.95e-05 *
+2026-03-25 11:33:34 [INFO] Epoch  14/200 | Train Loss: 0.5916 Acc: 0.6919 AUC: 0.7618 | Val Loss: 0.6044 Acc: 0.6816 AUC: 0.7509 | LR: 4.94e-05
+2026-03-25 11:33:35 [INFO] Epoch  15/200 | Train Loss: 0.5967 Acc: 0.6887 AUC: 0.7624 | Val Loss: 0.6200 Acc: 0.6753 AUC: 0.7527 | LR: 4.93e-05 *
+2026-03-25 11:33:37 [INFO] Epoch  16/200 | Train Loss: 0.5919 Acc: 0.6913 AUC: 0.7617 | Val Loss: 0.6022 Acc: 0.6908 AUC: 0.7500 | LR: 4.92e-05
+2026-03-25 11:33:39 [INFO] Epoch  17/200 | Train Loss: 0.5927 Acc: 0.6915 AUC: 0.7634 | Val Loss: 0.5966 Acc: 0.6921 AUC: 0.7515 | LR: 4.91e-05
+2026-03-25 11:33:40 [INFO] Epoch  18/200 | Train Loss: 0.5941 Acc: 0.6901 AUC: 0.7627 | Val Loss: 0.5962 Acc: 0.6913 AUC: 0.7519 | LR: 4.90e-05
+2026-03-25 11:33:42 [INFO] Epoch  19/200 | Train Loss: 0.5908 Acc: 0.6930 AUC: 0.7631 | Val Loss: 0.5941 Acc: 0.6923 AUC: 0.7532 | LR: 4.89e-05 *
+2026-03-25 11:33:44 [INFO] Epoch  20/200 | Train Loss: 0.5898 Acc: 0.6935 AUC: 0.7633 | Val Loss: 0.5943 Acc: 0.6937 AUC: 0.7517 | LR: 4.88e-05
+2026-03-25 11:33:46 [INFO] Epoch  21/200 | Train Loss: 0.5944 Acc: 0.6904 AUC: 0.7635 | Val Loss: 0.6003 Acc: 0.6854 AUC: 0.7516 | LR: 4.87e-05
+2026-03-25 11:33:47 [INFO] Epoch  22/200 | Train Loss: 0.5902 Acc: 0.6943 AUC: 0.7633 | Val Loss: 0.5978 Acc: 0.6918 AUC: 0.7518 | LR: 4.85e-05
+2026-03-25 11:33:49 [INFO] Epoch  23/200 | Train Loss: 0.5901 Acc: 0.6935 AUC: 0.7624 | Val Loss: 0.5988 Acc: 0.6919 AUC: 0.7517 | LR: 4.84e-05
+2026-03-25 11:33:51 [INFO] Epoch  24/200 | Train Loss: 0.5906 Acc: 0.6933 AUC: 0.7629 | Val Loss: 0.5995 Acc: 0.6866 AUC: 0.7526 | LR: 4.82e-05
+2026-03-25 11:33:52 [INFO] Epoch  25/200 | Train Loss: 0.5907 Acc: 0.6935 AUC: 0.7635 | Val Loss: 0.5931 Acc: 0.6956 AUC: 0.7527 | LR: 4.81e-05
+2026-03-25 11:33:54 [INFO] Epoch  26/200 | Train Loss: 0.5931 Acc: 0.6904 AUC: 0.7634 | Val Loss: 0.5959 Acc: 0.6895 AUC: 0.7519 | LR: 4.79e-05
+2026-03-25 11:33:56 [INFO] Epoch  27/200 | Train Loss: 0.5889 Acc: 0.6957 AUC: 0.7630 | Val Loss: 0.6035 Acc: 0.6848 AUC: 0.7519 | LR: 4.78e-05
+2026-03-25 11:33:58 [INFO] Epoch  28/200 | Train Loss: 0.5888 Acc: 0.6943 AUC: 0.7642 | Val Loss: 0.5971 Acc: 0.6898 AUC: 0.7528 | LR: 4.76e-05
+2026-03-25 11:33:59 [INFO] Epoch  29/200 | Train Loss: 0.5904 Acc: 0.6936 AUC: 0.7629 | Val Loss: 0.5959 Acc: 0.6931 AUC: 0.7511 | LR: 4.75e-05
+2026-03-25 11:34:01 [INFO] Epoch  30/200 | Train Loss: 0.5930 Acc: 0.6910 AUC: 0.7639 | Val Loss: 0.6098 Acc: 0.6794 AUC: 0.7529 | LR: 4.73e-05
+2026-03-25 11:34:03 [INFO] Epoch  31/200 | Train Loss: 0.5904 Acc: 0.6930 AUC: 0.7639 | Val Loss: 0.5943 Acc: 0.6946 AUC: 0.7524 | LR: 4.71e-05
+2026-03-25 11:34:04 [INFO] Epoch  32/200 | Train Loss: 0.5886 Acc: 0.6947 AUC: 0.7634 | Val Loss: 0.6235 Acc: 0.6614 AUC: 0.7519 | LR: 4.69e-05
+2026-03-25 11:34:06 [INFO] Epoch  33/200 | Train Loss: 0.5907 Acc: 0.6922 AUC: 0.7640 | Val Loss: 0.5975 Acc: 0.6947 AUC: 0.7533 | LR: 4.67e-05 *
+2026-03-25 11:34:08 [INFO] Epoch  34/200 | Train Loss: 0.5921 Acc: 0.6922 AUC: 0.7632 | Val Loss: 0.6033 Acc: 0.6848 AUC: 0.7524 | LR: 4.65e-05
+2026-03-25 11:34:09 [INFO] Epoch  35/200 | Train Loss: 0.5914 Acc: 0.6922 AUC: 0.7625 | Val Loss: 0.6100 Acc: 0.6778 AUC: 0.7512 | LR: 4.63e-05
+2026-03-25 11:34:11 [INFO] Epoch  36/200 | Train Loss: 0.5906 Acc: 0.6936 AUC: 0.7635 | Val Loss: 0.5956 Acc: 0.6949 AUC: 0.7531 | LR: 4.61e-05
+2026-03-25 11:34:13 [INFO] Epoch  37/200 | Train Loss: 0.5873 Acc: 0.6954 AUC: 0.7629 | Val Loss: 0.5948 Acc: 0.6938 AUC: 0.7520 | LR: 4.59e-05
+2026-03-25 11:34:15 [INFO] Epoch  38/200 | Train Loss: 0.5902 Acc: 0.6935 AUC: 0.7631 | Val Loss: 0.5961 Acc: 0.6930 AUC: 0.7527 | LR: 4.57e-05
+2026-03-25 11:34:16 [INFO] Epoch  39/200 | Train Loss: 0.5902 Acc: 0.6939 AUC: 0.7633 | Val Loss: 0.5939 Acc: 0.6931 AUC: 0.7522 | LR: 4.55e-05
+2026-03-25 11:34:18 [INFO] Epoch  40/200 | Train Loss: 0.5899 Acc: 0.6935 AUC: 0.7638 | Val Loss: 0.5930 Acc: 0.6971 AUC: 0.7526 | LR: 4.52e-05
+2026-03-25 11:34:20 [INFO] Epoch  41/200 | Train Loss: 0.5889 Acc: 0.6942 AUC: 0.7643 | Val Loss: 0.5940 Acc: 0.6944 AUC: 0.7545 | LR: 4.50e-05 *
+2026-03-25 11:34:22 [INFO] Epoch  42/200 | Train Loss: 0.5899 Acc: 0.6924 AUC: 0.7644 | Val Loss: 0.5923 Acc: 0.6944 AUC: 0.7534 | LR: 4.48e-05
+2026-03-25 11:34:23 [INFO] Epoch  43/200 | Train Loss: 0.5882 Acc: 0.6945 AUC: 0.7619 | Val Loss: 0.6018 Acc: 0.6894 AUC: 0.7524 | LR: 4.45e-05
+2026-03-25 11:34:25 [INFO] Epoch  44/200 | Train Loss: 0.5901 Acc: 0.6931 AUC: 0.7634 | Val Loss: 0.6097 Acc: 0.6776 AUC: 0.7530 | LR: 4.43e-05
+2026-03-25 11:34:27 [INFO] Epoch  45/200 | Train Loss: 0.5898 Acc: 0.6927 AUC: 0.7631 | Val Loss: 0.6000 Acc: 0.6863 AUC: 0.7517 | LR: 4.40e-05
+2026-03-25 11:34:29 [INFO] Epoch  46/200 | Train Loss: 0.5891 Acc: 0.6939 AUC: 0.7633 | Val Loss: 0.6014 Acc: 0.6888 AUC: 0.7529 | LR: 4.38e-05
+2026-03-25 11:34:31 [INFO] Epoch  47/200 | Train Loss: 0.5888 Acc: 0.6944 AUC: 0.7634 | Val Loss: 0.5963 Acc: 0.6922 AUC: 0.7518 | LR: 4.35e-05
+2026-03-25 11:34:32 [INFO] Epoch  48/200 | Train Loss: 0.5880 Acc: 0.6957 AUC: 0.7640 | Val Loss: 0.5918 Acc: 0.6958 AUC: 0.7537 | LR: 4.32e-05
+2026-03-25 11:34:34 [INFO] Epoch  49/200 | Train Loss: 0.5909 Acc: 0.6934 AUC: 0.7633 | Val Loss: 0.5958 Acc: 0.6944 AUC: 0.7523 | LR: 4.30e-05
+2026-03-25 11:34:36 [INFO] Epoch  50/200 | Train Loss: 0.5879 Acc: 0.6960 AUC: 0.7642 | Val Loss: 0.5941 Acc: 0.6930 AUC: 0.7526 | LR: 4.27e-05
+2026-03-25 11:34:38 [INFO] Epoch  51/200 | Train Loss: 0.5891 Acc: 0.6951 AUC: 0.7640 | Val Loss: 0.5940 Acc: 0.6949 AUC: 0.7535 | LR: 4.24e-05
+2026-03-25 11:34:39 [INFO] Epoch  52/200 | Train Loss: 0.5860 Acc: 0.6973 AUC: 0.7639 | Val Loss: 0.5949 Acc: 0.6959 AUC: 0.7524 | LR: 4.21e-05
+2026-03-25 11:34:41 [INFO] Epoch  53/200 | Train Loss: 0.5868 Acc: 0.6961 AUC: 0.7637 | Val Loss: 0.5987 Acc: 0.6848 AUC: 0.7526 | LR: 4.18e-05
+2026-03-25 11:34:43 [INFO] Epoch  54/200 | Train Loss: 0.5880 Acc: 0.6950 AUC: 0.7636 | Val Loss: 0.5932 Acc: 0.6962 AUC: 0.7534 | LR: 4.15e-05
+2026-03-25 11:34:45 [INFO] Epoch  55/200 | Train Loss: 0.5870 Acc: 0.6963 AUC: 0.7638 | Val Loss: 0.5948 Acc: 0.6943 AUC: 0.7530 | LR: 4.13e-05
+2026-03-25 11:34:46 [INFO] Epoch  56/200 | Train Loss: 0.5868 Acc: 0.6963 AUC: 0.7643 | Val Loss: 0.5968 Acc: 0.6940 AUC: 0.7529 | LR: 4.10e-05
+2026-03-25 11:34:48 [INFO] Epoch  57/200 | Train Loss: 0.5860 Acc: 0.6981 AUC: 0.7642 | Val Loss: 0.5942 Acc: 0.6953 AUC: 0.7526 | LR: 4.06e-05
+2026-03-25 11:34:50 [INFO] Epoch  58/200 | Train Loss: 0.5917 Acc: 0.6918 AUC: 0.7631 | Val Loss: 0.5979 Acc: 0.6870 AUC: 0.7534 | LR: 4.03e-05
+2026-03-25 11:34:52 [INFO] Epoch  59/200 | Train Loss: 0.5874 Acc: 0.6955 AUC: 0.7643 | Val Loss: 0.5939 Acc: 0.6941 AUC: 0.7528 | LR: 4.00e-05
+2026-03-25 11:34:53 [INFO] Epoch  60/200 | Train Loss: 0.5888 Acc: 0.6942 AUC: 0.7638 | Val Loss: 0.5999 Acc: 0.6865 AUC: 0.7525 | LR: 3.97e-05
+2026-03-25 11:34:55 [INFO] Epoch  61/200 | Train Loss: 0.5876 Acc: 0.6953 AUC: 0.7636 | Val Loss: 0.5966 Acc: 0.6943 AUC: 0.7535 | LR: 3.94e-05
+2026-03-25 11:34:57 [INFO] Epoch  62/200 | Train Loss: 0.5870 Acc: 0.6962 AUC: 0.7639 | Val Loss: 0.6001 Acc: 0.6893 AUC: 0.7530 | LR: 3.91e-05
+2026-03-25 11:34:58 [INFO] Epoch  63/200 | Train Loss: 0.5892 Acc: 0.6954 AUC: 0.7632 | Val Loss: 0.5938 Acc: 0.6958 AUC: 0.7516 | LR: 3.87e-05
+2026-03-25 11:35:00 [INFO] Epoch  64/200 | Train Loss: 0.5864 Acc: 0.6965 AUC: 0.7644 | Val Loss: 0.5924 Acc: 0.6975 AUC: 0.7533 | LR: 3.84e-05
+2026-03-25 11:35:02 [INFO] Epoch  65/200 | Train Loss: 0.5873 Acc: 0.6956 AUC: 0.7646 | Val Loss: 0.5911 Acc: 0.6969 AUC: 0.7538 | LR: 3.81e-05
+2026-03-25 11:35:03 [INFO] Epoch  66/200 | Train Loss: 0.5872 Acc: 0.6958 AUC: 0.7636 | Val Loss: 0.5934 Acc: 0.6952 AUC: 0.7519 | LR: 3.78e-05
+2026-03-25 11:35:05 [INFO] Epoch  67/200 | Train Loss: 0.5878 Acc: 0.6953 AUC: 0.7642 | Val Loss: 0.5926 Acc: 0.6974 AUC: 0.7527 | LR: 3.74e-05
+2026-03-25 11:35:07 [INFO] Epoch  68/200 | Train Loss: 0.5875 Acc: 0.6954 AUC: 0.7646 | Val Loss: 0.5932 Acc: 0.6964 AUC: 0.7531 | LR: 3.71e-05
+2026-03-25 11:35:08 [INFO] Epoch  69/200 | Train Loss: 0.5878 Acc: 0.6955 AUC: 0.7646 | Val Loss: 0.5915 Acc: 0.6952 AUC: 0.7533 | LR: 3.67e-05
+2026-03-25 11:35:10 [INFO] Epoch  70/200 | Train Loss: 0.5862 Acc: 0.6977 AUC: 0.7647 | Val Loss: 0.5968 Acc: 0.6898 AUC: 0.7531 | LR: 3.64e-05
+2026-03-25 11:35:12 [INFO] Epoch  71/200 | Train Loss: 0.5880 Acc: 0.6942 AUC: 0.7644 | Val Loss: 0.5938 Acc: 0.6949 AUC: 0.7529 | LR: 3.60e-05
+2026-03-25 11:35:14 [INFO] Epoch  72/200 | Train Loss: 0.5874 Acc: 0.6955 AUC: 0.7640 | Val Loss: 0.5934 Acc: 0.6951 AUC: 0.7530 | LR: 3.57e-05
+2026-03-25 11:35:15 [INFO] Epoch  73/200 | Train Loss: 0.5852 Acc: 0.6978 AUC: 0.7640 | Val Loss: 0.5941 Acc: 0.6941 AUC: 0.7537 | LR: 3.53e-05
+2026-03-25 11:35:17 [INFO] Epoch  74/200 | Train Loss: 0.5857 Acc: 0.6971 AUC: 0.7639 | Val Loss: 0.5955 Acc: 0.6950 AUC: 0.7527 | LR: 3.50e-05
+2026-03-25 11:35:19 [INFO] Epoch  75/200 | Train Loss: 0.5893 Acc: 0.6942 AUC: 0.7636 | Val Loss: 0.5947 Acc: 0.6941 AUC: 0.7528 | LR: 3.46e-05
+2026-03-25 11:35:21 [INFO] Epoch  76/200 | Train Loss: 0.5861 Acc: 0.6966 AUC: 0.7639 | Val Loss: 0.5934 Acc: 0.6933 AUC: 0.7523 | LR: 3.42e-05
+2026-03-25 11:35:22 [INFO] Epoch  77/200 | Train Loss: 0.5872 Acc: 0.6968 AUC: 0.7639 | Val Loss: 0.5918 Acc: 0.6958 AUC: 0.7531 | LR: 3.39e-05
+2026-03-25 11:35:24 [INFO] Epoch  78/200 | Train Loss: 0.5865 Acc: 0.6963 AUC: 0.7647 | Val Loss: 0.6028 Acc: 0.6883 AUC: 0.7539 | LR: 3.35e-05
+2026-03-25 11:35:26 [INFO] Epoch  79/200 | Train Loss: 0.5866 Acc: 0.6965 AUC: 0.7646 | Val Loss: 0.5921 Acc: 0.6970 AUC: 0.7529 | LR: 3.31e-05
+2026-03-25 11:35:28 [INFO] Epoch  80/200 | Train Loss: 0.5861 Acc: 0.6976 AUC: 0.7644 | Val Loss: 0.5966 Acc: 0.6923 AUC: 0.7531 | LR: 3.28e-05
+2026-03-25 11:35:30 [INFO] Epoch  81/200 | Train Loss: 0.5861 Acc: 0.6972 AUC: 0.7645 | Val Loss: 0.5923 Acc: 0.6951 AUC: 0.7534 | LR: 3.24e-05
+2026-03-25 11:35:31 [INFO] Epoch  82/200 | Train Loss: 0.5859 Acc: 0.6975 AUC: 0.7643 | Val Loss: 0.5917 Acc: 0.6966 AUC: 0.7533 | LR: 3.20e-05
+2026-03-25 11:35:33 [INFO] Epoch  83/200 | Train Loss: 0.5861 Acc: 0.6965 AUC: 0.7642 | Val Loss: 0.6055 Acc: 0.6849 AUC: 0.7523 | LR: 3.16e-05
+2026-03-25 11:35:35 [INFO] Epoch  84/200 | Train Loss: 0.5871 Acc: 0.6953 AUC: 0.7645 | Val Loss: 0.5916 Acc: 0.6957 AUC: 0.7541 | LR: 3.13e-05
+2026-03-25 11:35:37 [INFO] Epoch  85/200 | Train Loss: 0.5875 Acc: 0.6948 AUC: 0.7643 | Val Loss: 0.5928 Acc: 0.6961 AUC: 0.7524 | LR: 3.09e-05
+2026-03-25 11:35:38 [INFO] Epoch  86/200 | Train Loss: 0.5874 Acc: 0.6950 AUC: 0.7640 | Val Loss: 0.5922 Acc: 0.6962 AUC: 0.7529 | LR: 3.05e-05
+2026-03-25 11:35:40 [INFO] Epoch  87/200 | Train Loss: 0.5856 Acc: 0.6971 AUC: 0.7649 | Val Loss: 0.5990 Acc: 0.6920 AUC: 0.7543 | LR: 3.01e-05
+2026-03-25 11:35:42 [INFO] Epoch  88/200 | Train Loss: 0.5851 Acc: 0.6979 AUC: 0.7642 | Val Loss: 0.5938 Acc: 0.6959 AUC: 0.7532 | LR: 2.97e-05
+2026-03-25 11:35:43 [INFO] Epoch  89/200 | Train Loss: 0.5850 Acc: 0.6980 AUC: 0.7647 | Val Loss: 0.5925 Acc: 0.6959 AUC: 0.7531 | LR: 2.93e-05
+2026-03-25 11:35:45 [INFO] Epoch  90/200 | Train Loss: 0.5864 Acc: 0.6962 AUC: 0.7643 | Val Loss: 0.5953 Acc: 0.6921 AUC: 0.7527 | LR: 2.90e-05
+2026-03-25 11:35:47 [INFO] Epoch  91/200 | Train Loss: 0.5868 Acc: 0.6954 AUC: 0.7646 | Val Loss: 0.5976 Acc: 0.6882 AUC: 0.7533 | LR: 2.86e-05
+2026-03-25 11:35:49 [INFO] Epoch  92/200 | Train Loss: 0.5857 Acc: 0.6977 AUC: 0.7650 | Val Loss: 0.5945 Acc: 0.6919 AUC: 0.7536 | LR: 2.82e-05
+2026-03-25 11:35:51 [INFO] Epoch  93/200 | Train Loss: 0.5860 Acc: 0.6975 AUC: 0.7646 | Val Loss: 0.5988 Acc: 0.6857 AUC: 0.7532 | LR: 2.78e-05
+2026-03-25 11:35:53 [INFO] Epoch  94/200 | Train Loss: 0.5867 Acc: 0.6961 AUC: 0.7647 | Val Loss: 0.5932 Acc: 0.6953 AUC: 0.7530 | LR: 2.74e-05
+2026-03-25 11:35:55 [INFO] Epoch  95/200 | Train Loss: 0.5851 Acc: 0.6973 AUC: 0.7650 | Val Loss: 0.6003 Acc: 0.6844 AUC: 0.7539 | LR: 2.70e-05
+2026-03-25 11:35:56 [INFO] Epoch  96/200 | Train Loss: 0.5853 Acc: 0.6976 AUC: 0.7651 | Val Loss: 0.5914 Acc: 0.6971 AUC: 0.7535 | LR: 2.66e-05
+2026-03-25 11:35:58 [INFO] Epoch  97/200 | Train Loss: 0.5860 Acc: 0.6955 AUC: 0.7652 | Val Loss: 0.5914 Acc: 0.6974 AUC: 0.7539 | LR: 2.62e-05
+2026-03-25 11:36:00 [INFO] Epoch  98/200 | Train Loss: 0.5853 Acc: 0.6974 AUC: 0.7652 | Val Loss: 0.5940 Acc: 0.6940 AUC: 0.7538 | LR: 2.58e-05
+2026-03-25 11:36:02 [INFO] Epoch  99/200 | Train Loss: 0.5840 Acc: 0.6985 AUC: 0.7652 | Val Loss: 0.5910 Acc: 0.6954 AUC: 0.7540 | LR: 2.54e-05
+2026-03-25 11:36:03 [INFO] Epoch 100/200 | Train Loss: 0.5859 Acc: 0.6964 AUC: 0.7651 | Val Loss: 0.5949 Acc: 0.6903 AUC: 0.7541 | LR: 2.50e-05
+2026-03-25 11:36:05 [INFO] Epoch 101/200 | Train Loss: 0.5842 Acc: 0.6990 AUC: 0.7650 | Val Loss: 0.5904 Acc: 0.6989 AUC: 0.7543 | LR: 2.47e-05
+2026-03-25 11:36:07 [INFO] Epoch 102/200 | Train Loss: 0.5859 Acc: 0.6968 AUC: 0.7640 | Val Loss: 0.5918 Acc: 0.6958 AUC: 0.7538 | LR: 2.43e-05
+2026-03-25 11:36:08 [INFO] Epoch 103/200 | Train Loss: 0.5835 Acc: 0.6998 AUC: 0.7652 | Val Loss: 0.5930 Acc: 0.6958 AUC: 0.7545 | LR: 2.39e-05
+2026-03-25 11:36:10 [INFO] Epoch 104/200 | Train Loss: 0.5867 Acc: 0.6963 AUC: 0.7652 | Val Loss: 0.5966 Acc: 0.6916 AUC: 0.7536 | LR: 2.35e-05
+2026-03-25 11:36:12 [INFO] Epoch 105/200 | Train Loss: 0.5847 Acc: 0.6983 AUC: 0.7652 | Val Loss: 0.5914 Acc: 0.6958 AUC: 0.7539 | LR: 2.31e-05
+2026-03-25 11:36:14 [INFO] Epoch 106/200 | Train Loss: 0.5838 Acc: 0.6995 AUC: 0.7653 | Val Loss: 0.5920 Acc: 0.6955 AUC: 0.7538 | LR: 2.27e-05
+2026-03-25 11:36:15 [INFO] Epoch 107/200 | Train Loss: 0.5843 Acc: 0.6984 AUC: 0.7649 | Val Loss: 0.5917 Acc: 0.6951 AUC: 0.7536 | LR: 2.23e-05
+2026-03-25 11:36:17 [INFO] Epoch 108/200 | Train Loss: 0.5837 Acc: 0.6988 AUC: 0.7653 | Val Loss: 0.5930 Acc: 0.6934 AUC: 0.7538 | LR: 2.19e-05
+2026-03-25 11:36:19 [INFO] Epoch 109/200 | Train Loss: 0.5842 Acc: 0.6981 AUC: 0.7646 | Val Loss: 0.5917 Acc: 0.6984 AUC: 0.7536 | LR: 2.15e-05
+2026-03-25 11:36:21 [INFO] Epoch 110/200 | Train Loss: 0.5845 Acc: 0.6971 AUC: 0.7653 | Val Loss: 0.5919 Acc: 0.6956 AUC: 0.7542 | LR: 2.11e-05
+2026-03-25 11:36:22 [INFO] Epoch 111/200 | Train Loss: 0.5845 Acc: 0.6979 AUC: 0.7648 | Val Loss: 0.6002 Acc: 0.6898 AUC: 0.7539 | LR: 2.08e-05
+2026-03-25 11:36:24 [INFO] Epoch 112/200 | Train Loss: 0.5842 Acc: 0.6985 AUC: 0.7654 | Val Loss: 0.5944 Acc: 0.6941 AUC: 0.7542 | LR: 2.04e-05
+2026-03-25 11:36:26 [INFO] Epoch 113/200 | Train Loss: 0.5860 Acc: 0.6963 AUC: 0.7653 | Val Loss: 0.6002 Acc: 0.6844 AUC: 0.7542 | LR: 2.00e-05
+2026-03-25 11:36:28 [INFO] Epoch 114/200 | Train Loss: 0.5839 Acc: 0.6983 AUC: 0.7652 | Val Loss: 0.5917 Acc: 0.6964 AUC: 0.7537 | LR: 1.96e-05
+2026-03-25 11:36:29 [INFO] Epoch 115/200 | Train Loss: 0.5836 Acc: 0.6989 AUC: 0.7653 | Val Loss: 0.5914 Acc: 0.6980 AUC: 0.7543 | LR: 1.92e-05
+2026-03-25 11:36:31 [INFO] Epoch 116/200 | Train Loss: 0.5828 Acc: 0.6993 AUC: 0.7653 | Val Loss: 0.5927 Acc: 0.6945 AUC: 0.7538 | LR: 1.88e-05
+2026-03-25 11:36:33 [INFO] Epoch 117/200 | Train Loss: 0.5827 Acc: 0.6999 AUC: 0.7655 | Val Loss: 0.5936 Acc: 0.6957 AUC: 0.7540 | LR: 1.85e-05
+2026-03-25 11:36:35 [INFO] Epoch 118/200 | Train Loss: 0.5841 Acc: 0.6983 AUC: 0.7654 | Val Loss: 0.6008 Acc: 0.6827 AUC: 0.7536 | LR: 1.81e-05
+2026-03-25 11:36:37 [INFO] Epoch 119/200 | Train Loss: 0.5835 Acc: 0.6986 AUC: 0.7651 | Val Loss: 0.5946 Acc: 0.6941 AUC: 0.7542 | LR: 1.77e-05
+2026-03-25 11:36:38 [INFO] Epoch 120/200 | Train Loss: 0.5836 Acc: 0.6997 AUC: 0.7652 | Val Loss: 0.5948 Acc: 0.6915 AUC: 0.7539 | LR: 1.73e-05
+2026-03-25 11:36:40 [INFO] Epoch 121/200 | Train Loss: 0.5836 Acc: 0.6986 AUC: 0.7656 | Val Loss: 0.5927 Acc: 0.6948 AUC: 0.7542 | LR: 1.70e-05
+2026-03-25 11:36:42 [INFO] Epoch 122/200 | Train Loss: 0.5832 Acc: 0.6991 AUC: 0.7656 | Val Loss: 0.5907 Acc: 0.6969 AUC: 0.7540 | LR: 1.66e-05
+2026-03-25 11:36:44 [INFO] Epoch 123/200 | Train Loss: 0.5825 Acc: 0.6990 AUC: 0.7656 | Val Loss: 0.5906 Acc: 0.6972 AUC: 0.7543 | LR: 1.62e-05
+2026-03-25 11:36:46 [INFO] Epoch 124/200 | Train Loss: 0.5825 Acc: 0.6996 AUC: 0.7653 | Val Loss: 0.5913 Acc: 0.6973 AUC: 0.7539 | LR: 1.59e-05
+2026-03-25 11:36:48 [INFO] Epoch 125/200 | Train Loss: 0.5831 Acc: 0.6995 AUC: 0.7655 | Val Loss: 0.5912 Acc: 0.6981 AUC: 0.7540 | LR: 1.55e-05
+2026-03-25 11:36:49 [INFO] Epoch 126/200 | Train Loss: 0.5832 Acc: 0.6989 AUC: 0.7657 | Val Loss: 0.5915 Acc: 0.6980 AUC: 0.7543 | LR: 1.51e-05
+2026-03-25 11:36:51 [INFO] Epoch 127/200 | Train Loss: 0.5839 Acc: 0.6979 AUC: 0.7656 | Val Loss: 0.5985 Acc: 0.6874 AUC: 0.7540 | LR: 1.48e-05
+2026-03-25 11:36:53 [INFO] Epoch 128/200 | Train Loss: 0.5830 Acc: 0.7001 AUC: 0.7655 | Val Loss: 0.5928 Acc: 0.6968 AUC: 0.7535 | LR: 1.44e-05
+2026-03-25 11:36:54 [INFO] Epoch 129/200 | Train Loss: 0.5827 Acc: 0.6996 AUC: 0.7655 | Val Loss: 0.5914 Acc: 0.6960 AUC: 0.7542 | LR: 1.41e-05
+2026-03-25 11:36:56 [INFO] Epoch 130/200 | Train Loss: 0.5822 Acc: 0.6996 AUC: 0.7655 | Val Loss: 0.5906 Acc: 0.6979 AUC: 0.7546 | LR: 1.37e-05 *
+2026-03-25 11:36:58 [INFO] Epoch 131/200 | Train Loss: 0.5829 Acc: 0.6989 AUC: 0.7657 | Val Loss: 0.5908 Acc: 0.6966 AUC: 0.7542 | LR: 1.34e-05
+2026-03-25 11:37:00 [INFO] Epoch 132/200 | Train Loss: 0.5824 Acc: 0.7006 AUC: 0.7655 | Val Loss: 0.5946 Acc: 0.6933 AUC: 0.7546 | LR: 1.30e-05
+2026-03-25 11:37:01 [INFO] Epoch 133/200 | Train Loss: 0.5833 Acc: 0.6992 AUC: 0.7654 | Val Loss: 0.5927 Acc: 0.6960 AUC: 0.7545 | LR: 1.27e-05
+2026-03-25 11:37:03 [INFO] Epoch 134/200 | Train Loss: 0.5829 Acc: 0.6999 AUC: 0.7654 | Val Loss: 0.5910 Acc: 0.6978 AUC: 0.7540 | LR: 1.23e-05
+2026-03-25 11:37:05 [INFO] Epoch 135/200 | Train Loss: 0.5818 Acc: 0.7010 AUC: 0.7657 | Val Loss: 0.5906 Acc: 0.6972 AUC: 0.7545 | LR: 1.20e-05
+2026-03-25 11:37:06 [INFO] Epoch 136/200 | Train Loss: 0.5817 Acc: 0.7004 AUC: 0.7656 | Val Loss: 0.5906 Acc: 0.6979 AUC: 0.7541 | LR: 1.17e-05
+2026-03-25 11:37:08 [INFO] Epoch 137/200 | Train Loss: 0.5814 Acc: 0.7011 AUC: 0.7655 | Val Loss: 0.5910 Acc: 0.6969 AUC: 0.7538 | LR: 1.14e-05
+2026-03-25 11:37:10 [INFO] Epoch 138/200 | Train Loss: 0.5823 Acc: 0.6998 AUC: 0.7657 | Val Loss: 0.5907 Acc: 0.6970 AUC: 0.7541 | LR: 1.10e-05
+2026-03-25 11:37:12 [INFO] Epoch 139/200 | Train Loss: 0.5823 Acc: 0.6995 AUC: 0.7658 | Val Loss: 0.5918 Acc: 0.6981 AUC: 0.7543 | LR: 1.07e-05
+2026-03-25 11:37:14 [INFO] Epoch 140/200 | Train Loss: 0.5818 Acc: 0.7010 AUC: 0.7655 | Val Loss: 0.5917 Acc: 0.6972 AUC: 0.7542 | LR: 1.04e-05
+2026-03-25 11:37:15 [INFO] Epoch 141/200 | Train Loss: 0.5817 Acc: 0.7004 AUC: 0.7657 | Val Loss: 0.5909 Acc: 0.6964 AUC: 0.7541 | LR: 1.01e-05
+2026-03-25 11:37:17 [INFO] Epoch 142/200 | Train Loss: 0.5815 Acc: 0.7002 AUC: 0.7657 | Val Loss: 0.5910 Acc: 0.6969 AUC: 0.7541 | LR: 9.76e-06
+2026-03-25 11:37:19 [INFO] Epoch 143/200 | Train Loss: 0.5817 Acc: 0.7004 AUC: 0.7658 | Val Loss: 0.5909 Acc: 0.6961 AUC: 0.7544 | LR: 9.45e-06
+2026-03-25 11:37:21 [INFO] Epoch 144/200 | Train Loss: 0.5813 Acc: 0.7007 AUC: 0.7656 | Val Loss: 0.5913 Acc: 0.6974 AUC: 0.7542 | LR: 9.15e-06
+2026-03-25 11:37:23 [INFO] Epoch 145/200 | Train Loss: 0.5821 Acc: 0.7004 AUC: 0.7656 | Val Loss: 0.5914 Acc: 0.6970 AUC: 0.7543 | LR: 8.85e-06
+2026-03-25 11:37:25 [INFO] Epoch 146/200 | Train Loss: 0.5816 Acc: 0.6998 AUC: 0.7657 | Val Loss: 0.5907 Acc: 0.6962 AUC: 0.7544 | LR: 8.55e-06
+2026-03-25 11:37:26 [INFO] Epoch 147/200 | Train Loss: 0.5817 Acc: 0.7008 AUC: 0.7657 | Val Loss: 0.5909 Acc: 0.6976 AUC: 0.7545 | LR: 8.26e-06
+2026-03-25 11:37:28 [INFO] Epoch 148/200 | Train Loss: 0.5813 Acc: 0.7010 AUC: 0.7657 | Val Loss: 0.5930 Acc: 0.6947 AUC: 0.7544 | LR: 7.97e-06
+2026-03-25 11:37:30 [INFO] Epoch 149/200 | Train Loss: 0.5816 Acc: 0.7015 AUC: 0.7656 | Val Loss: 0.5931 Acc: 0.6963 AUC: 0.7541 | LR: 7.69e-06
+2026-03-25 11:37:31 [INFO] Epoch 150/200 | Train Loss: 0.5814 Acc: 0.7016 AUC: 0.7656 | Val Loss: 0.5904 Acc: 0.6971 AUC: 0.7545 | LR: 7.41e-06
+2026-03-25 11:37:33 [INFO] Epoch 151/200 | Train Loss: 0.5812 Acc: 0.7001 AUC: 0.7656 | Val Loss: 0.5908 Acc: 0.6969 AUC: 0.7543 | LR: 7.13e-06
+2026-03-25 11:37:35 [INFO] Epoch 152/200 | Train Loss: 0.5815 Acc: 0.7006 AUC: 0.7657 | Val Loss: 0.5903 Acc: 0.6981 AUC: 0.7546 | LR: 6.86e-06
+2026-03-25 11:37:37 [INFO] Epoch 153/200 | Train Loss: 0.5810 Acc: 0.7012 AUC: 0.7658 | Val Loss: 0.5909 Acc: 0.6985 AUC: 0.7544 | LR: 6.60e-06
+2026-03-25 11:37:38 [INFO] Epoch 154/200 | Train Loss: 0.5812 Acc: 0.7012 AUC: 0.7658 | Val Loss: 0.5903 Acc: 0.6975 AUC: 0.7546 | LR: 6.33e-06
+2026-03-25 11:37:40 [INFO] Epoch 155/200 | Train Loss: 0.5809 Acc: 0.7004 AUC: 0.7658 | Val Loss: 0.5908 Acc: 0.6982 AUC: 0.7545 | LR: 6.08e-06
+2026-03-25 11:37:42 [INFO] Epoch 156/200 | Train Loss: 0.5809 Acc: 0.7011 AUC: 0.7658 | Val Loss: 0.5922 Acc: 0.6959 AUC: 0.7544 | LR: 5.83e-06
+2026-03-25 11:37:44 [INFO] Epoch 157/200 | Train Loss: 0.5808 Acc: 0.7010 AUC: 0.7658 | Val Loss: 0.5912 Acc: 0.6970 AUC: 0.7544 | LR: 5.58e-06
+2026-03-25 11:37:45 [INFO] Epoch 158/200 | Train Loss: 0.5810 Acc: 0.7009 AUC: 0.7659 | Val Loss: 0.5908 Acc: 0.6974 AUC: 0.7544 | LR: 5.34e-06
+2026-03-25 11:37:47 [INFO] Epoch 159/200 | Train Loss: 0.5808 Acc: 0.7015 AUC: 0.7657 | Val Loss: 0.5906 Acc: 0.6966 AUC: 0.7544 | LR: 5.10e-06
+2026-03-25 11:37:49 [INFO] Epoch 160/200 | Train Loss: 0.5808 Acc: 0.7014 AUC: 0.7659 | Val Loss: 0.5912 Acc: 0.6977 AUC: 0.7545 | LR: 4.87e-06
+2026-03-25 11:37:50 [INFO] Epoch 161/200 | Train Loss: 0.5809 Acc: 0.7012 AUC: 0.7659 | Val Loss: 0.5917 Acc: 0.6962 AUC: 0.7544 | LR: 4.64e-06
+2026-03-25 11:37:52 [INFO] Epoch 162/200 | Train Loss: 0.5808 Acc: 0.7019 AUC: 0.7658 | Val Loss: 0.5905 Acc: 0.6974 AUC: 0.7544 | LR: 4.41e-06
+2026-03-25 11:37:54 [INFO] Epoch 163/200 | Train Loss: 0.5807 Acc: 0.7011 AUC: 0.7658 | Val Loss: 0.5907 Acc: 0.6982 AUC: 0.7543 | LR: 4.20e-06
+2026-03-25 11:37:55 [INFO] Epoch 164/200 | Train Loss: 0.5804 Acc: 0.7015 AUC: 0.7658 | Val Loss: 0.5902 Acc: 0.6971 AUC: 0.7547 | LR: 3.98e-06 *
+2026-03-25 11:37:57 [INFO] Epoch 165/200 | Train Loss: 0.5805 Acc: 0.7012 AUC: 0.7659 | Val Loss: 0.5907 Acc: 0.6974 AUC: 0.7546 | LR: 3.78e-06
+2026-03-25 11:37:59 [INFO] Epoch 166/200 | Train Loss: 0.5806 Acc: 0.7017 AUC: 0.7659 | Val Loss: 0.5905 Acc: 0.6972 AUC: 0.7545 | LR: 3.57e-06
+2026-03-25 11:38:00 [INFO] Epoch 167/200 | Train Loss: 0.5805 Acc: 0.7016 AUC: 0.7659 | Val Loss: 0.5907 Acc: 0.6977 AUC: 0.7545 | LR: 3.38e-06
+2026-03-25 11:38:02 [INFO] Epoch 168/200 | Train Loss: 0.5804 Acc: 0.7013 AUC: 0.7659 | Val Loss: 0.5904 Acc: 0.6974 AUC: 0.7545 | LR: 3.19e-06
+2026-03-25 11:38:04 [INFO] Epoch 169/200 | Train Loss: 0.5803 Acc: 0.7016 AUC: 0.7658 | Val Loss: 0.5904 Acc: 0.6966 AUC: 0.7544 | LR: 3.00e-06
+2026-03-25 11:38:06 [INFO] Epoch 170/200 | Train Loss: 0.5803 Acc: 0.7015 AUC: 0.7659 | Val Loss: 0.5903 Acc: 0.6977 AUC: 0.7545 | LR: 2.82e-06
+2026-03-25 11:38:07 [INFO] Epoch 171/200 | Train Loss: 0.5802 Acc: 0.7019 AUC: 0.7659 | Val Loss: 0.5920 Acc: 0.6963 AUC: 0.7546 | LR: 2.64e-06
+2026-03-25 11:38:09 [INFO] Epoch 172/200 | Train Loss: 0.5802 Acc: 0.7017 AUC: 0.7659 | Val Loss: 0.5908 Acc: 0.6979 AUC: 0.7545 | LR: 2.47e-06
+2026-03-25 11:38:11 [INFO] Epoch 173/200 | Train Loss: 0.5801 Acc: 0.7019 AUC: 0.7659 | Val Loss: 0.5905 Acc: 0.6972 AUC: 0.7545 | LR: 2.31e-06
+2026-03-25 11:38:12 [INFO] Epoch 174/200 | Train Loss: 0.5803 Acc: 0.7019 AUC: 0.7659 | Val Loss: 0.5904 Acc: 0.6969 AUC: 0.7545 | LR: 2.15e-06
+2026-03-25 11:38:14 [INFO] Epoch 175/200 | Train Loss: 0.5801 Acc: 0.7021 AUC: 0.7659 | Val Loss: 0.5905 Acc: 0.6984 AUC: 0.7546 | LR: 2.00e-06
+2026-03-25 11:38:16 [INFO] Epoch 176/200 | Train Loss: 0.5802 Acc: 0.7015 AUC: 0.7659 | Val Loss: 0.5903 Acc: 0.6972 AUC: 0.7545 | LR: 1.85e-06
+2026-03-25 11:38:17 [INFO] Epoch 177/200 | Train Loss: 0.5801 Acc: 0.7019 AUC: 0.7659 | Val Loss: 0.5903 Acc: 0.6972 AUC: 0.7545 | LR: 1.71e-06
+2026-03-25 11:38:19 [INFO] Epoch 178/200 | Train Loss: 0.5801 Acc: 0.7019 AUC: 0.7659 | Val Loss: 0.5903 Acc: 0.6969 AUC: 0.7546 | LR: 1.58e-06
+2026-03-25 11:38:21 [INFO] Epoch 179/200 | Train Loss: 0.5800 Acc: 0.7019 AUC: 0.7659 | Val Loss: 0.5903 Acc: 0.6970 AUC: 0.7546 | LR: 1.45e-06
+2026-03-25 11:38:22 [INFO] Epoch 180/200 | Train Loss: 0.5799 Acc: 0.7016 AUC: 0.7659 | Val Loss: 0.5903 Acc: 0.6972 AUC: 0.7546 | LR: 1.32e-06
+2026-03-25 11:38:24 [INFO] Epoch 181/200 | Train Loss: 0.5800 Acc: 0.7020 AUC: 0.7659 | Val Loss: 0.5903 Acc: 0.6969 AUC: 0.7545 | LR: 1.20e-06
+2026-03-25 11:38:26 [INFO] Epoch 182/200 | Train Loss: 0.5800 Acc: 0.7017 AUC: 0.7659 | Val Loss: 0.5903 Acc: 0.6974 AUC: 0.7545 | LR: 1.09e-06
+2026-03-25 11:38:28 [INFO] Epoch 183/200 | Train Loss: 0.5800 Acc: 0.7014 AUC: 0.7659 | Val Loss: 0.5903 Acc: 0.6970 AUC: 0.7545 | LR: 9.84e-07
+2026-03-25 11:38:29 [INFO] Epoch 184/200 | Train Loss: 0.5799 Acc: 0.7016 AUC: 0.7659 | Val Loss: 0.5903 Acc: 0.6972 AUC: 0.7545 | LR: 8.84e-07
+2026-03-25 11:38:31 [INFO] Epoch 185/200 | Train Loss: 0.5799 Acc: 0.7017 AUC: 0.7659 | Val Loss: 0.5903 Acc: 0.6972 AUC: 0.7545 | LR: 7.89e-07
+2026-03-25 11:38:33 [INFO] Epoch 186/200 | Train Loss: 0.5799 Acc: 0.7018 AUC: 0.7659 | Val Loss: 0.5903 Acc: 0.6969 AUC: 0.7545 | LR: 7.01e-07
+2026-03-25 11:38:34 [INFO] Epoch 187/200 | Train Loss: 0.5799 Acc: 0.7017 AUC: 0.7659 | Val Loss: 0.5903 Acc: 0.6979 AUC: 0.7545 | LR: 6.18e-07
+2026-03-25 11:38:36 [INFO] Epoch 188/200 | Train Loss: 0.5799 Acc: 0.7018 AUC: 0.7659 | Val Loss: 0.5903 Acc: 0.6970 AUC: 0.7545 | LR: 5.42e-07
+2026-03-25 11:38:38 [INFO] Epoch 189/200 | Train Loss: 0.5798 Acc: 0.7017 AUC: 0.7659 | Val Loss: 0.5903 Acc: 0.6972 AUC: 0.7545 | LR: 4.72e-07
+2026-03-25 11:38:39 [INFO] Epoch 190/200 | Train Loss: 0.5798 Acc: 0.7015 AUC: 0.7659 | Val Loss: 0.5903 Acc: 0.6972 AUC: 0.7545 | LR: 4.07e-07
+2026-03-25 11:38:41 [INFO] Epoch 191/200 | Train Loss: 0.5798 Acc: 0.7018 AUC: 0.7659 | Val Loss: 0.5903 Acc: 0.6969 AUC: 0.7545 | LR: 3.49e-07
+2026-03-25 11:38:43 [INFO] Epoch 192/200 | Train Loss: 0.5798 Acc: 0.7017 AUC: 0.7659 | Val Loss: 0.5903 Acc: 0.6968 AUC: 0.7545 | LR: 2.97e-07
+2026-03-25 11:38:45 [INFO] Epoch 193/200 | Train Loss: 0.5798 Acc: 0.7017 AUC: 0.7659 | Val Loss: 0.5903 Acc: 0.6972 AUC: 0.7545 | LR: 2.51e-07
+2026-03-25 11:38:46 [INFO] Epoch 194/200 | Train Loss: 0.5797 Acc: 0.7017 AUC: 0.7659 | Val Loss: 0.5905 Acc: 0.6967 AUC: 0.7545 | LR: 2.11e-07
+2026-03-25 11:38:48 [INFO] Epoch 195/200 | Train Loss: 0.5798 Acc: 0.7016 AUC: 0.7659 | Val Loss: 0.5903 Acc: 0.6970 AUC: 0.7545 | LR: 1.77e-07
+2026-03-25 11:38:50 [INFO] Epoch 196/200 | Train Loss: 0.5797 Acc: 0.7017 AUC: 0.7659 | Val Loss: 0.5903 Acc: 0.6971 AUC: 0.7545 | LR: 1.49e-07
+2026-03-25 11:38:52 [INFO] Epoch 197/200 | Train Loss: 0.5797 Acc: 0.7017 AUC: 0.7659 | Val Loss: 0.5903 Acc: 0.6971 AUC: 0.7545 | LR: 1.28e-07
+2026-03-25 11:38:53 [INFO] Epoch 198/200 | Train Loss: 0.5797 Acc: 0.7017 AUC: 0.7659 | Val Loss: 0.5903 Acc: 0.6972 AUC: 0.7545 | LR: 1.12e-07
+2026-03-25 11:38:55 [INFO] Epoch 199/200 | Train Loss: 0.5797 Acc: 0.7018 AUC: 0.7659 | Val Loss: 0.5903 Acc: 0.6971 AUC: 0.7545 | LR: 1.03e-07
+2026-03-25 11:38:57 [INFO] Epoch 200/200 | Train Loss: 0.5797 Acc: 0.7018 AUC: 0.7659 | Val Loss: 0.5903 Acc: 0.6970 AUC: 0.7545 | LR: 1.00e-07
+2026-03-25 11:38:57 [INFO] Linear probe done. Best val AUC: 0.7547
+2026-03-25 11:38:57 [INFO] === Phase 3: Test Evaluation ===
+2026-03-25 11:38:57 [INFO] Test AUC: 0.7612
+2026-03-25 11:38:57 [INFO] Test Acc: 0.7016
+2026-03-25 11:38:57 [INFO] Done!
+2026-03-25 11:40:49 [INFO] Experiment: ae_linear_sgd
+2026-03-25 11:40:49 [INFO] Config: {'experiment_name': 'ae_linear_sgd', 'ae_checkpoint': 'outputs/task1/segnet_ptlogpct/best.pt', 'batch_size': 256, 'optimizer': 'sgd', 'linear_lr': 2e-05, 'min_lr': 1e-07, 'weight_decay': 0.002, 'linear_epochs': 200, 'seed': 42}
+2026-03-25 11:40:50 [INFO] Loaded SegNet encoder from segnet_ptlogpct (epoch 61)
+2026-03-25 11:40:50 [INFO] Data: 139306 images
+2026-03-25 11:40:50 [INFO] Split: train=111444, val=13931, test=13931
+2026-03-25 11:40:50 [INFO] === Phase 1: Feature Extraction ===
+2026-03-25 11:40:50 [INFO] Extracting train features...
+2026-03-25 11:40:58 [INFO]   Extracted 12800/111444
+2026-03-25 11:41:04 [INFO]   Extracted 25600/111444
+2026-03-25 11:41:10 [INFO]   Extracted 38400/111444
+2026-03-25 11:41:15 [INFO]   Extracted 51200/111444
+2026-03-25 11:41:21 [INFO]   Extracted 64000/111444
+2026-03-25 11:41:27 [INFO]   Extracted 76800/111444
+2026-03-25 11:41:33 [INFO]   Extracted 89600/111444
+2026-03-25 11:41:41 [INFO]   Extracted 102400/111444
+2026-03-25 11:41:47 [INFO] Extracting val features...
+2026-03-25 11:41:57 [INFO]   Extracted 12800/13931
+2026-03-25 11:41:58 [INFO] Extracting test features...
+2026-03-25 11:42:09 [INFO]   Extracted 12800/13931
+2026-03-25 11:42:10 [INFO] Feature dim: 512
+2026-03-25 11:42:10 [INFO] === Phase 2: Linear Classification ===
+2026-03-25 11:42:11 [INFO] Optimizer: sgd, lr=2e-05, wd=0.002, min_lr=1e-07
+2026-03-25 11:42:13 [INFO] Epoch   1/200 | Train Loss: 1.7374 Acc: 0.5766 AUC: 0.6377 | Val Loss: 1.2300 Acc: 0.6023 AUC: 0.6377 | LR: 2.00e-05 *
+2026-03-25 11:42:15 [INFO] Epoch   2/200 | Train Loss: 1.0332 Acc: 0.6125 AUC: 0.6654 | Val Loss: 0.8929 Acc: 0.6185 AUC: 0.6621 | LR: 2.00e-05 *
+2026-03-25 11:42:17 [INFO] Epoch   3/200 | Train Loss: 0.8078 Acc: 0.6315 AUC: 0.6890 | Val Loss: 0.7535 Acc: 0.6300 AUC: 0.6835 | LR: 2.00e-05 *
+2026-03-25 11:42:18 [INFO] Epoch   4/200 | Train Loss: 0.7110 Acc: 0.6457 AUC: 0.7084 | Val Loss: 0.6900 Acc: 0.6478 AUC: 0.7018 | LR: 2.00e-05 *
+2026-03-25 11:42:20 [INFO] Epoch   5/200 | Train Loss: 0.6623 Acc: 0.6572 AUC: 0.7209 | Val Loss: 0.6621 Acc: 0.6537 AUC: 0.7133 | LR: 2.00e-05 *
+2026-03-25 11:42:22 [INFO] Epoch   6/200 | Train Loss: 0.6365 Acc: 0.6665 AUC: 0.7304 | Val Loss: 0.6361 Acc: 0.6684 AUC: 0.7215 | LR: 2.00e-05 *
+2026-03-25 11:42:23 [INFO] Epoch   7/200 | Train Loss: 0.6221 Acc: 0.6725 AUC: 0.7374 | Val Loss: 0.6260 Acc: 0.6699 AUC: 0.7281 | LR: 1.99e-05 *
+2026-03-25 11:42:25 [INFO] Epoch   8/200 | Train Loss: 0.6117 Acc: 0.6779 AUC: 0.7426 | Val Loss: 0.6154 Acc: 0.6769 AUC: 0.7328 | LR: 1.99e-05 *
+2026-03-25 11:42:27 [INFO] Epoch   9/200 | Train Loss: 0.6054 Acc: 0.6815 AUC: 0.7484 | Val Loss: 0.6145 Acc: 0.6762 AUC: 0.7384 | LR: 1.99e-05 *
+2026-03-25 11:42:29 [INFO] Epoch  10/200 | Train Loss: 0.6008 Acc: 0.6847 AUC: 0.7505 | Val Loss: 0.6067 Acc: 0.6829 AUC: 0.7400 | LR: 1.99e-05 *
+2026-03-25 11:42:31 [INFO] Epoch  11/200 | Train Loss: 0.5975 Acc: 0.6875 AUC: 0.7539 | Val Loss: 0.6044 Acc: 0.6852 AUC: 0.7435 | LR: 1.99e-05 *
+2026-03-25 11:42:33 [INFO] Epoch  12/200 | Train Loss: 0.5942 Acc: 0.6899 AUC: 0.7556 | Val Loss: 0.6015 Acc: 0.6890 AUC: 0.7447 | LR: 1.98e-05 *
+2026-03-25 11:42:34 [INFO] Epoch  13/200 | Train Loss: 0.5934 Acc: 0.6914 AUC: 0.7574 | Val Loss: 0.6019 Acc: 0.6869 AUC: 0.7466 | LR: 1.98e-05 *
+2026-03-25 11:42:36 [INFO] Epoch  14/200 | Train Loss: 0.5912 Acc: 0.6919 AUC: 0.7580 | Val Loss: 0.5999 Acc: 0.6873 AUC: 0.7465 | LR: 1.98e-05
+2026-03-25 11:42:38 [INFO] Epoch  15/200 | Train Loss: 0.5897 Acc: 0.6933 AUC: 0.7594 | Val Loss: 0.5985 Acc: 0.6894 AUC: 0.7485 | LR: 1.97e-05 *
+2026-03-25 11:42:40 [INFO] Epoch  16/200 | Train Loss: 0.5895 Acc: 0.6932 AUC: 0.7598 | Val Loss: 0.5968 Acc: 0.6927 AUC: 0.7485 | LR: 1.97e-05 *
+2026-03-25 11:42:41 [INFO] Epoch  17/200 | Train Loss: 0.5881 Acc: 0.6950 AUC: 0.7607 | Val Loss: 0.5972 Acc: 0.6916 AUC: 0.7490 | LR: 1.96e-05 *
+2026-03-25 11:42:43 [INFO] Epoch  18/200 | Train Loss: 0.5896 Acc: 0.6936 AUC: 0.7611 | Val Loss: 0.5954 Acc: 0.6910 AUC: 0.7500 | LR: 1.96e-05 *
+2026-03-25 11:42:45 [INFO] Epoch  19/200 | Train Loss: 0.5874 Acc: 0.6961 AUC: 0.7612 | Val Loss: 0.5996 Acc: 0.6875 AUC: 0.7499 | LR: 1.96e-05
+2026-03-25 11:42:47 [INFO] Epoch  20/200 | Train Loss: 0.5866 Acc: 0.6948 AUC: 0.7619 | Val Loss: 0.5948 Acc: 0.6910 AUC: 0.7500 | LR: 1.95e-05
+2026-03-25 11:42:48 [INFO] Epoch  21/200 | Train Loss: 0.5866 Acc: 0.6964 AUC: 0.7622 | Val Loss: 0.5946 Acc: 0.6933 AUC: 0.7501 | LR: 1.95e-05 *
+2026-03-25 11:42:50 [INFO] Epoch  22/200 | Train Loss: 0.5860 Acc: 0.6966 AUC: 0.7624 | Val Loss: 0.5954 Acc: 0.6913 AUC: 0.7508 | LR: 1.94e-05 *
+2026-03-25 11:42:52 [INFO] Epoch  23/200 | Train Loss: 0.5871 Acc: 0.6959 AUC: 0.7625 | Val Loss: 0.5940 Acc: 0.6925 AUC: 0.7512 | LR: 1.94e-05 *
+2026-03-25 11:42:54 [INFO] Epoch  24/200 | Train Loss: 0.5860 Acc: 0.6958 AUC: 0.7623 | Val Loss: 0.6058 Acc: 0.6797 AUC: 0.7514 | LR: 1.93e-05 *
+2026-03-25 11:42:55 [INFO] Epoch  25/200 | Train Loss: 0.5859 Acc: 0.6964 AUC: 0.7631 | Val Loss: 0.5934 Acc: 0.6941 AUC: 0.7516 | LR: 1.92e-05 *
+2026-03-25 11:42:57 [INFO] Epoch  26/200 | Train Loss: 0.5863 Acc: 0.6972 AUC: 0.7626 | Val Loss: 0.5936 Acc: 0.6946 AUC: 0.7514 | LR: 1.92e-05
+2026-03-25 11:42:59 [INFO] Epoch  27/200 | Train Loss: 0.5895 Acc: 0.6942 AUC: 0.7631 | Val Loss: 0.6118 Acc: 0.6776 AUC: 0.7516 | LR: 1.91e-05
+2026-03-25 11:43:01 [INFO] Epoch  28/200 | Train Loss: 0.5886 Acc: 0.6946 AUC: 0.7635 | Val Loss: 0.5980 Acc: 0.6919 AUC: 0.7519 | LR: 1.91e-05 *
+2026-03-25 11:43:02 [INFO] Epoch  29/200 | Train Loss: 0.5867 Acc: 0.6964 AUC: 0.7631 | Val Loss: 0.6055 Acc: 0.6799 AUC: 0.7514 | LR: 1.90e-05
+2026-03-25 11:43:04 [INFO] Epoch  30/200 | Train Loss: 0.5851 Acc: 0.6981 AUC: 0.7634 | Val Loss: 0.5934 Acc: 0.6949 AUC: 0.7515 | LR: 1.89e-05
+2026-03-25 11:43:06 [INFO] Epoch  31/200 | Train Loss: 0.5849 Acc: 0.6978 AUC: 0.7635 | Val Loss: 0.6032 Acc: 0.6868 AUC: 0.7522 | LR: 1.88e-05 *
+2026-03-25 11:43:07 [INFO] Epoch  32/200 | Train Loss: 0.5850 Acc: 0.6968 AUC: 0.7635 | Val Loss: 0.5940 Acc: 0.6940 AUC: 0.7518 | LR: 1.88e-05
+2026-03-25 11:43:09 [INFO] Epoch  33/200 | Train Loss: 0.5850 Acc: 0.6977 AUC: 0.7637 | Val Loss: 0.5938 Acc: 0.6941 AUC: 0.7526 | LR: 1.87e-05 *
+2026-03-25 11:43:11 [INFO] Epoch  34/200 | Train Loss: 0.5842 Acc: 0.6984 AUC: 0.7639 | Val Loss: 0.5941 Acc: 0.6941 AUC: 0.7522 | LR: 1.86e-05
+2026-03-25 11:43:13 [INFO] Epoch  35/200 | Train Loss: 0.5857 Acc: 0.6969 AUC: 0.7634 | Val Loss: 0.5929 Acc: 0.6949 AUC: 0.7518 | LR: 1.85e-05
+2026-03-25 11:43:14 [INFO] Epoch  36/200 | Train Loss: 0.5847 Acc: 0.6981 AUC: 0.7639 | Val Loss: 0.5991 Acc: 0.6859 AUC: 0.7525 | LR: 1.85e-05
+2026-03-25 11:43:16 [INFO] Epoch  37/200 | Train Loss: 0.5851 Acc: 0.6975 AUC: 0.7640 | Val Loss: 0.5946 Acc: 0.6925 AUC: 0.7524 | LR: 1.84e-05
+2026-03-25 11:43:18 [INFO] Epoch  38/200 | Train Loss: 0.5851 Acc: 0.6982 AUC: 0.7639 | Val Loss: 0.5927 Acc: 0.6963 AUC: 0.7526 | LR: 1.83e-05 *
+2026-03-25 11:43:20 [INFO] Epoch  39/200 | Train Loss: 0.5852 Acc: 0.6975 AUC: 0.7636 | Val Loss: 0.5927 Acc: 0.6939 AUC: 0.7519 | LR: 1.82e-05
+2026-03-25 11:43:21 [INFO] Epoch  40/200 | Train Loss: 0.5842 Acc: 0.6990 AUC: 0.7642 | Val Loss: 0.5942 Acc: 0.6936 AUC: 0.7525 | LR: 1.81e-05
+2026-03-25 11:43:23 [INFO] Epoch  41/200 | Train Loss: 0.5849 Acc: 0.6969 AUC: 0.7643 | Val Loss: 0.5940 Acc: 0.6941 AUC: 0.7530 | LR: 1.80e-05 *
+2026-03-25 11:43:25 [INFO] Epoch  42/200 | Train Loss: 0.5853 Acc: 0.6976 AUC: 0.7643 | Val Loss: 0.6008 Acc: 0.6844 AUC: 0.7530 | LR: 1.79e-05
+2026-03-25 11:43:27 [INFO] Epoch  43/200 | Train Loss: 0.5844 Acc: 0.6977 AUC: 0.7638 | Val Loss: 0.5959 Acc: 0.6908 AUC: 0.7529 | LR: 1.78e-05
+2026-03-25 11:43:28 [INFO] Epoch  44/200 | Train Loss: 0.5848 Acc: 0.6978 AUC: 0.7642 | Val Loss: 0.5937 Acc: 0.6924 AUC: 0.7530 | LR: 1.77e-05
+2026-03-25 11:43:30 [INFO] Epoch  45/200 | Train Loss: 0.5837 Acc: 0.6982 AUC: 0.7640 | Val Loss: 0.5928 Acc: 0.6949 AUC: 0.7521 | LR: 1.76e-05
+2026-03-25 11:43:32 [INFO] Epoch  46/200 | Train Loss: 0.5839 Acc: 0.6984 AUC: 0.7641 | Val Loss: 0.5955 Acc: 0.6935 AUC: 0.7531 | LR: 1.75e-05 *
+2026-03-25 11:43:34 [INFO] Epoch  47/200 | Train Loss: 0.5838 Acc: 0.6986 AUC: 0.7640 | Val Loss: 0.5985 Acc: 0.6880 AUC: 0.7518 | LR: 1.74e-05
+2026-03-25 11:43:35 [INFO] Epoch  48/200 | Train Loss: 0.5841 Acc: 0.6979 AUC: 0.7642 | Val Loss: 0.5987 Acc: 0.6860 AUC: 0.7531 | LR: 1.73e-05 *
+2026-03-25 11:43:37 [INFO] Epoch  49/200 | Train Loss: 0.5837 Acc: 0.6991 AUC: 0.7644 | Val Loss: 0.5934 Acc: 0.6933 AUC: 0.7530 | LR: 1.72e-05
+2026-03-25 11:43:39 [INFO] Epoch  50/200 | Train Loss: 0.5839 Acc: 0.6997 AUC: 0.7645 | Val Loss: 0.5948 Acc: 0.6926 AUC: 0.7525 | LR: 1.71e-05
+2026-03-25 11:43:41 [INFO] Epoch  51/200 | Train Loss: 0.5841 Acc: 0.6990 AUC: 0.7647 | Val Loss: 0.5912 Acc: 0.6972 AUC: 0.7535 | LR: 1.70e-05 *
+2026-03-25 11:43:42 [INFO] Epoch  52/200 | Train Loss: 0.5837 Acc: 0.6985 AUC: 0.7644 | Val Loss: 0.5938 Acc: 0.6963 AUC: 0.7527 | LR: 1.69e-05
+2026-03-25 11:43:44 [INFO] Epoch  53/200 | Train Loss: 0.5846 Acc: 0.6983 AUC: 0.7646 | Val Loss: 0.5998 Acc: 0.6850 AUC: 0.7530 | LR: 1.67e-05
+2026-03-25 11:43:46 [INFO] Epoch  54/200 | Train Loss: 0.5834 Acc: 0.6989 AUC: 0.7644 | Val Loss: 0.5940 Acc: 0.6928 AUC: 0.7529 | LR: 1.66e-05
+2026-03-25 11:43:48 [INFO] Epoch  55/200 | Train Loss: 0.5847 Acc: 0.6981 AUC: 0.7644 | Val Loss: 0.5946 Acc: 0.6913 AUC: 0.7528 | LR: 1.65e-05
+2026-03-25 11:43:49 [INFO] Epoch  56/200 | Train Loss: 0.5833 Acc: 0.6986 AUC: 0.7645 | Val Loss: 0.5921 Acc: 0.6957 AUC: 0.7527 | LR: 1.64e-05
+2026-03-25 11:43:51 [INFO] Epoch  57/200 | Train Loss: 0.5837 Acc: 0.6995 AUC: 0.7648 | Val Loss: 0.5921 Acc: 0.6961 AUC: 0.7530 | LR: 1.63e-05
+2026-03-25 11:43:53 [INFO] Epoch  58/200 | Train Loss: 0.5835 Acc: 0.6989 AUC: 0.7645 | Val Loss: 0.5914 Acc: 0.6957 AUC: 0.7533 | LR: 1.61e-05
+2026-03-25 11:43:54 [INFO] Epoch  59/200 | Train Loss: 0.5833 Acc: 0.6990 AUC: 0.7647 | Val Loss: 0.5923 Acc: 0.6947 AUC: 0.7531 | LR: 1.60e-05
+2026-03-25 11:43:56 [INFO] Epoch  60/200 | Train Loss: 0.5834 Acc: 0.6990 AUC: 0.7648 | Val Loss: 0.6038 Acc: 0.6806 AUC: 0.7527 | LR: 1.59e-05
+2026-03-25 11:43:58 [INFO] Epoch  61/200 | Train Loss: 0.5836 Acc: 0.6987 AUC: 0.7648 | Val Loss: 0.5932 Acc: 0.6945 AUC: 0.7537 | LR: 1.58e-05 *
+2026-03-25 11:44:00 [INFO] Epoch  62/200 | Train Loss: 0.5836 Acc: 0.6996 AUC: 0.7648 | Val Loss: 0.5923 Acc: 0.6959 AUC: 0.7532 | LR: 1.56e-05
+2026-03-25 11:44:02 [INFO] Epoch  63/200 | Train Loss: 0.5833 Acc: 0.6990 AUC: 0.7646 | Val Loss: 0.5920 Acc: 0.6962 AUC: 0.7529 | LR: 1.55e-05
+2026-03-25 11:44:03 [INFO] Epoch  64/200 | Train Loss: 0.5833 Acc: 0.6989 AUC: 0.7648 | Val Loss: 0.5944 Acc: 0.6939 AUC: 0.7533 | LR: 1.54e-05
+2026-03-25 11:44:05 [INFO] Epoch  65/200 | Train Loss: 0.5831 Acc: 0.6993 AUC: 0.7648 | Val Loss: 0.5939 Acc: 0.6931 AUC: 0.7536 | LR: 1.52e-05
+2026-03-25 11:44:07 [INFO] Epoch  66/200 | Train Loss: 0.5834 Acc: 0.6998 AUC: 0.7648 | Val Loss: 0.5942 Acc: 0.6920 AUC: 0.7528 | LR: 1.51e-05
+2026-03-25 11:44:08 [INFO] Epoch  67/200 | Train Loss: 0.5837 Acc: 0.6992 AUC: 0.7647 | Val Loss: 0.5941 Acc: 0.6941 AUC: 0.7528 | LR: 1.50e-05
+2026-03-25 11:44:10 [INFO] Epoch  68/200 | Train Loss: 0.5842 Acc: 0.6989 AUC: 0.7649 | Val Loss: 0.5940 Acc: 0.6941 AUC: 0.7528 | LR: 1.48e-05
+2026-03-25 11:44:12 [INFO] Epoch  69/200 | Train Loss: 0.5833 Acc: 0.6994 AUC: 0.7648 | Val Loss: 0.5923 Acc: 0.6943 AUC: 0.7533 | LR: 1.47e-05
+2026-03-25 11:44:13 [INFO] Epoch  70/200 | Train Loss: 0.5830 Acc: 0.7000 AUC: 0.7649 | Val Loss: 0.5917 Acc: 0.6954 AUC: 0.7530 | LR: 1.46e-05
+2026-03-25 11:44:15 [INFO] Epoch  71/200 | Train Loss: 0.5830 Acc: 0.6999 AUC: 0.7649 | Val Loss: 0.5931 Acc: 0.6924 AUC: 0.7532 | LR: 1.44e-05
+2026-03-25 11:44:17 [INFO] Epoch  72/200 | Train Loss: 0.5833 Acc: 0.6987 AUC: 0.7648 | Val Loss: 0.5914 Acc: 0.6961 AUC: 0.7534 | LR: 1.43e-05
+2026-03-25 11:44:19 [INFO] Epoch  73/200 | Train Loss: 0.5832 Acc: 0.6992 AUC: 0.7647 | Val Loss: 0.5921 Acc: 0.6954 AUC: 0.7533 | LR: 1.41e-05
+2026-03-25 11:44:20 [INFO] Epoch  74/200 | Train Loss: 0.5831 Acc: 0.7001 AUC: 0.7650 | Val Loss: 0.5940 Acc: 0.6929 AUC: 0.7536 | LR: 1.40e-05
+2026-03-25 11:44:22 [INFO] Epoch  75/200 | Train Loss: 0.5832 Acc: 0.6991 AUC: 0.7644 | Val Loss: 0.5949 Acc: 0.6936 AUC: 0.7533 | LR: 1.39e-05
+2026-03-25 11:44:24 [INFO] Epoch  76/200 | Train Loss: 0.5827 Acc: 0.6995 AUC: 0.7647 | Val Loss: 0.5937 Acc: 0.6938 AUC: 0.7528 | LR: 1.37e-05
+2026-03-25 11:44:25 [INFO] Epoch  77/200 | Train Loss: 0.5832 Acc: 0.7005 AUC: 0.7650 | Val Loss: 0.5914 Acc: 0.6979 AUC: 0.7533 | LR: 1.36e-05
+2026-03-25 11:44:27 [INFO] Epoch  78/200 | Train Loss: 0.5826 Acc: 0.6997 AUC: 0.7651 | Val Loss: 0.5911 Acc: 0.6974 AUC: 0.7537 | LR: 1.34e-05 *
+2026-03-25 11:44:29 [INFO] Epoch  79/200 | Train Loss: 0.5833 Acc: 0.6989 AUC: 0.7650 | Val Loss: 0.5915 Acc: 0.6964 AUC: 0.7534 | LR: 1.33e-05
+2026-03-25 11:44:30 [INFO] Epoch  80/200 | Train Loss: 0.5830 Acc: 0.7000 AUC: 0.7651 | Val Loss: 0.5912 Acc: 0.6973 AUC: 0.7535 | LR: 1.31e-05
+2026-03-25 11:44:32 [INFO] Epoch  81/200 | Train Loss: 0.5831 Acc: 0.6997 AUC: 0.7648 | Val Loss: 0.5912 Acc: 0.6969 AUC: 0.7534 | LR: 1.30e-05
+2026-03-25 11:44:34 [INFO] Epoch  82/200 | Train Loss: 0.5825 Acc: 0.7000 AUC: 0.7651 | Val Loss: 0.5921 Acc: 0.6969 AUC: 0.7535 | LR: 1.28e-05
+2026-03-25 11:44:36 [INFO] Epoch  83/200 | Train Loss: 0.5830 Acc: 0.7000 AUC: 0.7650 | Val Loss: 0.5918 Acc: 0.6960 AUC: 0.7530 | LR: 1.27e-05
+2026-03-25 11:44:37 [INFO] Epoch  84/200 | Train Loss: 0.5824 Acc: 0.6993 AUC: 0.7650 | Val Loss: 0.5913 Acc: 0.6977 AUC: 0.7538 | LR: 1.25e-05 *
+2026-03-25 11:44:39 [INFO] Epoch  85/200 | Train Loss: 0.5825 Acc: 0.7002 AUC: 0.7648 | Val Loss: 0.5926 Acc: 0.6949 AUC: 0.7529 | LR: 1.24e-05
+2026-03-25 11:44:41 [INFO] Epoch  86/200 | Train Loss: 0.5825 Acc: 0.7001 AUC: 0.7648 | Val Loss: 0.5953 Acc: 0.6899 AUC: 0.7532 | LR: 1.22e-05
+2026-03-25 11:44:42 [INFO] Epoch  87/200 | Train Loss: 0.5827 Acc: 0.6993 AUC: 0.7652 | Val Loss: 0.5913 Acc: 0.6964 AUC: 0.7538 | LR: 1.21e-05 *
+2026-03-25 11:44:44 [INFO] Epoch  88/200 | Train Loss: 0.5826 Acc: 0.7004 AUC: 0.7649 | Val Loss: 0.5915 Acc: 0.6969 AUC: 0.7534 | LR: 1.19e-05
+2026-03-25 11:44:46 [INFO] Epoch  89/200 | Train Loss: 0.5827 Acc: 0.7000 AUC: 0.7651 | Val Loss: 0.5915 Acc: 0.6966 AUC: 0.7534 | LR: 1.18e-05
+2026-03-25 11:44:47 [INFO] Epoch  90/200 | Train Loss: 0.5824 Acc: 0.7001 AUC: 0.7651 | Val Loss: 0.5937 Acc: 0.6936 AUC: 0.7534 | LR: 1.16e-05
+2026-03-25 11:44:49 [INFO] Epoch  91/200 | Train Loss: 0.5828 Acc: 0.6999 AUC: 0.7650 | Val Loss: 0.5926 Acc: 0.6954 AUC: 0.7535 | LR: 1.15e-05
+2026-03-25 11:44:51 [INFO] Epoch  92/200 | Train Loss: 0.5830 Acc: 0.6996 AUC: 0.7652 | Val Loss: 0.5915 Acc: 0.6949 AUC: 0.7536 | LR: 1.13e-05
+2026-03-25 11:44:52 [INFO] Epoch  93/200 | Train Loss: 0.5822 Acc: 0.7007 AUC: 0.7650 | Val Loss: 0.5926 Acc: 0.6961 AUC: 0.7533 | LR: 1.11e-05
+2026-03-25 11:44:54 [INFO] Epoch  94/200 | Train Loss: 0.5822 Acc: 0.6998 AUC: 0.7652 | Val Loss: 0.5915 Acc: 0.6966 AUC: 0.7534 | LR: 1.10e-05
+2026-03-25 11:44:56 [INFO] Epoch  95/200 | Train Loss: 0.5828 Acc: 0.6988 AUC: 0.7653 | Val Loss: 0.5920 Acc: 0.6977 AUC: 0.7536 | LR: 1.08e-05
+2026-03-25 11:44:58 [INFO] Epoch  96/200 | Train Loss: 0.5826 Acc: 0.6996 AUC: 0.7652 | Val Loss: 0.5933 Acc: 0.6949 AUC: 0.7537 | LR: 1.07e-05
+2026-03-25 11:44:59 [INFO] Epoch  97/200 | Train Loss: 0.5824 Acc: 0.6997 AUC: 0.7653 | Val Loss: 0.5912 Acc: 0.6969 AUC: 0.7537 | LR: 1.05e-05
+2026-03-25 11:45:01 [INFO] Epoch  98/200 | Train Loss: 0.5826 Acc: 0.6987 AUC: 0.7652 | Val Loss: 0.5911 Acc: 0.6984 AUC: 0.7537 | LR: 1.04e-05
+2026-03-25 11:45:03 [INFO] Epoch  99/200 | Train Loss: 0.5821 Acc: 0.7001 AUC: 0.7652 | Val Loss: 0.5912 Acc: 0.6960 AUC: 0.7537 | LR: 1.02e-05
+2026-03-25 11:45:04 [INFO] Epoch 100/200 | Train Loss: 0.5820 Acc: 0.7004 AUC: 0.7650 | Val Loss: 0.5939 Acc: 0.6925 AUC: 0.7536 | LR: 1.01e-05
+2026-03-25 11:45:06 [INFO] Epoch 101/200 | Train Loss: 0.5822 Acc: 0.7001 AUC: 0.7652 | Val Loss: 0.5927 Acc: 0.6939 AUC: 0.7537 | LR: 9.89e-06
+2026-03-25 11:45:08 [INFO] Epoch 102/200 | Train Loss: 0.5822 Acc: 0.7004 AUC: 0.7652 | Val Loss: 0.5937 Acc: 0.6922 AUC: 0.7539 | LR: 9.74e-06 *
+2026-03-25 11:45:09 [INFO] Epoch 103/200 | Train Loss: 0.5823 Acc: 0.6999 AUC: 0.7653 | Val Loss: 0.5924 Acc: 0.6959 AUC: 0.7539 | LR: 9.58e-06
+2026-03-25 11:45:11 [INFO] Epoch 104/200 | Train Loss: 0.5824 Acc: 0.6998 AUC: 0.7653 | Val Loss: 0.5957 Acc: 0.6921 AUC: 0.7535 | LR: 9.43e-06
+2026-03-25 11:45:13 [INFO] Epoch 105/200 | Train Loss: 0.5821 Acc: 0.7008 AUC: 0.7653 | Val Loss: 0.5925 Acc: 0.6951 AUC: 0.7537 | LR: 9.27e-06
+2026-03-25 11:45:14 [INFO] Epoch 106/200 | Train Loss: 0.5821 Acc: 0.7007 AUC: 0.7652 | Val Loss: 0.5914 Acc: 0.6972 AUC: 0.7534 | LR: 9.11e-06
+2026-03-25 11:45:16 [INFO] Epoch 107/200 | Train Loss: 0.5819 Acc: 0.7006 AUC: 0.7652 | Val Loss: 0.5913 Acc: 0.6981 AUC: 0.7536 | LR: 8.96e-06
+2026-03-25 11:45:18 [INFO] Epoch 108/200 | Train Loss: 0.5819 Acc: 0.7010 AUC: 0.7652 | Val Loss: 0.5974 Acc: 0.6917 AUC: 0.7535 | LR: 8.80e-06
+2026-03-25 11:45:20 [INFO] Epoch 109/200 | Train Loss: 0.5820 Acc: 0.7002 AUC: 0.7651 | Val Loss: 0.5910 Acc: 0.6970 AUC: 0.7538 | LR: 8.65e-06
+2026-03-25 11:45:21 [INFO] Epoch 110/200 | Train Loss: 0.5819 Acc: 0.7005 AUC: 0.7653 | Val Loss: 0.5925 Acc: 0.6956 AUC: 0.7538 | LR: 8.49e-06
+2026-03-25 11:45:23 [INFO] Epoch 111/200 | Train Loss: 0.5817 Acc: 0.7008 AUC: 0.7652 | Val Loss: 0.5913 Acc: 0.6956 AUC: 0.7537 | LR: 8.34e-06
+2026-03-25 11:45:25 [INFO] Epoch 112/200 | Train Loss: 0.5816 Acc: 0.7000 AUC: 0.7653 | Val Loss: 0.5910 Acc: 0.6961 AUC: 0.7538 | LR: 8.19e-06
+2026-03-25 11:45:26 [INFO] Epoch 113/200 | Train Loss: 0.5821 Acc: 0.7002 AUC: 0.7653 | Val Loss: 0.5912 Acc: 0.6968 AUC: 0.7537 | LR: 8.03e-06
+2026-03-25 11:45:28 [INFO] Epoch 114/200 | Train Loss: 0.5817 Acc: 0.7005 AUC: 0.7651 | Val Loss: 0.5910 Acc: 0.6972 AUC: 0.7537 | LR: 7.88e-06
+2026-03-25 11:45:30 [INFO] Epoch 115/200 | Train Loss: 0.5814 Acc: 0.7011 AUC: 0.7654 | Val Loss: 0.5909 Acc: 0.6977 AUC: 0.7539 | LR: 7.73e-06
+2026-03-25 11:45:31 [INFO] Epoch 116/200 | Train Loss: 0.5820 Acc: 0.6998 AUC: 0.7653 | Val Loss: 0.5912 Acc: 0.6982 AUC: 0.7536 | LR: 7.58e-06
+2026-03-25 11:45:33 [INFO] Epoch 117/200 | Train Loss: 0.5814 Acc: 0.6998 AUC: 0.7653 | Val Loss: 0.5912 Acc: 0.6966 AUC: 0.7537 | LR: 7.42e-06
+2026-03-25 11:45:35 [INFO] Epoch 118/200 | Train Loss: 0.5821 Acc: 0.7001 AUC: 0.7653 | Val Loss: 0.5933 Acc: 0.6928 AUC: 0.7535 | LR: 7.27e-06
+2026-03-25 11:45:36 [INFO] Epoch 119/200 | Train Loss: 0.5814 Acc: 0.7002 AUC: 0.7654 | Val Loss: 0.5948 Acc: 0.6926 AUC: 0.7538 | LR: 7.12e-06
+2026-03-25 11:45:38 [INFO] Epoch 120/200 | Train Loss: 0.5817 Acc: 0.7004 AUC: 0.7653 | Val Loss: 0.5913 Acc: 0.6965 AUC: 0.7538 | LR: 6.98e-06
+2026-03-25 11:45:40 [INFO] Epoch 121/200 | Train Loss: 0.5815 Acc: 0.7014 AUC: 0.7654 | Val Loss: 0.5918 Acc: 0.6949 AUC: 0.7538 | LR: 6.83e-06
+2026-03-25 11:45:42 [INFO] Epoch 122/200 | Train Loss: 0.5812 Acc: 0.7013 AUC: 0.7653 | Val Loss: 0.5911 Acc: 0.6965 AUC: 0.7539 | LR: 6.68e-06
+2026-03-25 11:45:43 [INFO] Epoch 123/200 | Train Loss: 0.5814 Acc: 0.6997 AUC: 0.7654 | Val Loss: 0.5925 Acc: 0.6954 AUC: 0.7539 | LR: 6.53e-06
+2026-03-25 11:45:45 [INFO] Epoch 124/200 | Train Loss: 0.5811 Acc: 0.7011 AUC: 0.7653 | Val Loss: 0.5921 Acc: 0.6957 AUC: 0.7539 | LR: 6.39e-06
+2026-03-25 11:45:47 [INFO] Epoch 125/200 | Train Loss: 0.5813 Acc: 0.7005 AUC: 0.7654 | Val Loss: 0.5911 Acc: 0.6977 AUC: 0.7536 | LR: 6.24e-06
+2026-03-25 11:45:48 [INFO] Epoch 126/200 | Train Loss: 0.5813 Acc: 0.7001 AUC: 0.7654 | Val Loss: 0.5912 Acc: 0.6972 AUC: 0.7539 | LR: 6.10e-06
+2026-03-25 11:45:50 [INFO] Epoch 127/200 | Train Loss: 0.5816 Acc: 0.7001 AUC: 0.7654 | Val Loss: 0.5911 Acc: 0.6967 AUC: 0.7537 | LR: 5.96e-06
+2026-03-25 11:45:52 [INFO] Epoch 128/200 | Train Loss: 0.5812 Acc: 0.7008 AUC: 0.7654 | Val Loss: 0.5919 Acc: 0.6972 AUC: 0.7537 | LR: 5.81e-06
+2026-03-25 11:45:53 [INFO] Epoch 129/200 | Train Loss: 0.5812 Acc: 0.7010 AUC: 0.7654 | Val Loss: 0.5911 Acc: 0.6970 AUC: 0.7539 | LR: 5.67e-06
+2026-03-25 11:45:55 [INFO] Epoch 130/200 | Train Loss: 0.5811 Acc: 0.7007 AUC: 0.7654 | Val Loss: 0.5908 Acc: 0.6970 AUC: 0.7540 | LR: 5.53e-06 *
+2026-03-25 11:45:57 [INFO] Epoch 131/200 | Train Loss: 0.5812 Acc: 0.7009 AUC: 0.7654 | Val Loss: 0.5912 Acc: 0.6957 AUC: 0.7538 | LR: 5.39e-06
+2026-03-25 11:45:58 [INFO] Epoch 132/200 | Train Loss: 0.5814 Acc: 0.7004 AUC: 0.7654 | Val Loss: 0.5910 Acc: 0.6979 AUC: 0.7541 | LR: 5.26e-06 *
+2026-03-25 11:46:00 [INFO] Epoch 133/200 | Train Loss: 0.5811 Acc: 0.7008 AUC: 0.7654 | Val Loss: 0.5913 Acc: 0.6967 AUC: 0.7540 | LR: 5.12e-06
+2026-03-25 11:46:02 [INFO] Epoch 134/200 | Train Loss: 0.5812 Acc: 0.7009 AUC: 0.7654 | Val Loss: 0.5913 Acc: 0.6970 AUC: 0.7538 | LR: 4.99e-06
+2026-03-25 11:46:03 [INFO] Epoch 135/200 | Train Loss: 0.5810 Acc: 0.7011 AUC: 0.7654 | Val Loss: 0.5908 Acc: 0.6976 AUC: 0.7540 | LR: 4.85e-06
+2026-03-25 11:46:05 [INFO] Epoch 136/200 | Train Loss: 0.5810 Acc: 0.7013 AUC: 0.7654 | Val Loss: 0.5918 Acc: 0.6955 AUC: 0.7538 | LR: 4.72e-06
+2026-03-25 11:46:07 [INFO] Epoch 137/200 | Train Loss: 0.5809 Acc: 0.7010 AUC: 0.7655 | Val Loss: 0.5910 Acc: 0.6977 AUC: 0.7538 | LR: 4.59e-06
+2026-03-25 11:46:09 [INFO] Epoch 138/200 | Train Loss: 0.5810 Acc: 0.7007 AUC: 0.7655 | Val Loss: 0.5910 Acc: 0.6967 AUC: 0.7538 | LR: 4.46e-06
+2026-03-25 11:46:10 [INFO] Epoch 139/200 | Train Loss: 0.5811 Acc: 0.7005 AUC: 0.7655 | Val Loss: 0.5911 Acc: 0.6973 AUC: 0.7540 | LR: 4.33e-06
+2026-03-25 11:46:12 [INFO] Epoch 140/200 | Train Loss: 0.5810 Acc: 0.7013 AUC: 0.7654 | Val Loss: 0.5912 Acc: 0.6973 AUC: 0.7538 | LR: 4.20e-06
+2026-03-25 11:46:14 [INFO] Epoch 141/200 | Train Loss: 0.5811 Acc: 0.7013 AUC: 0.7655 | Val Loss: 0.5916 Acc: 0.6972 AUC: 0.7538 | LR: 4.08e-06
+2026-03-25 11:46:15 [INFO] Epoch 142/200 | Train Loss: 0.5809 Acc: 0.7012 AUC: 0.7655 | Val Loss: 0.5925 Acc: 0.6951 AUC: 0.7539 | LR: 3.95e-06
+2026-03-25 11:46:17 [INFO] Epoch 143/200 | Train Loss: 0.5809 Acc: 0.7014 AUC: 0.7655 | Val Loss: 0.5910 Acc: 0.6973 AUC: 0.7539 | LR: 3.83e-06
+2026-03-25 11:46:19 [INFO] Epoch 144/200 | Train Loss: 0.5806 Acc: 0.7011 AUC: 0.7654 | Val Loss: 0.5911 Acc: 0.6978 AUC: 0.7537 | LR: 3.71e-06
+2026-03-25 11:46:20 [INFO] Epoch 145/200 | Train Loss: 0.5808 Acc: 0.7009 AUC: 0.7655 | Val Loss: 0.5908 Acc: 0.6980 AUC: 0.7540 | LR: 3.59e-06
+2026-03-25 11:46:22 [INFO] Epoch 146/200 | Train Loss: 0.5807 Acc: 0.7011 AUC: 0.7655 | Val Loss: 0.5913 Acc: 0.6965 AUC: 0.7539 | LR: 3.47e-06
+2026-03-25 11:46:24 [INFO] Epoch 147/200 | Train Loss: 0.5808 Acc: 0.7014 AUC: 0.7655 | Val Loss: 0.5909 Acc: 0.6972 AUC: 0.7540 | LR: 3.35e-06
+2026-03-25 11:46:26 [INFO] Epoch 148/200 | Train Loss: 0.5807 Acc: 0.7017 AUC: 0.7655 | Val Loss: 0.5909 Acc: 0.6966 AUC: 0.7539 | LR: 3.24e-06
+2026-03-25 11:46:27 [INFO] Epoch 149/200 | Train Loss: 0.5805 Acc: 0.7012 AUC: 0.7654 | Val Loss: 0.5914 Acc: 0.6986 AUC: 0.7538 | LR: 3.13e-06
+2026-03-25 11:46:29 [INFO] Epoch 150/200 | Train Loss: 0.5806 Acc: 0.7015 AUC: 0.7654 | Val Loss: 0.5910 Acc: 0.6981 AUC: 0.7540 | LR: 3.01e-06
+2026-03-25 11:46:31 [INFO] Epoch 151/200 | Train Loss: 0.5809 Acc: 0.7012 AUC: 0.7655 | Val Loss: 0.5913 Acc: 0.6976 AUC: 0.7539 | LR: 2.90e-06
+2026-03-25 11:46:32 [INFO] Epoch 152/200 | Train Loss: 0.5809 Acc: 0.7009 AUC: 0.7655 | Val Loss: 0.5911 Acc: 0.6961 AUC: 0.7540 | LR: 2.80e-06
+2026-03-25 11:46:34 [INFO] Epoch 153/200 | Train Loss: 0.5806 Acc: 0.7016 AUC: 0.7655 | Val Loss: 0.5909 Acc: 0.6969 AUC: 0.7539 | LR: 2.69e-06
+2026-03-25 11:46:36 [INFO] Epoch 154/200 | Train Loss: 0.5806 Acc: 0.7019 AUC: 0.7655 | Val Loss: 0.5911 Acc: 0.6964 AUC: 0.7540 | LR: 2.59e-06
+2026-03-25 11:46:38 [INFO] Epoch 155/200 | Train Loss: 0.5805 Acc: 0.7015 AUC: 0.7655 | Val Loss: 0.5908 Acc: 0.6979 AUC: 0.7540 | LR: 2.48e-06
+2026-03-25 11:46:39 [INFO] Epoch 156/200 | Train Loss: 0.5805 Acc: 0.7006 AUC: 0.7655 | Val Loss: 0.5908 Acc: 0.6973 AUC: 0.7539 | LR: 2.38e-06
+2026-03-25 11:46:41 [INFO] Epoch 157/200 | Train Loss: 0.5805 Acc: 0.7013 AUC: 0.7655 | Val Loss: 0.5909 Acc: 0.6971 AUC: 0.7539 | LR: 2.28e-06
+2026-03-25 11:46:43 [INFO] Epoch 158/200 | Train Loss: 0.5805 Acc: 0.7012 AUC: 0.7655 | Val Loss: 0.5916 Acc: 0.6965 AUC: 0.7540 | LR: 2.19e-06
+2026-03-25 11:46:45 [INFO] Epoch 159/200 | Train Loss: 0.5806 Acc: 0.7015 AUC: 0.7655 | Val Loss: 0.5909 Acc: 0.6969 AUC: 0.7539 | LR: 2.09e-06
+2026-03-25 11:46:46 [INFO] Epoch 160/200 | Train Loss: 0.5805 Acc: 0.7017 AUC: 0.7655 | Val Loss: 0.5910 Acc: 0.6973 AUC: 0.7539 | LR: 2.00e-06
+2026-03-25 11:46:48 [INFO] Epoch 161/200 | Train Loss: 0.5806 Acc: 0.7013 AUC: 0.7655 | Val Loss: 0.5909 Acc: 0.6973 AUC: 0.7539 | LR: 1.91e-06
+2026-03-25 11:46:50 [INFO] Epoch 162/200 | Train Loss: 0.5805 Acc: 0.7018 AUC: 0.7655 | Val Loss: 0.5913 Acc: 0.6961 AUC: 0.7539 | LR: 1.82e-06
+2026-03-25 11:46:51 [INFO] Epoch 163/200 | Train Loss: 0.5805 Acc: 0.7015 AUC: 0.7655 | Val Loss: 0.5908 Acc: 0.6972 AUC: 0.7539 | LR: 1.73e-06
+2026-03-25 11:46:53 [INFO] Epoch 164/200 | Train Loss: 0.5804 Acc: 0.7016 AUC: 0.7655 | Val Loss: 0.5912 Acc: 0.6969 AUC: 0.7540 | LR: 1.65e-06
+2026-03-25 11:46:55 [INFO] Epoch 165/200 | Train Loss: 0.5803 Acc: 0.7013 AUC: 0.7655 | Val Loss: 0.5919 Acc: 0.6966 AUC: 0.7540 | LR: 1.57e-06
+2026-03-25 11:46:57 [INFO] Epoch 166/200 | Train Loss: 0.5805 Acc: 0.7014 AUC: 0.7655 | Val Loss: 0.5908 Acc: 0.6978 AUC: 0.7539 | LR: 1.49e-06
+2026-03-25 11:46:59 [INFO] Epoch 167/200 | Train Loss: 0.5803 Acc: 0.7016 AUC: 0.7655 | Val Loss: 0.5908 Acc: 0.6972 AUC: 0.7540 | LR: 1.41e-06
+2026-03-25 11:47:01 [INFO] Epoch 168/200 | Train Loss: 0.5803 Acc: 0.7015 AUC: 0.7655 | Val Loss: 0.5909 Acc: 0.6972 AUC: 0.7540 | LR: 1.33e-06
+2026-03-25 11:47:02 [INFO] Epoch 169/200 | Train Loss: 0.5803 Acc: 0.7014 AUC: 0.7655 | Val Loss: 0.5909 Acc: 0.6974 AUC: 0.7540 | LR: 1.26e-06
+2026-03-25 11:47:04 [INFO] Epoch 170/200 | Train Loss: 0.5803 Acc: 0.7015 AUC: 0.7655 | Val Loss: 0.5908 Acc: 0.6964 AUC: 0.7540 | LR: 1.18e-06
+2026-03-25 11:47:06 [INFO] Epoch 171/200 | Train Loss: 0.5803 Acc: 0.7016 AUC: 0.7655 | Val Loss: 0.5912 Acc: 0.6966 AUC: 0.7540 | LR: 1.11e-06
+2026-03-25 11:47:07 [INFO] Epoch 172/200 | Train Loss: 0.5802 Acc: 0.7016 AUC: 0.7655 | Val Loss: 0.5909 Acc: 0.6969 AUC: 0.7540 | LR: 1.05e-06
+2026-03-25 11:47:09 [INFO] Epoch 173/200 | Train Loss: 0.5802 Acc: 0.7019 AUC: 0.7655 | Val Loss: 0.5908 Acc: 0.6969 AUC: 0.7540 | LR: 9.82e-07
+2026-03-25 11:47:11 [INFO] Epoch 174/200 | Train Loss: 0.5803 Acc: 0.7015 AUC: 0.7655 | Val Loss: 0.5909 Acc: 0.6969 AUC: 0.7540 | LR: 9.18e-07
+2026-03-25 11:47:12 [INFO] Epoch 175/200 | Train Loss: 0.5802 Acc: 0.7019 AUC: 0.7655 | Val Loss: 0.5909 Acc: 0.6971 AUC: 0.7540 | LR: 8.57e-07
+2026-03-25 11:47:14 [INFO] Epoch 176/200 | Train Loss: 0.5803 Acc: 0.7012 AUC: 0.7655 | Val Loss: 0.5907 Acc: 0.6977 AUC: 0.7540 | LR: 7.99e-07
+2026-03-25 11:47:16 [INFO] Epoch 177/200 | Train Loss: 0.5802 Acc: 0.7015 AUC: 0.7655 | Val Loss: 0.5909 Acc: 0.6968 AUC: 0.7540 | LR: 7.42e-07
+2026-03-25 11:47:18 [INFO] Epoch 178/200 | Train Loss: 0.5802 Acc: 0.7014 AUC: 0.7655 | Val Loss: 0.5907 Acc: 0.6974 AUC: 0.7540 | LR: 6.88e-07
+2026-03-25 11:47:19 [INFO] Epoch 179/200 | Train Loss: 0.5802 Acc: 0.7015 AUC: 0.7655 | Val Loss: 0.5907 Acc: 0.6975 AUC: 0.7540 | LR: 6.36e-07
+2026-03-25 11:47:21 [INFO] Epoch 180/200 | Train Loss: 0.5801 Acc: 0.7016 AUC: 0.7655 | Val Loss: 0.5908 Acc: 0.6974 AUC: 0.7540 | LR: 5.87e-07
+2026-03-25 11:47:23 [INFO] Epoch 181/200 | Train Loss: 0.5802 Acc: 0.7016 AUC: 0.7655 | Val Loss: 0.5908 Acc: 0.6970 AUC: 0.7540 | LR: 5.40e-07
+2026-03-25 11:47:24 [INFO] Epoch 182/200 | Train Loss: 0.5802 Acc: 0.7016 AUC: 0.7655 | Val Loss: 0.5907 Acc: 0.6974 AUC: 0.7540 | LR: 4.95e-07
+2026-03-25 11:47:26 [INFO] Epoch 183/200 | Train Loss: 0.5802 Acc: 0.7012 AUC: 0.7655 | Val Loss: 0.5907 Acc: 0.6976 AUC: 0.7540 | LR: 4.53e-07
+2026-03-25 11:47:28 [INFO] Epoch 184/200 | Train Loss: 0.5801 Acc: 0.7014 AUC: 0.7655 | Val Loss: 0.5907 Acc: 0.6976 AUC: 0.7540 | LR: 4.13e-07
+2026-03-25 11:47:29 [INFO] Epoch 185/200 | Train Loss: 0.5801 Acc: 0.7016 AUC: 0.7655 | Val Loss: 0.5908 Acc: 0.6977 AUC: 0.7540 | LR: 3.75e-07
+2026-03-25 11:47:31 [INFO] Epoch 186/200 | Train Loss: 0.5801 Acc: 0.7014 AUC: 0.7655 | Val Loss: 0.5908 Acc: 0.6977 AUC: 0.7540 | LR: 3.40e-07
+2026-03-25 11:47:33 [INFO] Epoch 187/200 | Train Loss: 0.5801 Acc: 0.7015 AUC: 0.7655 | Val Loss: 0.5908 Acc: 0.6968 AUC: 0.7540 | LR: 3.07e-07
+2026-03-25 11:47:34 [INFO] Epoch 188/200 | Train Loss: 0.5801 Acc: 0.7013 AUC: 0.7655 | Val Loss: 0.5907 Acc: 0.6974 AUC: 0.7540 | LR: 2.76e-07
+2026-03-25 11:47:36 [INFO] Epoch 189/200 | Train Loss: 0.5801 Acc: 0.7015 AUC: 0.7655 | Val Loss: 0.5908 Acc: 0.6976 AUC: 0.7540 | LR: 2.48e-07
+2026-03-25 11:47:38 [INFO] Epoch 190/200 | Train Loss: 0.5801 Acc: 0.7019 AUC: 0.7655 | Val Loss: 0.5907 Acc: 0.6977 AUC: 0.7540 | LR: 2.23e-07
+2026-03-25 11:47:40 [INFO] Epoch 191/200 | Train Loss: 0.5801 Acc: 0.7013 AUC: 0.7655 | Val Loss: 0.5908 Acc: 0.6976 AUC: 0.7540 | LR: 1.99e-07
+2026-03-25 11:47:41 [INFO] Epoch 192/200 | Train Loss: 0.5801 Acc: 0.7014 AUC: 0.7655 | Val Loss: 0.5908 Acc: 0.6969 AUC: 0.7540 | LR: 1.78e-07
+2026-03-25 11:47:43 [INFO] Epoch 193/200 | Train Loss: 0.5801 Acc: 0.7013 AUC: 0.7655 | Val Loss: 0.5908 Acc: 0.6979 AUC: 0.7540 | LR: 1.60e-07
+2026-03-25 11:47:45 [INFO] Epoch 194/200 | Train Loss: 0.5800 Acc: 0.7014 AUC: 0.7655 | Val Loss: 0.5909 Acc: 0.6973 AUC: 0.7540 | LR: 1.44e-07
+2026-03-25 11:47:47 [INFO] Epoch 195/200 | Train Loss: 0.5801 Acc: 0.7015 AUC: 0.7655 | Val Loss: 0.5908 Acc: 0.6980 AUC: 0.7540 | LR: 1.31e-07
+2026-03-25 11:47:48 [INFO] Epoch 196/200 | Train Loss: 0.5801 Acc: 0.7014 AUC: 0.7655 | Val Loss: 0.5908 Acc: 0.6972 AUC: 0.7540 | LR: 1.20e-07
+2026-03-25 11:47:50 [INFO] Epoch 197/200 | Train Loss: 0.5800 Acc: 0.7014 AUC: 0.7655 | Val Loss: 0.5907 Acc: 0.6974 AUC: 0.7540 | LR: 1.11e-07
+2026-03-25 11:47:52 [INFO] Epoch 198/200 | Train Loss: 0.5800 Acc: 0.7015 AUC: 0.7655 | Val Loss: 0.5908 Acc: 0.6973 AUC: 0.7540 | LR: 1.05e-07
+2026-03-25 11:47:53 [INFO] Epoch 199/200 | Train Loss: 0.5800 Acc: 0.7014 AUC: 0.7655 | Val Loss: 0.5908 Acc: 0.6969 AUC: 0.7540 | LR: 1.01e-07
+2026-03-25 11:47:55 [INFO] Epoch 200/200 | Train Loss: 0.5800 Acc: 0.7014 AUC: 0.7655 | Val Loss: 0.5907 Acc: 0.6974 AUC: 0.7540 | LR: 1.00e-07
+2026-03-25 11:47:55 [INFO] Linear probe done. Best val AUC: 0.7541
+2026-03-25 11:47:55 [INFO] === Phase 3: Test Evaluation ===
+2026-03-25 11:47:55 [INFO] Test AUC: 0.7610
+2026-03-25 11:47:55 [INFO] Test Acc: 0.7015
+2026-03-25 11:47:55 [INFO] Done!

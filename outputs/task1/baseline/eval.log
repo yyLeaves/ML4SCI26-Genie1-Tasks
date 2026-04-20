@@ -1,0 +1,34 @@
+2026-03-22 17:39:26 [INFO] Loaded model from epoch 1, val_loss=0.000001
+2026-03-22 17:39:26 [INFO] Data: 139306 samples (train: 111444, val: 27862)
+2026-03-22 17:39:26 [INFO] --- Validation Metrics ---
+2026-03-22 17:39:50 [INFO]   MSE:  0.000001
+2026-03-22 17:39:50 [INFO]   MAE:  0.000020
+2026-03-22 17:39:50 [INFO]   MSE (Tracks): 0.000002
+2026-03-22 17:39:50 [INFO]   MSE (ECAL  ): 0.000001
+2026-03-22 17:39:50 [INFO]   MSE (HCAL  ): 0.000000
+2026-03-22 17:39:50 [INFO] --- Train Metrics ---
+2026-03-22 17:41:27 [INFO]   MSE:  0.000001
+2026-03-22 17:41:27 [INFO]   MAE:  0.000020
+2026-03-22 17:41:34 [INFO] Saved reconstruction plots
+2026-03-22 17:41:44 [INFO] Saved jet event plots
+2026-03-22 17:41:47 [INFO] Saved scatter comparison plot
+2026-03-22 17:42:04 [INFO] Saved: outputs\task1\baseline\avg_reconstruction.png
+2026-03-22 17:42:21 [INFO] Saved: outputs\task1\baseline\loss_distribution.png
+2026-03-22 17:42:21 [INFO] Done!
+2026-03-22 19:49:41 [INFO] Loaded model from epoch 46, val_loss=0.235174
+2026-03-22 19:49:41 [INFO] Data: 139306 samples (train: 111444, val: 27862)
+2026-03-22 19:49:41 [INFO] --- Validation Metrics ---
+2026-03-22 19:49:53 [INFO]   MSE:  0.235320
+2026-03-22 19:49:53 [INFO]   MAE:  0.052354
+2026-03-22 19:49:53 [INFO]   MSE (Tracks): 0.313896
+2026-03-22 19:49:53 [INFO]   MSE (ECAL  ): 0.340256
+2026-03-22 19:49:53 [INFO]   MSE (HCAL  ): 0.051808
+2026-03-22 19:49:53 [INFO] --- Train Metrics ---
+2026-03-22 19:50:56 [INFO]   MSE:  0.218926
+2026-03-22 19:50:56 [INFO]   MAE:  0.048264
+2026-03-22 19:50:58 [INFO] Saved reconstruction plots
+2026-03-22 19:51:05 [INFO] Saved jet event plots
+2026-03-22 19:51:07 [INFO] Saved scatter comparison plot
+2026-03-22 19:51:23 [INFO] Saved: outputs\task1\baseline\avg_reconstruction.png
+2026-03-22 19:51:30 [INFO] Saved: outputs\task1\baseline\loss_distribution.png
+2026-03-22 19:51:30 [INFO] Done!
